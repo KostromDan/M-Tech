@@ -593,7 +593,7 @@
 		}
 		{
 			x: -3.5d
-			y: -1.0d
+			y: -1.5d
 			subtitle: "Quickly switch between tools using the handy Radial Menu! (Hold R down -- or change the keybind to your preference)"
 			dependencies: ["35FA3C2E42143217"]
 			id: "3A3E2A3B9D9721B7"
@@ -653,7 +653,7 @@
 		}
 		{
 			x: -5.0d
-			y: -1.0d
+			y: -1.5d
 			subtitle: "2 stock slots, upgradeable to 9 by combining with tool pouches in an anvil!"
 			dependencies: ["3A3E2A3B9D9721B7"]
 			id: "7DB1A10B5AC680D4"
@@ -1416,7 +1416,7 @@
 		}
 		{
 			x: -3.5d
-			y: 0.5d
+			y: 0.0d
 			subtitle: "Bow that can shoot and set up torches."
 			dependencies: ["35FA3C2E42143217"]
 			id: "17D99FBBACB024DC"
@@ -3016,8 +3016,8 @@
 		}
 		{
 			x: -13.0d
-			y: -8.0d
-			subtitle: "Telepots you to the lastest waystone, you clicked with this item."
+			y: -8.5d
+			subtitle: "The Return Scroll is an item added by Waystones that, when used, is consumed and teleports you to the last Waystone, activated for the first time."
 			dependencies: ["765A60D676EA0A6D"]
 			id: "41EBE4463971C2C1"
 			tasks: [{
@@ -3039,7 +3039,7 @@
 		}
 		{
 			x: -5.0d
-			y: 0.5d
+			y: 0.0d
 			subtitle: "Shoot 9 torches at once!"
 			dependencies: ["17D99FBBACB024DC"]
 			id: "44C7655ECA3808A6"
@@ -3577,6 +3577,30 @@
 					item: "minecraft:bubble_coral"
 				}
 			]
+		}
+		{
+			x: -13.5d
+			y: -7.5d
+			subtitle: "The Bound Scroll is an item added by Waystones. The Bound Scroll can be bound to an activated Waystone and when used will be consumed and teleport you to the Waystone it was bound to."
+			dependencies: ["765A60D676EA0A6D"]
+			id: "42C7DD914A221390"
+			tasks: [{
+				id: "406DA23DD5B55DA6"
+				type: "item"
+				item: "waystones:bound_scroll"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			subtitle: "Storage Labels This is a simple mod that adds one item, the Label functions similar to Item Frames but can adapt to all surfaces and be physically connected to any solid block no matter the shape. By shift-clicking on a Label with an item you'll be able to change its image, showing that item you selected. Clicking on a Label will let the player interact with the block behind, making it perfect for your storage systems. Images shown by Labels are pixelated and colored to better fit Minecraft style. This works seamlessly for any item. Can accept Glow Ink Sacks to make then glow in the dark. Can be colored with any dye. Using a Feather on them will display the item name. "
+			dependencies: ["35FA3C2E42143217"]
+			id: "42C8367898216806"
+			tasks: [{
+				id: "73336FC32EB50B5E"
+				type: "item"
+				item: "labels:label"
+			}]
 		}
 	]
 	quest_links: [ ]

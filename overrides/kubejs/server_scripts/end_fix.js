@@ -127,7 +127,6 @@ ServerEvents.tick(event => {
         let players = event.server.players
         let server = event.server
         players.forEach(player => {
-
             if (player.level.dimension === 'minecraft:the_end') {
                 let level = player.level
                 if (tick_summon_freeze >= 0) {
@@ -142,13 +141,12 @@ ServerEvents.tick(event => {
                     console.log(`M-Tech-logging: Player ${player.username} tried to cheat the end dimension!`)
                     server.runCommand(`execute in minecraft:overworld run tp ${player.username} 0 400 0`)
                     server.runCommand(`effect give ${player.username} minecraft:slow_falling 40`)
-                } else if ((!player.data.ftbquests.isCompleted("181B66292B3EA3E5")) && (player.x >= 300 || player.z >= 300 || player.x <= -300 || player.z <= -300)) {
+                } else if ((!player.data.ftbquests.isCompleted("181B66292B3EA3E5")) && (player.x >= 200 || player.z >= 200 || player.x <= -200 || player.z <= -200)) {
                     player.tell("To leave the dragon island you need to kill the dragon. You are teleported to the center of the island! If you are not ready to fight the dragon, then just jump into the void, you will not die, you will be teleported to overworld!")
                     console.log(`M-Tech-logging: Player ${player.username} tried to leave dragon island without killing dragon!`)
-                    server.runCommand(`execute in minecraft:the_end run tp ${player.username} 0 400 0`)
                     server.runCommand(`effect give ${player.username} minecraft:slow_falling 40`)
-                }
-                if (player.data.ftbquests.isCompleted("6A72CB008C10DA05") && !player.data.ftbquests.isCompleted("181B66292B3EA3E5") && !player.stages.has('dragon_summoned' && !dragon_is_summoning)) {
+                    server.runCommand(`execute as ${player.username} at @s in minecraft:the_end run tp @s 0 400 0`)
+                } else if (player.data.ftbquests.isCompleted("6A72CB008C10DA05") && !player.data.ftbquests.isCompleted("181B66292B3EA3E5") && !player.stages.has('dragon_summoned' && !dragon_is_summoning)) {
                     if (!players_already_summoning_func_running.includes(player.username)) {
                         players_already_summoning_func_running.push(player.username)
                         server.scheduleInTicks(301, callback => {

@@ -8,7 +8,7 @@
 	#Range: 0 ~ 1000000
 	maxRadius = 1000000
 	#A list of structures that the compass will not display in the GUI and will not be able to search for. Wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:stronghold", "minecraft:endcity", "minecraft:*village*"]
-	structureBlacklist = ["minecraft:buried_treasure", "minecraft:desert_pyramid", "minecraft:fortress", "minecraft:mineshaft", "minecraft:stronghold", "minecraft:monument", "minecraft:swamp_hut", "betterstrongholds:stronghold"]
+	structureBlacklist = ["idas:*", "integrated_stronghold:stronghold", "minecraft:buried_treasure", "minecraft:desert_pyramid", "minecraft:fortress", "minecraft:mineshaft", "minecraft:stronghold", "minecraft:monument", "minecraft:swamp_hut", "betterstrongholds:stronghold"]
 	#The maximum number of samples to be taken when searching for a structure.
 	#Range: 0 ~ 100000000
 	maxSamples = 10000000

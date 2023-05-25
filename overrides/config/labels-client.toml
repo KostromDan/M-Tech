@@ -4,7 +4,7 @@
 	colored_text = true
 	#Item texture resolution. You might want to keep this multiples of 16
 	#Range: 8 ~ 512
-	texture_resolution = 16
+	texture_resolution = 64
 
 [color_settings]
 	#Greyscales then recolors each item. You can customize said colors by overriding 'label_colors.png' with a resourcepack
