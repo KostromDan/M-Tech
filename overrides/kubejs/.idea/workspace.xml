@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ebe4c5f-d3d4-475c-9238-360183453f0f" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NLRKRaMhNHyQumbR6q6oeLSp6h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ebe4c5f-d3d4-475c-9238-360183453f0f" name="Changes" comment="" />
+      <created>1679441312538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679441312538</updated>
+      <workItem from="1679441313707" duration="917000" />
+      <workItem from="1679445991386" duration="1179000" />
+      <workItem from="1679451933345" duration="69000" />
+      <workItem from="1679452257677" duration="6000" />
+      <workItem from="1679600672870" duration="715000" />
+      <workItem from="1679601834165" duration="2346000" />
+      <workItem from="1679604292291" duration="10740000" />
+      <workItem from="1679622114903" duration="11000" />
+      <workItem from="1679668938958" duration="1459000" />
+      <workItem from="1679907673239" duration="7165000" />
+      <workItem from="1679933706652" duration="16000" />
+      <workItem from="1680377534963" duration="4143000" />
+      <workItem from="1680382943621" duration="308000" />
+      <workItem from="1680387400649" duration="10000" />
+      <workItem from="1680723582110" duration="2990000" />
+      <workItem from="1680743283369" duration="77000" />
+      <workItem from="1680856035137" duration="857000" />
+      <workItem from="1680894266427" duration="596000" />
+      <workItem from="1681141602121" duration="335000" />
+      <workItem from="1681285576322" duration="1962000" />
+      <workItem from="1681287931208" duration="1148000" />
+      <workItem from="1681291030354" duration="162000" />
+      <workItem from="1681292423160" duration="793000" />
+      <workItem from="1681315109070" duration="1978000" />
+      <workItem from="1681337454505" duration="315000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server_scripts/create/tag_fix.js</url>
+          <line>242</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
