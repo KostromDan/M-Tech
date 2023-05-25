@@ -6,30 +6,6 @@ ServerEvents.recipes(event => {
     event.remove({output: 'immersiveengineering:waterwheel_segment'})
 
     event.remove({
-        output: 'immersiveengineering:hammer',
-    })
-    event.shaped('immersiveengineering:hammer', [
-        ' AB',
-        ' CA',
-        'C  '
-    ], {
-        A: '#forge:ingots/netherite',
-        B: 'create:wand_of_symmetry',
-        C: '#forge:rods/treated_wood'
-    })
-    event.remove({
-        output: 'immersiveengineering:wirecutter',
-    })
-    event.shaped('immersiveengineering:wirecutter', [
-        'CA',
-        'BC',
-    ], {
-        A: '#forge:ingots/netherite',
-        B: 'create:wand_of_symmetry',
-        C: '#forge:rods/treated_wood'
-    })
-
-    event.remove({
         output: 'immersiveengineering:blastbrick'
     })
     event.custom({

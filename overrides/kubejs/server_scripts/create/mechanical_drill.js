@@ -10,29 +10,21 @@ ServerEvents.recipes(event => {
             "A": {
                 "item": "minecraft:diamond"
             },
-            "B": {
-                "item": "create:flywheel"
-            },
-            "C": {
-                "item": "create:rotation_speed_controller"
-            },
             "D": {
                 "item": 'create:mechanical_bearing'
             },
             "E": {
                 "item": "create:railway_casing"
             },
-            "F": {
-                "item": "create:nixie_tube"
+            "B": {
+                "item": "create:rotation_speed_controller"
             }
 
         },
         "pattern": [
             " A ",
-            "ADA",
-            "CBC",
-            "EFE",
-            "EEE"
+            "EDE",
+            "EBE"
         ],
         "result": {
             "item": "create:mechanical_drill"

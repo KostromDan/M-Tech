@@ -15,4 +15,7 @@
 	#Fuel cost of a helicopter
 	#Range: > 0
 	helicopter_fuel_cost = 6
+	#Capacity of the liquid engine
+	#Range: > 1
+	liquid_engine_capacity = 4000
 

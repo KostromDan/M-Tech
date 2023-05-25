@@ -32,12 +32,6 @@ ServerEvents.recipes(event => {
         "type": "create:compacting",
         "ingredients": [
             {
-                "tag": "forge:eggs"
-            },
-            {
-                "item": "minecraft:sugar"
-            },
-            {
                 "item": 'minecraft:red_concrete_powder'
             }
         ],

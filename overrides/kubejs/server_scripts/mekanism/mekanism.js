@@ -77,6 +77,19 @@ ServerEvents.recipes(event => {
         E: 'immersiveengineering:capacitor_hv'
     })
 
+    event.remove({output: 'mekanismgenerators:heat_generator'})
+    event.shaped(Item.of('mekanismgenerators:heat_generator', 1), [
+        'AAA',
+        'BCB',
+        'DED'
+    ], {
+        A: 'minecraft:iron_ingot',
+        B: 'mekanism:alloy_infused',
+        C: 'mekanism:ingot_osmium',
+        D: 'minecraft:copper_ingot',
+        E: 'minecraft:furnace'
+    })
+
     event.remove({output: 'mekanism:basic_control_circuit'})
     event.custom({
         "type": "immersiveengineering:arc_furnace",
@@ -105,6 +118,4 @@ ServerEvents.recipes(event => {
         ],
         "time": 400
     })
-
-
 })
