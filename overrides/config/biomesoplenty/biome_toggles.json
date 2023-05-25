@@ -48,9 +48,9 @@
 
   "jade_cliffs_enabled": true,
 
-  "lavender_field_enabled": true,
+  "lavender_field_enabled": false,
 
-  "lavender_forest_enabled": true,
+  "lavender_forest_enabled": false,
 
   "lush_desert_enabled": true,
 

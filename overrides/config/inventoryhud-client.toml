@@ -78,7 +78,7 @@
 	xPos = 0
 	#Inventory HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPos = 100
+	yPos = 115
 	#Armor HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	armValign = "BOTTOM"

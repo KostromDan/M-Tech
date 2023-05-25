@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "M-Tech",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "author": "devaverin",
   "files": [
     {
@@ -81,7 +81,7 @@
     },
     {
       "projectID": 631016,
-      "fileID": 4031660,
+      "fileID": 4419320,
       "required": true
     },
     {
@@ -216,7 +216,7 @@
     },
     {
       "projectID": 421850,
-      "fileID": 4408064,
+      "fileID": 4419316,
       "required": true
     },
     {
@@ -256,7 +256,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 4398040,
+      "fileID": 4418021,
       "required": true
     },
     {
@@ -286,7 +286,7 @@
     },
     {
       "projectID": 531761,
-      "fileID": 4414507,
+      "fileID": 4418651,
       "required": true
     },
     {
@@ -306,7 +306,7 @@
     },
     {
       "projectID": 243121,
-      "fileID": 4417010,
+      "fileID": 4420296,
       "required": true
     },
     {
@@ -416,7 +416,7 @@
     },
     {
       "projectID": 342584,
-      "fileID": 4399625,
+      "fileID": 4421615,
       "required": true
     },
     {
@@ -446,7 +446,7 @@
     },
     {
       "projectID": 367178,
-      "fileID": 4399713,
+      "fileID": 4421312,
       "required": true
     },
     {
@@ -531,7 +531,7 @@
     },
     {
       "projectID": 499980,
-      "fileID": 4414538,
+      "fileID": 4421691,
       "required": true
     },
     {
