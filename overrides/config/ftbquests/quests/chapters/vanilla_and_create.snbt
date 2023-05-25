@@ -477,6 +477,7 @@
 		{
 			x: -0.5d
 			y: -3.0d
+			subtitle: "Exploration is the main focus of End Remastered, and to reach the End and beat the Ender Dragon, you will have to find 16 custom eyes by exploring vanilla structures and fighting vanilla bosses. Once you have at least 12 eyes, you can follow them until you reach the Stronghold. You have to put the 12 custom eyes in the portal in order to open it. If there's a vanilla eye of ender in one of the frames, you can remove it by right clicking on it with a custom eye."
 			dependencies: ["35FA3C2E42143217"]
 			id: "3213708E164F5CE1"
 			tasks: [{
@@ -578,6 +579,7 @@
 		{
 			x: -3.5d
 			y: -1.0d
+			subtitle: "Quickly switch between tools using the handy Radial Menu! (Hold R down -- or change the keybind to your preference)"
 			dependencies: ["35FA3C2E42143217"]
 			id: "3A3E2A3B9D9721B7"
 			tasks: [{
@@ -637,6 +639,7 @@
 		{
 			x: -5.0d
 			y: -1.0d
+			subtitle: "2 stock slots, upgradeable to 9 by combining with tool pouches in an anvil!"
 			dependencies: ["3A3E2A3B9D9721B7"]
 			id: "7DB1A10B5AC680D4"
 			tasks: [{
@@ -648,7 +651,7 @@
 		{
 			x: -3.5d
 			y: -3.0d
-			subtitle: "You can have only one standard backpack in the inventory. Don't try to make second one."
+			subtitle: "You can have only one standard backpack in the inventory. Don't try to make second one. Sophisticated backpacks is yet another backpack mod this time with backpack you can place in world, color in different color combinations, upgrade with more inventory and enhance with many functional upgrades."
 			dependencies: ["35FA3C2E42143217"]
 			id: "3536DC1DD11B4D99"
 			tasks: [{
@@ -1344,6 +1347,7 @@
 		{
 			x: -3.5d
 			y: 1.0d
+			subtitle: "A mod which adds grappling hooks. The aim of this mod is to provide a fun way to get around large builds like cities or caves."
 			dependencies: ["35FA3C2E42143217"]
 			id: "77F4B00E7E4B0979"
 			tasks: [{
@@ -1397,6 +1401,7 @@
 		{
 			x: 2.5d
 			y: -3.0d
+			subtitle: "Like beds except they do not set a player's spawn point on use, safely preserving a player's spawn point at their home base."
 			dependencies: ["35FA3C2E42143217"]
 			id: "13958CCA4782144D"
 			tasks: [{
@@ -1441,6 +1446,7 @@
 		{
 			x: 2.5d
 			y: -1.5d
+			subtitle: "Bow that can shoot and set up torches."
 			dependencies: ["35FA3C2E42143217"]
 			id: "17D99FBBACB024DC"
 			tasks: [{
@@ -2063,6 +2069,7 @@
 		{
 			x: -3.5d
 			y: 3.0d
+			subtitle: "Sophisticated Storage is mod that adds multiple tiers of Barrels, Chests and Shulker Boxes, any of these can have many different combinations of two colors applied to them and barrels/chests come in different wood varieties and in addition to that you can use many different upgrades in them to augment their functionality. Also adds its own take on mass storage - Limited Barrels that only have 1 to 4 slots for items with higher stack size limits in each that get even higher when their tier gets upgraded."
 			dependencies: ["35FA3C2E42143217"]
 			id: "09432007F26BAD34"
 			tasks: [{
@@ -3061,6 +3068,7 @@
 		{
 			x: 3.5d
 			y: -1.5d
+			subtitle: "Shoot 9 torches at once!"
 			dependencies: ["17D99FBBACB024DC"]
 			id: "44C7655ECA3808A6"
 			tasks: [{
@@ -3083,6 +3091,7 @@
 		{
 			x: 3.5d
 			y: -2.5d
+			subtitle: "Hammocks are like an inverse bed, turning day to night."
 			dependencies: ["13958CCA4782144D"]
 			id: "05EAD90CED8593BB"
 			tasks: [{

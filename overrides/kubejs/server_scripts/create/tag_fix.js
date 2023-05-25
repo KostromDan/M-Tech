@@ -25,15 +25,15 @@ ServerEvents.tags('item', event => {
 
 })
 let ac_tome = Item.of('akashictome:tome',
-        '{"akashictome:data":{' +
-        'advancedperipherals:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}},' +
-        'alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},' +
-        'naturescompass:{Count:1b,id:"naturescompass:naturescompass"},' +
-        'explorerscompass:{Count:1b,id:"explorerscompass:explorerscompass"},' +
-        'ftbquests:{Count:1b,id:"ftbquests:book"},' +
-        'apotheosis:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"book.apotheosis.name"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"book.apotheosis.name"}]}\'},"patchouli:book":"apotheosis:apoth_chronicle"}},' +
-        'immersiveengineering:{Count:1b,id:"immersiveengineering:manual",tag:{"akashictome:displayName":{text:\'{"translate":"item.immersiveengineering.manual"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.immersiveengineering.manual"}]}\'}}},' +
-        'simpleplanes:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"The Guide to Planes & Helicopters"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"The Guide to Planes & Helicopters"}]}\'},"patchouli:book":"simpleplanes:planes_book"}}},"akashictome:is_morphing":1b}')
+    '{"akashictome:data":{' +
+    'advancedperipherals:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}},' +
+    'alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},' +
+    'naturescompass:{Count:1b,id:"naturescompass:naturescompass"},' +
+    'explorerscompass:{Count:1b,id:"explorerscompass:explorerscompass"},' +
+    'ftbquests:{Count:1b,id:"ftbquests:book"},' +
+    'apotheosis:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"book.apotheosis.name"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"book.apotheosis.name"}]}\'},"patchouli:book":"apotheosis:apoth_chronicle"}},' +
+    'immersiveengineering:{Count:1b,id:"immersiveengineering:manual",tag:{"akashictome:displayName":{text:\'{"translate":"item.immersiveengineering.manual"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.immersiveengineering.manual"}]}\'}}},' +
+    'simpleplanes:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"The Guide to Planes & Helicopters"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"The Guide to Planes & Helicopters"}]}\'},"patchouli:book":"simpleplanes:planes_book"}}},"akashictome:is_morphing":1b}')
 ServerEvents.recipes(event => {
     function fix_ore(name, ingot, dust) {
         if (ingot) {
@@ -43,6 +43,12 @@ ServerEvents.recipes(event => {
             event.replaceOutput({}, 'immersiveengineering:nugget_' + name, 'mekanism:nugget_' + name)
             event.replaceInput({}, 'immersiveengineering:nugget_' + name, 'mekanism:nugget_' + name)
             event.replaceInput({}, '#forge:nuggets/' + name, 'mekanism:nugget_' + name)
+            event.replaceInput({}, '#forge:storage_blocks/' + name, 'mekanism:block_' + name)
+            event.replaceOutput({}, '#forge:storage_blocks/' + name, 'mekanism:block_' + name)
+            if (name !== "steel") {
+                event.replaceInput({}, '#forge:raw_materials/' + name, 'mekanism:raw_' + name)
+                event.replaceOutput({}, '#forge:raw_materials/' + name, 'mekanism:raw_' + name)
+            }
         }
         if (dust) {
             event.replaceInput({}, '#forge:dusts/' + name, 'mekanism:dust_' + name)
@@ -187,6 +193,7 @@ ServerEvents.recipes(event => {
     event.remove({
         output: 'createaddition:zinc_sheet'
     })
+    event.replaceInput({}, 'createaddition:zinc_sheet', 'createdeco:zinc_sheet')
     event.custom({
         "type": "create:milling",
         "ingredients": [
@@ -251,7 +258,11 @@ MoreJSEvents.playerStartTrading((event) => {
 ServerEvents.loaded(event => {
     Utils.server.runCommand("reload")
 })
+PlayerEvents.loggedOut(event=>{
+    console.log("M-Tech-logging: Player " + event.player.username + " logged out(" + event.player.level.dimension + "). X: " + event.player.x + " Y: " + event.player.y + " Z: " + event.player.z)
+})
 PlayerEvents.loggedIn(event => {
+    console.log("M-Tech-logging: Player " + event.player.username + " logged in(" + event.player.level.dimension + "). X: " + event.player.x + " Y: " + event.player.y + " Z: " + event.player.z)
     // Check if player doesn't have "starting_items" stage yet
     if (!event.player.stages.has('starting_items')) {
         // Add the stage
