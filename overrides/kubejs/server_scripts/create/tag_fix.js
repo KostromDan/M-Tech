@@ -7,7 +7,6 @@ ServerEvents.tags('item', event => {
     event.remove('forge:plates', 'create:brass_sheet')
     event.remove('forge:plates/gold', 'create:golden_sheet')
     event.remove('forge:plates', 'create:golden_sheet')
-    event.remove('forge:plates/zinc', "createaddition:zinc_sheet")
 
 
     event.remove('forge:wires/copper', 'createaddition:copper_wire')
@@ -65,7 +64,58 @@ ServerEvents.recipes(event => {
     event.replaceInput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
     event.replaceOutput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
 
-    event.remove({mod: 'waystones'})
+    event.remove({id: 'waystones:warp_plate'})
+    event.remove({id: 'waystones:bound_scroll'})
+    event.remove({id: 'waystones:warp_stone'})
+    event.remove({id: 'waystones:warp_scroll'})
+    event.remove({id: 'waystones:warp_dust'})
+    event.remove({id: 'waystones:return_scroll'})
+    event.custom({
+            "result": {
+                "item": "waystones:warp_stone"
+            },
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+                "DED",
+                "EGE",
+                "DED"
+            ],
+            "key": {
+                "G": {
+                    "item": 'mekanism:module_teleportation_unit'
+                },
+                "E": {
+                    "item": 'waystones:warp_dust'
+                },
+                "D": {
+                    "item": 'waystones:warp_dust'
+                }
+            }
+        }
+    )
+    event.custom({
+            "result": {
+                "item": "waystones:warp_plate"
+            },
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+                "SWS",
+                "WFW",
+                "SWS"
+            ],
+            "key": {
+                "W": {
+                    "item": 'minecraft:flint'
+                },
+                "F": {
+                    "item": "waystones:warp_stone"
+                },
+                "S": {
+                    "item": "minecraft:stone_bricks"
+                }
+            }
+        }
+    )
     event.custom({
         "result": {
             "item": "waystones:return_scroll",
@@ -90,21 +140,25 @@ ServerEvents.recipes(event => {
     })
     event.custom({
             "result": {
-                "item": "waystones:warp_dust",
-                "count": 1
+                "item": "waystones:warp_dust"
             },
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": 'ae2:ender_dust'
-                },
-                {
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+                "SWS",
+                "WFW",
+                "SWS"
+            ],
+            "key": {
+                "W": {
                     "item": 'minecraft:blaze_powder'
                 },
-                {
+                "F": {
+                    "item": 'ae2:ender_dust'
+                },
+                "S": {
                     "item": "minecraft:amethyst_shard"
                 }
-            ]
+            }
         }
     )
     event.remove({
@@ -133,6 +187,13 @@ ServerEvents.recipes(event => {
                 "item": 'minecraft:blaze_powder'
             }
         ]
+    })
+    event.custom({
+        "type": "mekanism:crushing",
+        "input": {
+            "ingredient": [{"item": 'minecraft:blaze_rod'}]
+        },
+        "output": {"count": 5, "item": 'minecraft:blaze_powder'}
     })
 
 

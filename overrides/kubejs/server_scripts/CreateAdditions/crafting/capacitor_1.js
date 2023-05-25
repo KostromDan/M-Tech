@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {event.custom({
 	{
 		"Z":
 		{
-			"item": "createaddition:zinc_sheet"
+			"tag": "forge:plates/zinc"
 		},
 		"C":
 		{

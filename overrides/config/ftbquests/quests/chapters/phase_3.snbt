@@ -3928,6 +3928,56 @@
 				item: "mekanismgenerators:reactor_glass"
 			}]
 		}
+		{
+			x: 49.0d
+			y: 6.0d
+			dependencies: ["68E45E53FC6B0BE8"]
+			id: "545FCFB5AB6F07A1"
+			tasks: [{
+				id: "05156613757BE139"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 50.0d
+			y: 5.0d
+			dependencies: ["545FCFB5AB6F07A1"]
+			id: "36B27CB0204EB1A0"
+			tasks: [{
+				id: "7720742B83EE5E0E"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+		}
+		{
+			x: 50.0d
+			y: 7.0d
+			dependencies: ["545FCFB5AB6F07A1"]
+			id: "50CE74217BAE3EC3"
+			tasks: [{
+				id: "0CF3BB815055B4B4"
+				type: "item"
+				item: "waystones:sharestone"
+			}]
+		}
+		{
+			x: 50.5d
+			y: 6.0d
+			dependencies: ["545FCFB5AB6F07A1"]
+			id: "6BAFE18116D7D180"
+			tasks: [{
+				id: "04FE0A2FB9CB5FDC"
+				type: "item"
+				item: "waystones:warp_plate"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

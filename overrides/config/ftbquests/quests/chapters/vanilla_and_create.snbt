@@ -3014,6 +3014,50 @@
 				item: "createaddition:modular_accumulator"
 			}]
 		}
+		{
+			x: -6.5d
+			y: -5.0d
+			dependencies: ["3F60137CEC196791"]
+			id: "68C3C1354353EB1A"
+			tasks: [{
+				id: "7859C691ED3F5051"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			dependencies: ["747CA72B797333AA"]
+			id: "765A60D676EA0A6D"
+			tasks: [{
+				id: "36686359B5847487"
+				type: "item"
+				item: "waystones:warp_dust"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -5.0d
+			dependencies: ["765A60D676EA0A6D"]
+			id: "41EBE4463971C2C1"
+			tasks: [{
+				id: "7DF10232E0D15550"
+				type: "item"
+				item: "waystones:return_scroll"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -5.0d
+			dependencies: ["68C3C1354353EB1A"]
+			id: "747CA72B797333AA"
+			tasks: [{
+				id: "5EBF2C1B2D4AFC9A"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
