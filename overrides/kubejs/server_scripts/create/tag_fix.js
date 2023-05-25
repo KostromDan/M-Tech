@@ -27,3 +27,6 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod: 'create'}, '#forge:plates/gold', 'create:golden_sheet')
 
 })
+ServerEvents.loaded(event => {
+    Utils.server.runCommand("reload")
+})
