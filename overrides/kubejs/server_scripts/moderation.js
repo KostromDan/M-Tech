@@ -32,7 +32,7 @@ ServerEvents.commandRegistry(event => {
                                 return 1;
                             }
                         }
-                        player.tell("Ypu haven't got access to this command, or command is broken!")
+                        player.tell("You haven't got access to this command, or command is broken!")
                         return 1;
 
                     })

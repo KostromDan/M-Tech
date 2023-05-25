@@ -3,7 +3,11 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$PlayerCh
 })
 
 global.ChangedDim = (event) => {
-    if (event.getTo() == "minecraft:the_end") {
+    let dimTo = event.getTo()
+    let dimFrom = event.getFrom()
+    let player = event.getEntity()
+    console.log(`M-Tech-logging: Player ${player.username} changed dimension from ${dimFrom.location()} to ${dimTo.location()}. Cords: ${Math.floor(player.x)} ${Math.floor(player.y)} ${Math.floor(player.z)}!`)
+    if (dimTo == "minecraft:the_end") {
         do_bbb_tick = true
     }
 }

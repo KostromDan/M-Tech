@@ -1,0 +1,10 @@
+{
+  "mekanism:mekanism_guide": {
+    "link": "https://wiki.aidancbrady.com/w/index.php?title=Special:AllPages",
+    "name": "Mekanism wiki"
+  },
+  "computercraft:computer_craft_manual": {
+    "link": "https://tweaked.cc/",
+    "name": "Computer Craft wiki"
+  }
+}
