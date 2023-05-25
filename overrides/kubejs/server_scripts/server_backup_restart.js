@@ -1,5 +1,5 @@
 function say(msg) {
-    Utils.server.runCommand("say " + msg)
+    Utils.server.runCommandSilent("say " + msg)
 }
 
 function get_player_count(server) {
@@ -15,17 +15,17 @@ let tick_count_to_stop = 0
 
 ServerEvents.tick(event => {
     let server = event.server
-    if (server.isDedicated()&&server.persistentData.do_restart) {
+    if (server.isDedicated() && server.persistentData.do_restart) {
         tick_count_to_stop++
         if (tick_count_to_stop >= server.persistentData.time_between_restart) {
-            server.runCommand("mtech restart")
+            server.runCommandSilent("mtech restart")
             tick_count_to_stop = 0
         }
     }
     if (do_backup_tick && server.persistentData.do_backup) {
         tick_count_to_backup++
         if (tick_count_to_backup >= server.persistentData.time_between_backup) {
-            server.runCommand("mtech backup")
+            server.runCommandSilent("mtech backup")
             tick_count_to_backup = 0
         }
     }
@@ -57,7 +57,7 @@ ServerEvents.commandRegistry(event => {
                     is_server_backupping = true
                     say("Backup after 1 minute! Can cause a little serverside lag!")
                     server.scheduleInTicks(20 * 60, e => {
-                        server.runCommand("backup start")
+                        server.runCommandSilent("backup start")
                         tick_count_to_backup = 0
                         is_server_backupping = false
                         if (get_player_count(server) == 0) {
@@ -99,7 +99,7 @@ ServerEvents.commandRegistry(event => {
                     say("Restart after 15 minutes!")
                     server.scheduleInTicks(18000, e => {
                         say("Restart!")
-                        Utils.server.runCommand("stop")
+                        Utils.server.runCommandSilent("stop")
                     })
                     server.scheduleInTicks(17980, e => {
                         say("Restart after 1 second!")
@@ -177,13 +177,17 @@ ServerEvents.commandRegistry(event => {
                         .executes(ctx => {
                             const arg1 = Arguments.BOOLEAN.getResult(ctx, "arg1");
                             let server = ctx.source.getServer()
-                            server.persistentData.putBoolean('do_backup', arg1)
+                            let player = ctx.source.player
+                            server.persistentData.do_backup = arg1
+                            player.tell(`Current value is ${server.persistentData.do_backup}`)
+
                             return 1
                         })
                     ).executes(ctx => {// no argument
                         let server = ctx.source.getServer()
                         let player = ctx.source.player
-                        player.tell(server.persistentData.do_backup)
+                        player.tell(`Current value is ${server.persistentData.do_backup}`)
+
                         return 1
                     })
                 )
@@ -192,13 +196,17 @@ ServerEvents.commandRegistry(event => {
                         .executes(ctx => {
                             const arg1 = Arguments.BOOLEAN.getResult(ctx, "arg1");
                             let server = ctx.source.getServer()
-                            server.persistentData.putBoolean('do_restart', arg1)
+                            let player = ctx.source.player
+                            server.persistentData.do_restart = arg1
+                            player.tell(`Current value is ${server.persistentData.do_restart}`)
+
                             return 1
                         })
                     ).executes(ctx => {// no argument
                         let server = ctx.source.getServer()
                         let player = ctx.source.player
-                        player.tell(server.persistentData.do_restart)
+                        player.tell(`Current value is ${server.persistentData.do_restart}`)
+
                         return 1
                     })
                 )
@@ -207,13 +215,17 @@ ServerEvents.commandRegistry(event => {
                         .executes(ctx => {
                             const arg1 = Arguments.INTEGER.getResult(ctx, "arg1");
                             let server = ctx.source.getServer()
+                            let player = ctx.source.player
                             server.persistentData.time_between_backup = arg1
+                            player.tell(`Current value is ${server.persistentData.time_between_backup}`)
+
                             return 1
                         })
                     ).executes(ctx => {// no argument
                         let server = ctx.source.getServer()
                         let player = ctx.source.player
-                        player.tell(server.persistentData.time_between_backup)
+                        player.tell(`Current value is ${server.persistentData.time_between_backup}`)
+
                         return 1
                     })
                 )
@@ -222,13 +234,16 @@ ServerEvents.commandRegistry(event => {
                         .executes(ctx => {
                             const arg1 = Arguments.INTEGER.getResult(ctx, "arg1");
                             let server = ctx.source.getServer()
+                            let player = ctx.source.player
                             server.persistentData.time_between_restart = arg1
+                            player.tell(`Current value is ${server.persistentData.time_between_restart}`)
+
                             return 1
                         })
                     ).executes(ctx => {// no argument
                         let server = ctx.source.getServer()
                         let player = ctx.source.player
-                        player.tell(server.persistentData.time_between_restart)
+                        player.tell(`Current value is ${server.persistentData.time_between_restart}`)
                         return 1
                     })
                 )
@@ -236,7 +251,7 @@ ServerEvents.commandRegistry(event => {
             .executes(ctx => {// no argument
                 let server = ctx.source.getServer()
                 let player = ctx.source.player
-                server.runCommand(`execute as ${player.username} run mtech help`)
+                server.runCommandSilent(`execute as ${player.username} run mtech help`)
                 return 1
             })
     )

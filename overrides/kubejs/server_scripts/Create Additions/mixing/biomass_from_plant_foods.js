@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {event.custom({
       "tag": "createaddition:plant_foods"
     },
     {
-      "fluidTag": "forge:plantoil",
+      "fluid": "createaddition:seed_oil",
       "amount": 100
     }
   ],

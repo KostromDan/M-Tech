@@ -14,3 +14,7 @@ ItemEvents.tooltip(tooltip => {
     let myMessage = Text.yellow('Reset with a left click on the air!')
     tooltip.add('akashictome:tome', [myMessage])
 })
+ItemEvents.tooltip(tooltip => {
+    let myMessage = Text.yellow('Right click to item from create, you want to get help, or non create to open page with all items. Works up to 64 blocks!')
+    tooltip.add('kubejs:create_manual', [myMessage])
+})

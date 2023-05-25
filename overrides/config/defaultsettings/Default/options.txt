@@ -27,7 +27,7 @@ fovEffectScale:1.0
 darknessEffectScale:1.0
 gamma:1.0
 renderDistance:12
-simulationDistance:8
+simulationDistance:6
 entityDistanceScaling:1.0
 guiScale:2
 particles:1
@@ -77,8 +77,8 @@ showAutosaveIndicator:true
 allowServerListing:true
 chatPreview:1
 onlyShowSecureChat:false
-soundCategory_master:1.0
-soundCategory_music:0.10211267
+soundCategory_master:0.50352114
+soundCategory_music:0.50352114
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

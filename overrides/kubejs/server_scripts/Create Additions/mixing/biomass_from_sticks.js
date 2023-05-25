@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {event.custom({
       "item": "minecraft:stick"
     },
     {
-      "fluidTag": "forge:plantoil",
+      "fluid": "createaddition:seed_oil",
       "amount": 200
     }
   ],

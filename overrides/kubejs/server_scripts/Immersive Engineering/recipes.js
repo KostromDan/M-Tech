@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     event.remove({output: 'immersiveengineering:windmill'})
     event.remove({output: 'immersiveengineering:watermill'})
     event.remove({output: 'immersiveengineering:waterwheel_segment'})
-        event.remove({id: 'immersiveengineering:alloybrick'})
+    event.remove({id: 'immersiveengineering:alloybrick'})
 
     event.remove({
         output: 'immersiveengineering:thermoelectric_generator'
@@ -63,6 +63,18 @@ ServerEvents.recipes(event => {
         "input": {"item": 'ae2:sky_stone_block'},
         "result": {"item": 'ae2:sky_dust'},
         "secondaries": []
+    })
+    event.custom({
+        "type": "immersiveengineering:fermenter",
+        "energy": 6400,
+        "fluid": {"amount": 80, "fluid": "immersiveengineering:ethanol"},
+        "input": {"item": 'alexsmobs:banana'}
+    })
+    event.custom({
+        "type": "immersiveengineering:fermenter",
+        "energy": 6400,
+        "fluid": {"amount": 120, "fluid": "immersiveengineering:ethanol"},
+        "input": {"item": 'quark:ancient_fruit'}
     })
 })
 

@@ -1,3 +1,5 @@
+from pprint import pprint
+
 out = []
 ench_dict = {}
 stage = 0
@@ -36,6 +38,7 @@ def gen_recipe(ench, lvl, em_count, maxUses=100000):
 cmd = r"""summon minecraft:villager ~ ~ ~ {Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{},Attributes:[{Base:0.0d,Name:"forge:step_height_addition"},{Base:0.08d,Name:"forge:entity_gravity"},{Base:0.5d,Name:"minecraft:generic.movement_speed"},{Base:48.0d,Modifiers:[{Amount:-0.014894148336887635d,Operation:1,UUID:[I;559209834,1471301591,-1758031218,-1340322021],Name:"Randomspawnbonus"}],Name:"minecraft:generic.follow_range"}],FoodLevel:0b,Invulnerable:0b,FallFlying:0b,ForcedAge:0,Gossips:[{Target:[I;-1573020407,237324131,-1441531928,-395225070],Type:"trading",Value:2}],PortalCooldown:0,AbsorptionAmount:0.0f,LastRestock:0L,FallDistance:0.0f,CanUpdate:1b,DeathTime:0s,Xp:1,LastGossipDecay:20202L,ForgeCaps:{"mekanism:radiation":{radiation:1.0E-7d}},HandDropChances:[0.085f,0.085f],PersistenceRequired:0b,Age:0,Motion:[0.0d,-0.0784000015258789d,0.0d],Health:20.0f,LeftHanded:0b,Air:300s,OnGround:1b,CitadelData:{},Offers:{Recipes:[RECIPE_LIST],"morejs$disabled":[0b,0b]},Rotation:[91.66468f,-12.89912f],HandItems:[{},{}],RestocksToday:0,ArmorDropChances:[0.085f,0.085f,0.085f,0.085f],Fire:-1s,ArmorItems:[{},{},{},{}],CanPickUpLoot:1b,VillagerData:{profession:"minecraft:librarian",level:1,type:"minecraft:plains"},HurtTime:0s,Inventory:[]}"""
 mod_list = sorted(list(set(x.split(':')[0] for x in ench_dict.keys())))
 print(mod_list)
+pprint(ench_dict)
 for mod in mod_list:
     recipe_list = []
     for ench, lvl in sorted(list(ench_dict.items()),

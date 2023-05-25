@@ -1,7 +1,7 @@
 ServerEvents.loaded(event => {
     if (!event.server.persistentData.contains('firstload')) {
         event.server.persistentData.putBoolean('firstload', true)
-        Utils.server.runCommand("gamerule playersSleepingPercentage 66")
+        Utils.server.runCommandSilent("gamerule playersSleepingPercentage 66")
     }
     if (!event.server.persistentData.contains('do_backup')) {
         event.server.persistentData.putBoolean('do_backup', true)
