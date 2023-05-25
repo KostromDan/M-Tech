@@ -15,7 +15,7 @@ import time
 import tkinter as tk
 
 zip_path = r'"C:\Program Files\7-Zip\7z.exe"'
-VERSION = '1.2.32'
+VERSION = '1.2.33'
 OUT_DIR = 'Server-Files-' + VERSION
 COPY_DIRS = [
     'config',
@@ -24,6 +24,9 @@ COPY_DIRS = [
     'mods'
 ]
 ONLY_CLIENT_MODS = [
+    'MyServerIsCompatible',
+    'lightspeed',
+    'yeetusexperimentus',
     'BetterAdvancements',
     'chat_heads',
     'Controlling',
@@ -92,6 +95,8 @@ def modify_bat_sh_file(file, custom_options):
                         str(custom_options["server_cfg_view"]))
     text = text.replace("{{simulation-distance}}",
                         str(custom_options["server_cfg_simulation"]))
+    text = text.replace("{{server_port}}",
+                        str(custom_options["server_port"]))
 
     with open(os.path.join(OUT_DIR, file), 'w') as out_f:
         out_f.write(text)
@@ -104,9 +109,9 @@ def main():
     os.system(fr'xcopy.exe .\Server-Files-Static\* .\{OUT_DIR}\ /e /Y')
     for file_name in os.listdir(os.path.join(OUT_DIR, 'mods')):
         extention = file_name.split('.')[-1]
-        if extention == 'jarnot':
+        if extention == 'serverjar':
             os.system(
-                fr'ren .\{OUT_DIR}\mods\{file_name} {file_name.replace(".jarnot", "")}.jar')
+                fr'ren .\{OUT_DIR}\mods\{file_name} {file_name.replace(".serverjar", "")}.jar')
     for dir_name in COPY_DIRS:
         os.system(fr'xcopy.exe .\{dir_name}\* .\{OUT_DIR}\{dir_name}\ /e /Y')
     for file_name in os.listdir(os.path.join(OUT_DIR, 'mods')):
@@ -145,9 +150,15 @@ def main():
             for modify_option, param in dyn_modify_options.items():
                 if modify_option in line:
                     value = line.split(' = ')[1].strip()
-                    line=line.replace(value,str(custom_options[param]))
+                    line = line.replace(value, str(custom_options[param]))
             out.append(line)
         out_f.write(''.join(out))
+    with open(os.path.join(OUT_DIR, 'user_jvm_args.txt'), 'r') as in_f:
+        jmv_options = in_f.read()
+    jmv_options = jmv_options.replace('{{max_memory_G}}',
+                                      str(custom_options['max_memory_G']))
+    with open(os.path.join(OUT_DIR, 'user_jvm_args.txt'), 'w') as out_f:
+        out_f.write(jmv_options)
 
     desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
     out_file = os.path.join(desktop, OUT_DIR + '.zip')

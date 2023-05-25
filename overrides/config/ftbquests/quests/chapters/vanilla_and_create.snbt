@@ -3125,6 +3125,50 @@
 				criterion: ""
 			}]
 		}
+		{
+			x: 2.5d
+			y: 1.5d
+			subtitle: "The Akashic Tome is a book that includes all existing documentation books in the modpack as well as 2 compasses: for locating biomes or structures. If you started the progress on the old version of the modpack, and you are missing something, you need to craft a tome from a tome, and you will have the current version."
+			dependencies: ["35FA3C2E42143217"]
+			id: "6458F9F4C24714AC"
+			tasks: [{
+				id: "632B4D77B22DC187"
+				type: "item"
+				item: "akashictome:tome"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.0d
+			subtitle: "Nature's Compass is a utility item that allows you to search for a biome's location anywhere in the world and view information about it."
+			dependencies: ["6458F9F4C24714AC"]
+			id: "6E0355B4AEAC87BE"
+			tasks: [{
+				id: "289F501BC3B806D4"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			subtitle: "Explorer's Compass is an item that allows you to locate structures anywhere in the world."
+			dependencies: ["6458F9F4C24714AC"]
+			id: "3F399C478A070AA6"
+			tasks: [{
+				id: "2A2659146557D299"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
 	]
 	quest_links: [ ]
 }

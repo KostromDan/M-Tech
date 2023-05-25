@@ -59,6 +59,8 @@
       <workItem from="1681555941582" duration="5000" />
       <workItem from="1681555959518" duration="720000" />
       <workItem from="1681571861248" duration="2229000" />
+      <workItem from="1681666631893" duration="608000" />
+      <workItem from="1682030797644" duration="2913000" />
     </task>
     <servers />
   </component>
@@ -70,7 +72,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server_scripts/create/tag_fix.js</url>
-          <line>287</line>
+          <line>342</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

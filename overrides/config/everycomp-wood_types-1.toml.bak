@@ -1,6 +1,27 @@
 
 [types]
 
+	[types.wood_type]
+
+		[types.wood_type.quark]
+			bamboo = true
+			azalea = true
+			blossom = true
+			ancient = true
+
+		[types.wood_type.biomesoplenty]
+			fir = true
+			redwood = true
+			cherry = true
+			mahogany = true
+			jacaranda = true
+			palm = true
+			willow = true
+			dead = true
+			magic = true
+			umbran = true
+			hellbark = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.biomesoplenty]
@@ -32,37 +53,7 @@
 			red_blossom = true
 			ancient = true
 
-	[types.wood_type]
-
-		[types.wood_type.quark]
-			bamboo = true
-			azalea = true
-			blossom = true
-			ancient = true
-
-		[types.wood_type.biomesoplenty]
-			fir = true
-			redwood = true
-			cherry = true
-			mahogany = true
-			jacaranda = true
-			palm = true
-			willow = true
-			dead = true
-			magic = true
-			umbran = true
-			hellbark = true
-
 [entries]
-
-	[entries.leaves_type]
-
-		[entries.leaves_type.quark]
-			hedge = true
-			leaf_carpet = true
-
-		[entries.leaves_type.mcwfences]
-			hedge = true
 
 	[entries.wood_type]
 
@@ -237,4 +228,13 @@
 		[entries.wood_type.create]
 			window_pane = true
 			window = true
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
+
+		[entries.leaves_type.mcwfences]
+			hedge = true
 

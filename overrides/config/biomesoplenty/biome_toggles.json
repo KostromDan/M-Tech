@@ -26,7 +26,7 @@
   "lavender_field_enabled": false,
   "lavender_forest_enabled": false,
   "lush_desert_enabled": true,
-  "lush_savanna_enabled": true,
+  "lush_savanna_enabled": false,
   "maple_woods_enabled": false,
   "marsh_enabled": true,
   "mediterranean_forest_enabled": true,

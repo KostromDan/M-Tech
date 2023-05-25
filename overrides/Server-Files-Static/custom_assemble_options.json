@@ -4,5 +4,7 @@
   "server_cfg_simulation": 8,
   "dyn_view_min_view": 8,
   "dyn_view_max_view": 12,
-  "server_cfg_view": 12
+  "server_cfg_view": 12,
+  "max_memory_G": 6,
+  "server_port": 25565
 }
