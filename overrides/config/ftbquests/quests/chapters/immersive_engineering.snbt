@@ -1,0 +1,22 @@
+{
+	id: "20746AD95DF8137E"
+	group: ""
+	order_index: 1
+	filename: "immersive_engineering"
+	title: "Phase 2"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Phase is physicly ready, but quests will come in one of the next update!"
+		description: ["Comming soon!"]
+		id: "1E7531C31D99B398"
+		tasks: [{
+			id: "4AF47C40D8B0EA20"
+			type: "item"
+			item: "minecraft:bedrock"
+		}]
+	}]
+	quest_links: [ ]
+}

@@ -1,0 +1,1627 @@
+{
+	id: "3177AC001B7FD0B0"
+	group: ""
+	order_index: 0
+	filename: "vanilla_and_create"
+	title: "Phase 1"
+	icon: "create:wrench"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Black Eye - Found in Buried Chests"
+			x: -0.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "45A9281056C76F12"
+			tasks: [{
+				id: "121132C4D9ECF9BE"
+				type: "item"
+				item: {
+					id: "endrem:black_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Cold Eye - Found in Igloos"
+			x: -4.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "174C350B05539928"
+			tasks: [{
+				id: "06FC61451AAD2D5E"
+				type: "item"
+				item: {
+					id: "endrem:cold_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Corrupted Eye - Found in Pillager Outposts"
+			x: 1.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "36936B74BA51FB80"
+			tasks: [{
+				id: "17156CE9C2C1A0EB"
+				type: "item"
+				item: {
+					id: "endrem:corrupted_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Lost Eye - Found in Mineshafts"
+			x: -1.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "79414E7EFA8111F9"
+			tasks: [{
+				id: "77E876155B94697A"
+				type: "item"
+				item: {
+					id: "endrem:lost_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Nether Eye - Found in Nether Fortresses"
+			x: -7.5d
+			y: -8.0d
+			dependencies: ["3F60137CEC196791"]
+			id: "0E42FA37CE4A8404"
+			tasks: [{
+				id: "0AC000A16F78A159"
+				type: "item"
+				item: {
+					id: "endrem:nether_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Old Eye - Found in Desert Pyramids"
+			x: -2.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "6BB565598AAB7A92"
+			tasks: [{
+				id: "160E0E9498E2BFCE"
+				type: "item"
+				item: {
+					id: "endrem:old_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Rogue Eye - Found in Jungle Pyramids"
+			x: -3.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "46367ADF3E205EF5"
+			tasks: [{
+				id: "28037F62C999825C"
+				type: "item"
+				item: {
+					id: "endrem:rogue_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Cursed Eye - Found in Bastions treasure chest"
+			x: -6.5d
+			y: -8.0d
+			dependencies: ["3F60137CEC196791"]
+			id: "1E00067A584D0971"
+			tasks: [{
+				id: "79B47BC4570DF792"
+				type: "item"
+				item: {
+					id: "endrem:cursed_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Evil Eye - Buy it from a master cleric"
+			x: 5.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "041C67E8034FB97A"
+			tasks: [{
+				id: "3B442F67DA46D299"
+				type: "item"
+				item: {
+					id: "endrem:evil_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Guardian Eye - Get it by Killing Elder Guardian"
+			x: 0.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "47ADD6B5BF8DA077"
+			tasks: [{
+				id: "35BC640B8D8AD60B"
+				type: "item"
+				item: {
+					id: "endrem:guardian_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Magical Eye - Dropped by Evokers"
+			x: 2.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "01CE9AADCF0DD634"
+			tasks: [{
+				id: "375B0E6C618C3271"
+				type: "item"
+				item: {
+					id: "endrem:magical_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Wither Eye - Dropped by The Wither"
+			x: -5.5d
+			y: -8.0d
+			dependencies: ["3F60137CEC196791"]
+			id: "464C38BC03DB6D50"
+			tasks: [{
+				id: "34602BEA7BD15291"
+				type: "item"
+				item: {
+					id: "endrem:wither_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Witch Eye - Craft it using the witch pupil"
+			x: 3.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "1A5444B829EFE989"
+			tasks: [{
+				id: "1C9628F4BDA1AD03"
+				type: "item"
+				item: {
+					id: "endrem:witch_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Undead Eye - Craft it using an Undead Soul"
+			x: 4.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "04E4A81F92AD10FD"
+			tasks: [{
+				id: "405A4D7D00203A5C"
+				type: "item"
+				item: {
+					id: "endrem:undead_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Exotic Eye - Craft it using aquatic items"
+			x: 6.5d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			id: "0D5EAA2E3BBA24D5"
+			tasks: [{
+				id: "1F1454AFC4CE5BB5"
+				type: "item"
+				item: {
+					id: "endrem:exotic_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -13.0d
+			subtitle: "You need any different 12/15 eyes."
+			dependencies: [
+				"45A9281056C76F12"
+				"174C350B05539928"
+				"36936B74BA51FB80"
+				"1E00067A584D0971"
+				"041C67E8034FB97A"
+				"464C38BC03DB6D50"
+				"1A5444B829EFE989"
+				"04E4A81F92AD10FD"
+				"46367ADF3E205EF5"
+				"6BB565598AAB7A92"
+				"01CE9AADCF0DD634"
+				"0D5EAA2E3BBA24D5"
+				"0D5EAA2E3BBA24D5"
+				"0E42FA37CE4A8404"
+				"79414E7EFA8111F9"
+				"47ADD6B5BF8DA077"
+			]
+			dependency_requirement: "one_completed"
+			id: "6A72CB008C10DA05"
+			tasks: [{
+				id: "4F9972A59E07649A"
+				type: "advancement"
+				advancement: "minecraft:story/follow_ender_eye"
+				criterion: ""
+			}]
+		}
+		{
+			x: -0.5d
+			y: -14.0d
+			dependencies: ["6A72CB008C10DA05"]
+			id: "69F920C65A71B0C3"
+			tasks: [{
+				id: "04CF7C7439B7B7FC"
+				type: "advancement"
+				advancement: "minecraft:end/root"
+				criterion: ""
+			}]
+		}
+		{
+			x: -0.5d
+			y: -15.0d
+			dependencies: ["69F920C65A71B0C3"]
+			id: "181B66292B3EA3E5"
+			tasks: [{
+				id: "5ECE10545E18CA91"
+				type: "advancement"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+		}
+		{
+			x: -0.5d
+			y: -16.0d
+			dependencies: ["181B66292B3EA3E5"]
+			id: "5412C8396989DED0"
+			tasks: [{
+				id: "1151A1B9CB22F413"
+				type: "advancement"
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+			}]
+		}
+		{
+			x: -0.5d
+			y: -17.0d
+			dependencies: ["5412C8396989DED0"]
+			id: "4A51F9FE4D6BDA6B"
+			tasks: [{
+				id: "5D1324EBB2F80C39"
+				type: "advancement"
+				advancement: "minecraft:end/find_end_city"
+				criterion: ""
+			}]
+		}
+		{
+			x: -1.5d
+			y: -17.5d
+			dependencies: ["4A51F9FE4D6BDA6B"]
+			id: "00F4710A06FB2C4A"
+			tasks: [{
+				id: "60F229885CC47574"
+				type: "item"
+				item: "minecraft:shulker_shell"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -17.5d
+			dependencies: ["4A51F9FE4D6BDA6B"]
+			id: "5250AECF649F06F1"
+			tasks: [{
+				id: "5CC4812757A79458"
+				type: "advancement"
+				advancement: "minecraft:end/elytra"
+				criterion: ""
+			}]
+		}
+		{
+			x: -6.5d
+			y: -6.5d
+			dependencies: ["3213708E164F5CE1"]
+			id: "3F60137CEC196791"
+			tasks: [{
+				id: "48E6F50DAC5A2125"
+				type: "advancement"
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+			}]
+		}
+		{
+			x: -0.5d
+			y: -18.0d
+			dependencies: ["4A51F9FE4D6BDA6B"]
+			id: "11710D97905F8332"
+			tasks: [{
+				id: "4EB201C22BD31028"
+				type: "item"
+				item: "minecraft:dragon_head"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -19.0d
+			dependencies: ["11710D97905F8332"]
+			id: "44B1FCD935F1FF77"
+			tasks: [{
+				id: "4C3DCA28CB1ABDC7"
+				type: "item"
+				item: "cgm:workbench"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -18.0d
+			dependencies: ["00F4710A06FB2C4A"]
+			id: "5CF53712DBCF57BE"
+			tasks: [{
+				id: "0C8F55932B7831AF"
+				type: "item"
+				item: "sophisticatedbackpacks:iron_backpack"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -18.5d
+			dependencies: ["5CF53712DBCF57BE"]
+			id: "73FA514B1A5A8DF3"
+			tasks: [{
+				id: "79A993323AD1D092"
+				type: "item"
+				item: "sophisticatedbackpacks:gold_backpack"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -19.0d
+			dependencies: ["73FA514B1A5A8DF3"]
+			id: "2C3691FA06D03485"
+			tasks: [{
+				id: "67877CEB0D603166"
+				type: "item"
+				item: "sophisticatedbackpacks:diamond_backpack"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -19.5d
+			dependencies: ["2C3691FA06D03485"]
+			id: "6A2D5ED6D5BEDF85"
+			tasks: [{
+				id: "6138089CEC5A7808"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+		}
+		{
+			title: "The Great Begining"
+			x: -0.5d
+			y: 0.0d
+			id: "35FA3C2E42143217"
+			tasks: [{
+				id: "75149139A1BC492A"
+				type: "dimension"
+				icon: "minecraft:grass_block"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			dependencies: ["35FA3C2E42143217"]
+			id: "3213708E164F5CE1"
+			tasks: [{
+				id: "484FFEEC2E6AC4ED"
+				type: "advancement"
+				advancement: "endrem:main/root"
+				criterion: ""
+			}]
+		}
+		{
+			x: 26.5d
+			y: 14.5d
+			dependencies: [
+				"58F6489569480121"
+				"5D6B7AEE3256F1A7"
+				"422140008BAD4A2E"
+			]
+			id: "6FEE862F02256B0E"
+			tasks: [{
+				id: "6FC4DEEB01667580"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+		}
+		{
+			x: 28.0d
+			y: 14.5d
+			dependencies: ["6FEE862F02256B0E"]
+			id: "4C217E67271D2488"
+			tasks: [{
+				id: "1AECD12443E96111"
+				type: "item"
+				item: "createaddition:connector"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 10.0d
+			dependencies: ["59C7F319B478051D"]
+			id: "5D6B7AEE3256F1A7"
+			tasks: [{
+				id: "052D941CC073F7A5"
+				type: "item"
+				item: "createaddition:copper_spool"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -14.5d
+			subtitle: "Do not forget to collect enough dragon breath so that you do not have to revive dragon later for this."
+			dependencies: ["69F920C65A71B0C3"]
+			id: "4B87BB3B97274BFB"
+			tasks: [{
+				id: "30081EA978F3B946"
+				type: "advancement"
+				advancement: "minecraft:end/dragon_breath"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.5d
+			y: -15.0d
+			dependencies: ["4B87BB3B97274BFB"]
+			id: "7368DCD352CDC7AF"
+			tasks: [{
+				id: "3AFEF087EBC687F8"
+				type: "item"
+				item: "apotheosis:endshelf"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 19.5d
+			dependencies: [
+				"47E018D3D2AB494D"
+				"0C1048780223FCCC"
+			]
+			id: "6035531FCD9B5244"
+			tasks: [{
+				id: "425BC253D9F5F92F"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			x: 18.5d
+			y: 22.0d
+			dependencies: [
+				"678AC2A9E602F8FC"
+				"0C1048780223FCCC"
+			]
+			id: "1F24F18D7B294425"
+			tasks: [{
+				id: "19EC12EC50198836"
+				type: "item"
+				item: "create:railway_casing"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			dependencies: ["35FA3C2E42143217"]
+			id: "3A3E2A3B9D9721B7"
+			tasks: [{
+				id: "5E6E2C61F1EE80BF"
+				type: "item"
+				item: "toolbelt:belt"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 21.0d
+			dependencies: ["6035531FCD9B5244"]
+			id: "536637FA876498B0"
+			tasks: [{
+				id: "046CE934C0112260"
+				type: "item"
+				item: {
+					id: "constructionwand:infinity_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 21.0d
+			y: 22.0d
+			dependencies: [
+				"1F24F18D7B294425"
+				"6035531FCD9B5244"
+				"58F6489569480121"
+			]
+			id: "76759C0F29F89618"
+			tasks: [{
+				id: "2920AEFB4CC01761"
+				type: "item"
+				item: "simpleplanes:plane_workbench"
+			}]
+		}
+		{
+			x: 23.5d
+			y: 14.5d
+			dependencies: [
+				"74A60D96F6226F52"
+				"39698A97C8F7B9D4"
+				"6177FCC39908B9E7"
+			]
+			id: "422140008BAD4A2E"
+			tasks: [{
+				id: "6E2648E5842A8257"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.0d
+			dependencies: ["3A3E2A3B9D9721B7"]
+			id: "7DB1A10B5AC680D4"
+			tasks: [{
+				id: "62A738996A7C4538"
+				type: "item"
+				item: "toolbelt:pouch"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			dependencies: ["35FA3C2E42143217"]
+			id: "3536DC1DD11B4D99"
+			tasks: [{
+				id: "3013644E899E625B"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -19.5d
+			dependencies: ["44B1FCD935F1FF77"]
+			id: "412CF6489D13644C"
+			tasks: [{
+				id: "062AAD2C6A31F264"
+				type: "item"
+				item: "cgm:basic_bullet"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -20.0d
+			dependencies: ["44B1FCD935F1FF77"]
+			id: "320DC0E70C1EA240"
+			tasks: [{
+				id: "105671A70CF9A4B8"
+				type: "item"
+				item: "cgm:advanced_bullet"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -20.5d
+			dependencies: ["44B1FCD935F1FF77"]
+			id: "53A17195B23597E2"
+			tasks: [{
+				id: "27F97B829E9240D1"
+				type: "item"
+				item: "cgm:shell"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -20.0d
+			dependencies: ["44B1FCD935F1FF77"]
+			id: "2270C3B03D24B0AC"
+			tasks: [{
+				id: "6359EDE40F62478F"
+				type: "item"
+				item: "cgm:missile"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -19.5d
+			dependencies: ["44B1FCD935F1FF77"]
+			id: "6A46BB7AA949E6E0"
+			tasks: [{
+				id: "6B90BEC7159C437F"
+				type: "item"
+				item: "cgm:grenade"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -19.0d
+			dependencies: ["44B1FCD935F1FF77"]
+			id: "36C8572A4A1172C1"
+			tasks: [{
+				id: "0CD50E634A0FDBF6"
+				type: "item"
+				item: "cgm:stun_grenade"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -20.5d
+			dependencies: [
+				"6A46BB7AA949E6E0"
+				"36C8572A4A1172C1"
+			]
+			dependency_requirement: "one_completed"
+			id: "00F86A5553E02FBC"
+			tasks: [{
+				id: "2380B5A137B5CB64"
+				type: "item"
+				item: {
+					id: "cgm:grenade_launcher"
+					Count: 1b
+					tag: {
+						AmmoCount: 1
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -21.0d
+			dependencies: ["2270C3B03D24B0AC"]
+			id: "6A91604EC833CD87"
+			tasks: [{
+				id: "5615E435712A02A2"
+				type: "item"
+				item: {
+					id: "cgm:bazooka"
+					Count: 1b
+					tag: {
+						AmmoCount: 1
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -21.5d
+			dependencies: ["53A17195B23597E2"]
+			id: "10E89D1FC206B2C2"
+			tasks: [{
+				id: "5D1994860707CF66"
+				type: "item"
+				item: {
+					id: "cgm:shotgun"
+					Count: 1b
+					tag: {
+						AmmoCount: 8
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -19.5d
+			dependencies: ["412CF6489D13644C"]
+			id: "3FEE6BA9008816FB"
+			tasks: [{
+				id: "0138A4F42566674A"
+				type: "item"
+				item: {
+					id: "cgm:pistol"
+					Count: 1b
+					tag: {
+						AmmoCount: 16
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -20.5d
+			dependencies: ["412CF6489D13644C"]
+			id: "7598D1012AE0B5BF"
+			tasks: [{
+				id: "0B13B4DD6B8D9BF7"
+				type: "item"
+				item: {
+					id: "cgm:machine_pistol"
+					Count: 1b
+					tag: {
+						AmmoCount: 80
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -21.5d
+			dependencies: ["412CF6489D13644C"]
+			id: "54665FF7961F93F2"
+			tasks: [{
+				id: "30DF70B18A535940"
+				type: "item"
+				item: {
+					id: "cgm:assault_rifle"
+					Count: 1b
+					tag: {
+						AmmoCount: 40
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -22.5d
+			dependencies: ["412CF6489D13644C"]
+			id: "2AAADE0F88E56F6A"
+			tasks: [{
+				id: "3041574313E7A747"
+				type: "item"
+				item: {
+					id: "cgm:mini_gun"
+					Count: 1b
+					tag: {
+						AmmoCount: 100
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -21.5d
+			dependencies: ["320DC0E70C1EA240"]
+			id: "187C42FF77731B24"
+			tasks: [{
+				id: "6C4CDC8FF9C52EBA"
+				type: "item"
+				item: {
+					id: "cgm:assault_rifle"
+					Count: 1b
+					tag: {
+						AmmoCount: 40
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -21.5d
+			dependencies: ["320DC0E70C1EA240"]
+			id: "6C69B86E6BEDB0A9"
+			tasks: [{
+				id: "2736361E5EAF89EE"
+				type: "item"
+				item: {
+					id: "cgm:heavy_rifle"
+					Count: 1b
+					tag: {
+						AmmoCount: 4
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["35FA3C2E42143217"]
+			id: "5FFDB29C6E24216A"
+			tasks: [{
+				id: "78E22729FA0C348C"
+				type: "item"
+				item: "create:zinc_ingot"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["5FFDB29C6E24216A"]
+			id: "6946E2EFA81E4ABD"
+			tasks: [{
+				id: "480BDC1EA700E028"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 17.0d
+			dependencies: [
+				"0A87CF97563AEAC5"
+				"01DF79471F190E9E"
+				"4DB4E8C2460FA1EA"
+			]
+			id: "2C9C0FD3E819E730"
+			tasks: [{
+				id: "7EBC31A01F596886"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 17.0d
+			dependencies: [
+				"1F24F18D7B294425"
+				"58F6489569480121"
+				"14F3E7DF937B195D"
+			]
+			id: "74A60D96F6226F52"
+			tasks: [{
+				id: "51D0AC7DCB2E1131"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+		}
+		{
+			x: 18.5d
+			y: 14.5d
+			dependencies: ["39698A97C8F7B9D4"]
+			id: "47E018D3D2AB494D"
+			tasks: [{
+				id: "10DDD2D2B554F397"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			dependencies: ["6946E2EFA81E4ABD"]
+			id: "5F4990D7B51616AD"
+			tasks: [{
+				id: "7D369F2CD182329F"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["5EE15F60CE8B8D4E"]
+			id: "6401FEEE988E35AC"
+			tasks: [{
+				id: "1662FD55DA3F48A3"
+				type: "item"
+				item: "create:copper_casing"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 19.5d
+			dependencies: ["2C9C0FD3E819E730"]
+			id: "0C1048780223FCCC"
+			tasks: [{
+				id: "2F985355AFA897D9"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 14.0d
+			dependencies: ["744FD1DFF6664B06"]
+			id: "0A87CF97563AEAC5"
+			tasks: [{
+				id: "42C42A08BBF0177A"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			dependencies: ["5F4990D7B51616AD"]
+			id: "744FD1DFF6664B06"
+			tasks: [{
+				id: "43FDF1DBC9406342"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 17.0d
+			dependencies: [
+				"0A87CF97563AEAC5"
+				"4DB4E8C2460FA1EA"
+			]
+			id: "538315E05F1B9C3E"
+			tasks: [{
+				id: "5EA30B76B56910C2"
+				type: "item"
+				item: "mekanism:ingot_bronze"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "79643F9B780B05BD"
+			tasks: [{
+				id: "5ACEC932200D84DE"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "0AA4E5052D68078B"
+			tasks: [{
+				id: "6BFD518F8DB7A698"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "4747A6558B2A8907"
+			tasks: [{
+				id: "23268B26235BBAF7"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "12DDEA55A22CA502"
+			tasks: [{
+				id: "43E08BF5366FAF53"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 21.0d
+			dependencies: [
+				"79643F9B780B05BD"
+				"0AA4E5052D68078B"
+				"4747A6558B2A8907"
+			]
+			id: "4C8392A6F4309520"
+			tasks: [{
+				id: "6F16CE490DB97B85"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_paxel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "22D98CA54F52ECF7"
+			tasks: [{
+				id: "02EDF2D811C9F3CB"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "7F571C168C403324"
+			tasks: [{
+				id: "05A5343685634400"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "7EEDD29CAAA919C8"
+			tasks: [{
+				id: "2967CB38929B52C9"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "4D8D6906E74D6B9A"
+			tasks: [{
+				id: "3ABD42F3937E547B"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "4BAD09C0CF470CA7"
+			tasks: [{
+				id: "05C3EF1105829AF2"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: 14.0d
+			dependencies: ["744FD1DFF6664B06"]
+			id: "523826F018D17445"
+			tasks: [{
+				id: "2246E3822AD01561"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 14.0d
+			dependencies: ["523826F018D17445"]
+			id: "4DB4E8C2460FA1EA"
+			tasks: [{
+				id: "652CF64A1D4D98EB"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 12.0d
+			dependencies: [
+				"476DA229A85AFDDC"
+				"744FD1DFF6664B06"
+				"79DD7965169070F9"
+			]
+			id: "7EA4BE9BE0BD8A15"
+			tasks: [{
+				id: "13A4EE9CE551E33B"
+				type: "item"
+				item: "create:blaze_cake_base"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 14.0d
+			dependencies: [
+				"7EA4BE9BE0BD8A15"
+				"6836E5CEE8F9293C"
+			]
+			id: "01DF79471F190E9E"
+			tasks: [{
+				id: "069118A71D6A0850"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 10.0d
+			dependencies: ["50B1B216CC743CBB"]
+			id: "476DA229A85AFDDC"
+			tasks: [{
+				id: "10D33487F9A7BC6A"
+				type: "item"
+				item: "create:dough"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.0d
+			dependencies: [
+				"6401FEEE988E35AC"
+				"2DA4BF94B6D61B14"
+				"4FD0DFB36BBB61C2"
+			]
+			id: "6836E5CEE8F9293C"
+			tasks: [{
+				id: "458DF4A14C9A7058"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.0d
+			dependencies: ["322CCF8D641FE741"]
+			id: "4FD0DFB36BBB61C2"
+			tasks: [{
+				id: "2981525092007268"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			dependencies: [
+				"5EE15F60CE8B8D4E"
+				"744FD1DFF6664B06"
+			]
+			id: "322CCF8D641FE741"
+			tasks: [{
+				id: "4C10F92A4FBD636E"
+				type: "item"
+				item: "create:fluid_pipe"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			dependencies: ["6401FEEE988E35AC"]
+			id: "2DA4BF94B6D61B14"
+			tasks: [{
+				id: "5BC5416F3C216A46"
+				type: "item"
+				item: "create:item_drain"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 8.0d
+			dependencies: ["744FD1DFF6664B06"]
+			id: "50B1B216CC743CBB"
+			tasks: [{
+				id: "55760CCE35DBA351"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: 18.5d
+			y: 19.5d
+			dependencies: ["0C1048780223FCCC"]
+			id: "58F6489569480121"
+			tasks: [{
+				id: "5F586E2E9EC11503"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 17.0d
+			dependencies: [
+				"0A87CF97563AEAC5"
+				"4DB4E8C2460FA1EA"
+			]
+			id: "279DC62268B596DB"
+			tasks: [{
+				id: "0A08AD2B89D6BFE4"
+				type: "item"
+				item: "immersiveengineering:ingot_constantan"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 17.0d
+			dependencies: [
+				"4DB4E8C2460FA1EA"
+				"0A87CF97563AEAC5"
+			]
+			id: "0083E8C39C139A2A"
+			tasks: [{
+				id: "0B956F927CD32748"
+				type: "item"
+				item: "immersiveengineering:ingot_electrum"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 22.0d
+			dependencies: [
+				"744FD1DFF6664B06"
+				"6836E5CEE8F9293C"
+			]
+			id: "678AC2A9E602F8FC"
+			tasks: [{
+				id: "2D7D8940114605A4"
+				type: "item"
+				item: "create:sturdy_sheet"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 20.0d
+			dependencies: ["538315E05F1B9C3E"]
+			id: "5F95CE86BC2237C4"
+			tasks: [{
+				id: "2A7220B626E9ED3A"
+				type: "item"
+				item: {
+					id: "mekanismtools:bronze_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			dependencies: ["35FA3C2E42143217"]
+			id: "5EE15F60CE8B8D4E"
+			tasks: [{
+				id: "42C09AE27125804C"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 17.0d
+			dependencies: ["2C9C0FD3E819E730"]
+			id: "39698A97C8F7B9D4"
+			tasks: [{
+				id: "3D0B56CF6E742F49"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: 18.5d
+			y: 17.0d
+			dependencies: [
+				"47E018D3D2AB494D"
+				"0C1048780223FCCC"
+			]
+			id: "14F3E7DF937B195D"
+			tasks: [{
+				id: "3071CA8D7383EFDB"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 14.5d
+			dependencies: [
+				"58F6489569480121"
+				"47E018D3D2AB494D"
+			]
+			id: "23C4BDA06C9DE9D6"
+			tasks: [{
+				id: "4A97A15451C8E60D"
+				type: "item"
+				item: "create:wand_of_symmetry"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 12.0d
+			dependencies: ["47E018D3D2AB494D"]
+			id: "6177FCC39908B9E7"
+			tasks: [{
+				id: "6F28D861DEBEC7EA"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 6.0d
+			dependencies: ["744FD1DFF6664B06"]
+			id: "59C7F319B478051D"
+			tasks: [{
+				id: "1CEBAD4108C0083A"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 19.5d
+			dependencies: ["6035531FCD9B5244"]
+			id: "56C5952BF8B1CCFA"
+			tasks: [{
+				id: "39F90B87162CB998"
+				type: "item"
+				item: "chunkloaders:basic_chunk_loader"
+			}]
+		}
+		{
+			x: 25.5d
+			y: 19.5d
+			dependencies: ["56C5952BF8B1CCFA"]
+			id: "7B8C497E7F623CE7"
+			tasks: [{
+				id: "51A6F9581DC2B3C6"
+				type: "item"
+				item: "chunkloaders:single_chunk_loader"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 21.5d
+			dependencies: ["56C5952BF8B1CCFA"]
+			id: "31AF5BECE375E697"
+			tasks: [{
+				id: "2BCFD9B641A33B04"
+				type: "item"
+				item: "chunkloaders:advanced_chunk_loader"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 23.5d
+			dependencies: ["31AF5BECE375E697"]
+			id: "0E5F29C9DBF7916D"
+			tasks: [{
+				id: "27CC3B22539E85D5"
+				type: "item"
+				item: "chunkloaders:ultimate_chunk_loader"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 23.5d
+			dependencies: ["76759C0F29F89618"]
+			id: "532A298A7893CE45"
+			tasks: [{
+				id: "6FEC693E740017D1"
+				type: "item"
+				item: {
+					id: "simpleplanes:plane"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							material: "minecraft:oak_planks"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 21.0d
+			y: 23.5d
+			dependencies: ["76759C0F29F89618"]
+			id: "49DF7B0EED2E3590"
+			tasks: [{
+				id: "3A390B4D64BA8A47"
+				type: "item"
+				item: {
+					id: "simpleplanes:large_plane"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							material: "minecraft:oak_planks"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 22.0d
+			y: 23.5d
+			dependencies: ["76759C0F29F89618"]
+			id: "2A71B02B5CA44956"
+			tasks: [{
+				id: "70F2AAAC347C7934"
+				type: "item"
+				item: {
+					id: "simpleplanes:helicopter"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							material: "minecraft:oak_planks"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: 10.0d
+			dependencies: ["476DA229A85AFDDC"]
+			id: "79DD7965169070F9"
+			tasks: [{
+				id: "641A9796F032403A"
+				type: "item"
+				item: "minecraft:red_concrete_powder"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.0d
+			dependencies: ["35FA3C2E42143217"]
+			id: "77F4B00E7E4B0979"
+			tasks: [{
+				id: "62BC672537886D8E"
+				type: "item"
+				item: {
+					id: "grapplemod:grapplinghook"
+					Count: 1b
+					tag: {
+						Damage: 0
+						custom: {
+							doublehook: 0b
+							motor: 0b
+							phaserope: 0b
+							attract: 0b
+							rocket: 0b
+							hookgravity: 1.0d
+							repelforce: 1.0d
+							attractradius: 3.0d
+							pullbackwards: 1b
+							smartmotor: 0b
+							detachonkeyrelease: 0b
+							angle: 20.0d
+							crc32: 2252267022L
+							rocket_vertical_angle: 0.0d
+							rocket_force: 1.0d
+							rocket_refuel_ratio: 15.0d
+							motorwhencrouching: 0b
+							motorwhennotcrouching: 1b
+							motordampener: 0b
+							rocket_active_time: 0.5d
+							throwspeed: 2.0d
+							motoracceleration: 0.2d
+							enderstaff: 0b
+							oneropepull: 0b
+							sneakingverticalthrowangle: 0.0d
+							smartdoublemotor: 1b
+							repel: 0b
+							sneakingangle: 10.0d
+							motormaxspeed: 4.0d
+							playermovementmult: 1.0d
+							reelin: 1b
+							sticky: 0b
+							verticalthrowangle: 0.0d
+							maxlen: 30.0d
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			dependencies: ["35FA3C2E42143217"]
+			id: "13958CCA4782144D"
+			tasks: [{
+				id: "22FD85992D17EA6D"
+				type: "item"
+				item: "comforts:sleeping_bag_white"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

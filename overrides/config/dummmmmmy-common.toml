@@ -6,6 +6,8 @@ maximum_out_of_combat_interval = 120
 #Does dps message update dynamically or will it only appear after each parse? 
 #Allowed Values: DYNAMIC, STATIC, OFF
 DPS_mode = "DYNAMIC"
+#Makes monsters target a dummy that is wearing a player head
+dummy_decoy = false
 
 [scarecrow]
 	#Equip a dummy with a pumpkin to make hit act as a scarecrow

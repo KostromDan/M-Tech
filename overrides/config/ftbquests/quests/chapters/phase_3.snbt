@@ -1,0 +1,21 @@
+{
+	id: "1D7E902B56B990C8"
+	group: ""
+	order_index: 2
+	filename: "phase_3"
+	title: "Phase 3"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Phase is physicly ready, but quests will come in one of the next update!"
+		id: "13DA0D3F6708E986"
+		tasks: [{
+			id: "3519F2E77F3DE15D"
+			type: "item"
+			item: "minecraft:bedrock"
+		}]
+	}]
+	quest_links: [ ]
+}
