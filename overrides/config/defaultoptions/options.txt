@@ -30,7 +30,7 @@ renderDistance:12
 simulationDistance:8
 entityDistanceScaling:1.0
 guiScale:2
-particles:2
+particles:1
 maxFps:60
 graphicsMode:1
 ao:2
@@ -78,7 +78,7 @@ allowServerListing:true
 chatPreview:1
 onlyShowSecureChat:false
 soundCategory_master:1.0
-soundCategory_music:0.07992487
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "M-Tech",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "author": "devaverin",
   "files": [
     {
@@ -97,6 +97,11 @@
     {
       "projectID": 390886,
       "fileID": 4328861,
+      "required": true
+    },
+    {
+      "projectID": 289658,
+      "fileID": 3937416,
       "required": true
     },
     {
@@ -306,7 +311,7 @@
     },
     {
       "projectID": 243121,
-      "fileID": 4420296,
+      "fileID": 4426258,
       "required": true
     },
     {
@@ -365,13 +370,13 @@
       "required": true
     },
     {
-      "projectID": 248787,
-      "fileID": 3872808,
+      "projectID": 688223,
+      "fileID": 4354808,
       "required": true
     },
     {
-      "projectID": 688223,
-      "fileID": 4354808,
+      "projectID": 248787,
+      "fileID": 3872808,
       "required": true
     },
     {
@@ -450,13 +455,13 @@
       "required": true
     },
     {
-      "projectID": 454372,
-      "fileID": 4407413,
+      "projectID": 227887,
+      "fileID": 4413365,
       "required": true
     },
     {
-      "projectID": 227887,
-      "fileID": 4413365,
+      "projectID": 454372,
+      "fileID": 4407413,
       "required": true
     },
     {
@@ -465,13 +470,13 @@
       "required": true
     },
     {
-      "projectID": 404183,
-      "fileID": 4046639,
+      "projectID": 357540,
+      "fileID": 4153724,
       "required": true
     },
     {
-      "projectID": 357540,
-      "fileID": 4153724,
+      "projectID": 404183,
+      "fileID": 4046639,
       "required": true
     },
     {
@@ -480,13 +485,13 @@
       "required": true
     },
     {
-      "projectID": 316582,
-      "fileID": 3920717,
+      "projectID": 631401,
+      "fileID": 4031226,
       "required": true
     },
     {
-      "projectID": 631401,
-      "fileID": 4031226,
+      "projectID": 316582,
+      "fileID": 3920717,
       "required": true
     },
     {
@@ -545,13 +550,13 @@
       "required": true
     },
     {
-      "projectID": 410295,
-      "fileID": 4136430,
+      "projectID": 404465,
+      "fileID": 4415391,
       "required": true
     },
     {
-      "projectID": 404465,
-      "fileID": 4415391,
+      "projectID": 410295,
+      "fileID": 4136430,
       "required": true
     },
     {

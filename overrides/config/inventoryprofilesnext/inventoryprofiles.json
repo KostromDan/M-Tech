@@ -13,7 +13,6 @@
         "enable_inventory_settings_button": {
             "value": false
         },
-        "continuous_crafting_saved_value": false,
         "show_sort_in_columns_button": {
             "value": false
         },
@@ -26,11 +25,9 @@
         "locked_slots_disable_throw_for_non_stackable": false
     },
     "AutoRefillSettings": {
-        "refill_armor": {
-            "value": false
-        },
-        "refill_before_tool_break": {
-            "value": false
+        "tool_damage_threshold": 40,
+        "allow_break_for_non_enchanted": {
+            "value": true
         }
     },
     "ScrollSettings": {
