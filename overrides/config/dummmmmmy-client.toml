@@ -11,6 +11,8 @@
 	show_hearths = false
 	#Show damage numbers on entity
 	damage_numbers = true
+	#Display particles fullbright
+	full_bright_damage_numbers = true
 
 	[visuals.damage_number_colors]
 		#hex color for various damage sources

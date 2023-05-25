@@ -73,7 +73,6 @@ function del_item_more_than(event, ingredient, max_count) {
         let item = event.player.inventory.extractItem(event.player.inventory.find(ingredient), max_count, false)
         throw_item(event, item)
     }
-    й
 }
 
 PlayerEvents.inventoryChanged(event => {
