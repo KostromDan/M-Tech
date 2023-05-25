@@ -1,0 +1,24 @@
+ServerEvents.recipes(event => {event.custom({
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/nickel"
+    },
+    {
+      "tag": "forge:ingots/copper"
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:ingot_constantan",
+      "count": 2
+    }
+  ],
+  "heatRequirement": "heated",
+  "conditions": [
+    {
+    	"type": "forge:mod_loaded",
+    	"modid": "immersiveengineering"
+  	}
+  ]
+})})

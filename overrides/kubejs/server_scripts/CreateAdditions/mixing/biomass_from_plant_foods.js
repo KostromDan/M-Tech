@@ -1,0 +1,22 @@
+ServerEvents.recipes(event => {event.custom({
+  "type": "create:mixing",
+  "ingredients": [
+	{
+      "tag": "createaddition:plant_foods"
+    },
+    {
+      "tag": "createaddition:plant_foods"
+    },
+    {
+      "fluidTag": "forge:plantoil",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "createaddition:biomass",
+      "count": 3
+    }
+  ],
+  "heatRequirement": "heated"
+})})

@@ -1,0 +1,23 @@
+ServerEvents.recipes(event => {event.custom({
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "fluid": "immersiveengineering:creosote",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:treated_wood_horizontal"
+    }
+  ],
+  "conditions": [ 
+  	{
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+  	} 
+  ]
+})})
