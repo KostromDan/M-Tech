@@ -33,6 +33,10 @@ ServerEvents.recipes(event => {
         "ingredients": [
             {
                 "item": 'minecraft:red_concrete_powder'
+            }, {
+                "item": 'create:dough'
+            }, {
+                "item": 'create:dough'
             }
         ],
         "results": [

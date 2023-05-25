@@ -253,7 +253,7 @@
 [management]
 	"Quick Armor Swapping" = true
 	"Item Sharing" = true
-	"Inventory Sorting" = true
+	"Inventory Sorting" = false
 	"Hotbar Changer" = false
 	"Expanded Item Interactions" = true
 	"Easy Transfering" = true
