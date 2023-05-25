@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 })
 
 EntityEvents.death(event => {
-    if (event.entity.getType()==='minecraft:wither') {
+    if (event.entity.getType() === 'minecraft:wither') {
         let itemEntity = event.level.createEntity("item")
         itemEntity.y = event.entity.y
         itemEntity.x = event.entity.x
@@ -47,48 +47,50 @@ EntityEvents.death(event => {
 const CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
 
 function throw_item(event, item) {
-    let itemEntity = event.level.createEntity("item")
-    itemEntity.y = event.player.y + 0.5
-    itemEntity.x = event.player.x
-    itemEntity.z = event.player.z
-    itemEntity.item = item
-    itemEntity.item.count = 1
-    itemEntity.noGravity = true
-    itemEntity.setInvulnerable(true)
-    itemEntity.setGlowing(true)
-    itemEntity.setPickUpDelay(100)
-    itemEntity.spawn()
+    event.player.tell("You can have only one standard backpack in your inventory! Create a backpack of iron level or higher to be able to carry an unlimited number of backpacks. One of the backpacks was thrown to the ground!")
+    event.server.scheduleInTicks(20, e => {
+        let itemEntity = event.level.createEntity("item")
+        itemEntity.y = event.player.y + 0.5
+        itemEntity.x = event.player.x
+        itemEntity.z = event.player.z
+        itemEntity.item = item
+        itemEntity.item.count = 1
+        itemEntity.noGravity = true
+        itemEntity.setInvulnerable(true)
+        itemEntity.setGlowing(true)
+        itemEntity.setPickUpDelay(100)
+        itemEntity.spawn()
+    })
 }
 
-function deep_inventory_search(event, ingredient, del_more_than) {
+function remove_from_inv_include_curious(event, ingredient, max_count) {
     let player = event.player
-    let counter = 0
-    let curios_counter = 0
+    let curious_counter = 0
     const target = Ingredient.of(ingredient)
-    counter += player.inventory.count(ingredient)
     const api = new CuriosApi();
     const curios = api.getCuriosHelper().getEquippedCurios(event.player).resolve().get();
     for (let slot = 0; slot < curios.getSlots(); slot++) {
         var itemstack = Item.of(curios.getStackInSlot(slot))
         if (target.test(itemstack)) {
-            if (curios_counter >= del_more_than) {
+            curious_counter++
+            if (curious_counter > max_count) {
                 curios.setStackInSlot(slot, "minecraft:air")
                 throw_item(event, itemstack)
-                counter--
+                curious_counter--
             }
-            counter++
-            curios_counter++
         }
     }
-    return counter
+    let counter = player.inventory.count(ingredient)
+    while (curious_counter + counter > max_count) {
+        let item = event.player.inventory.extractItem(event.player.inventory.find(ingredient), 1, false)
+        throw_item(event, item)
+        counter = player.inventory.count(ingredient)
+    }
+    return curious_counter + counter
 }
 
 function del_item_more_than(event, ingredient, max_count) {
-    while (deep_inventory_search(event, ingredient, max_count) > max_count) {
-        event.player.tell("You can have only one standard backpack in your inventory! Create a backpack of iron level or higher to be able to carry an unlimited number of backpacks. One of the backpacks was thrown to the ground!")
-        let item = event.player.inventory.extractItem(event.player.inventory.find(ingredient), max_count, false)
-        throw_item(event, item)
-    }
+    while (remove_from_inv_include_curious(event, ingredient, max_count) > max_count) {}
 }
 
 PlayerEvents.inventoryChanged(event => {

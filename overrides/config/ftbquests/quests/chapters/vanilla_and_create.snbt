@@ -1345,8 +1345,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 1.0d
+			x: 2.5d
+			y: -3.0d
 			subtitle: "A mod which adds grappling hooks. The aim of this mod is to provide a fun way to get around large builds like cities or caves."
 			dependencies: ["35FA3C2E42143217"]
 			id: "77F4B00E7E4B0979"
@@ -1400,7 +1400,7 @@
 		}
 		{
 			x: 2.5d
-			y: -3.0d
+			y: -1.5d
 			subtitle: "Like beds except they do not set a player's spawn point on use, safely preserving a player's spawn point at their home base."
 			dependencies: ["35FA3C2E42143217"]
 			id: "13958CCA4782144D"
@@ -1444,8 +1444,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -1.5d
+			x: -3.5d
+			y: 0.5d
 			subtitle: "Bow that can shoot and set up torches."
 			dependencies: ["35FA3C2E42143217"]
 			id: "17D99FBBACB024DC"
@@ -3066,8 +3066,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -1.5d
+			x: -5.0d
+			y: 0.5d
 			subtitle: "Shoot 9 torches at once!"
 			dependencies: ["17D99FBBACB024DC"]
 			id: "44C7655ECA3808A6"
@@ -3079,7 +3079,7 @@
 		}
 		{
 			x: 3.5d
-			y: -3.5d
+			y: -2.0d
 			subtitle: "An integral part of the hammock."
 			dependencies: ["13958CCA4782144D"]
 			id: "090907240CD1DD18"
@@ -3091,7 +3091,7 @@
 		}
 		{
 			x: 3.5d
-			y: -2.5d
+			y: -1.0d
 			subtitle: "Hammocks are like an inverse bed, turning day to night."
 			dependencies: ["13958CCA4782144D"]
 			id: "05EAD90CED8593BB"
@@ -3167,6 +3167,138 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			dependencies: ["77F4B00E7E4B0979"]
+			id: "4C5232099E83DFCE"
+			tasks: [{
+				id: "1B646499C034847A"
+				type: "item"
+				item: "grapplemod:baseupgradeitem"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			dependencies: ["4C5232099E83DFCE"]
+			id: "25329BCAB079BF06"
+			tasks: [{
+				id: "772C33973A611BA8"
+				type: "item"
+				item: "grapplemod:block_grapple_modifier"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -6.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "302CC049FAF78788"
+			tasks: [{
+				id: "52DE26F735484D5A"
+				type: "item"
+				item: "grapplemod:doubleupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -5.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "465C3D66C61E8935"
+			tasks: [{
+				id: "1946E971E8F678F0"
+				type: "item"
+				item: "grapplemod:forcefieldupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -4.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "5EB3871BAC7DA2D4"
+			tasks: [{
+				id: "7BC2446CA3A2F935"
+				type: "item"
+				item: "grapplemod:magnetupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -3.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "52C7AC10B683C905"
+			tasks: [{
+				id: "732B39B9EF21BD70"
+				type: "item"
+				item: "grapplemod:motorupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -2.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "5716063030475054"
+			tasks: [{
+				id: "0D94C5C7E4857F72"
+				type: "item"
+				item: "grapplemod:ropeupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -1.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "1F4FAB20BEDF046B"
+			tasks: [{
+				id: "3E7ACAE10D76AF15"
+				type: "item"
+				item: "grapplemod:staffupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -0.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "52F29682750C19CF"
+			tasks: [{
+				id: "540F0478871A82C5"
+				type: "item"
+				item: "grapplemod:swingupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 0.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "13D56BAA853EE38F"
+			tasks: [{
+				id: "04A320ED42ACCF4D"
+				type: "item"
+				item: "grapplemod:throwupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 1.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "00679B8299727A02"
+			tasks: [{
+				id: "738DE8A381CAF6D9"
+				type: "item"
+				item: "grapplemod:limitsupgradeitem"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -7.5d
+			dependencies: ["25329BCAB079BF06"]
+			id: "01C6A94790BFC113"
+			tasks: [{
+				id: "4C7412003AFBF8F7"
+				type: "item"
+				item: "grapplemod:rocketupgradeitem"
 			}]
 		}
 	]

@@ -118,4 +118,143 @@ ServerEvents.recipes(event => {
         ],
         "time": 400
     })
+    event.remove({output: "mekanism:basic_fluid_tank"})
+    event.custom({
+        "type": "minecraft:crafting_shaped",
+        "key": {
+            "A": {
+                "tag": "mekanism:alloys/basic"
+            },
+            "I": {
+                "tag": "forge:ingots/iron"
+            },
+            "J": {
+                "item": 'kubejs:basic_control_circuit_small'
+            }
+        },
+        "pattern": [
+            "AIA",
+            "IJI",
+            "AIA"
+        ],
+        "result": {
+            "item": "mekanism:basic_fluid_tank"
+        }
+    })
+    event.remove({output: "mekanism:basic_universal_cable"})
+    event.custom({
+        "type": "minecraft:crafting_shaped",
+        "key": {
+            "#": {
+                "tag": "forge:dusts/redstone"
+            },
+            "S": {
+                "tag": "forge:ingots/steel"
+            },
+            "J": {
+                "item": 'kubejs:basic_control_circuit_small'
+            }
+        },
+        "pattern": [
+            " J ",
+            "S#S"
+        ],
+        "result": {
+            "count": 8,
+            "item": "mekanism:basic_universal_cable"
+        }
+    })
+    event.remove({output: "mekanism:basic_mechanical_pipe"})
+    event.custom({
+        "type": "minecraft:crafting_shaped",
+        "key": {
+            "#": {
+                "item": "minecraft:bucket"
+            },
+            "S": {
+                "tag": "forge:ingots/steel"
+            },
+            "J": {
+                "item": 'kubejs:basic_control_circuit_small'
+            }
+        },
+        "pattern": [
+            " J ",
+            "S#S"
+        ],
+        "result": {
+            "count": 8,
+            "item": "mekanism:basic_mechanical_pipe"
+        }
+    })
+    event.remove({output: "mekanism:basic_pressurized_tube"})
+    event.custom({
+        "type": "minecraft:crafting_shaped",
+        "key": {
+            "#": {
+                "tag": "forge:glass"
+            },
+            "S": {
+                "tag": "forge:ingots/steel"
+            },
+            "J": {
+                "item": 'kubejs:basic_control_circuit_small'
+            }
+        },
+        "pattern": [
+            " J ",
+            "S#S"
+        ],
+        "result": {
+            "count": 8,
+            "item": "mekanism:basic_pressurized_tube"
+        }
+    })
+    event.remove({output: "mekanism:basic_thermodynamic_conductor"})
+    event.custom({
+        "type": "minecraft:crafting_shaped",
+        "key": {
+            "#": {
+                "tag": "forge:ingots/copper"
+            },
+            "S": {
+                "tag": "forge:ingots/steel"
+            },
+            "J": {
+                "item": 'kubejs:basic_control_circuit_small'
+            }
+        },
+        "pattern": [
+            " J ",
+            "S#S"
+        ],
+        "result": {
+            "count": 8,
+            "item": "mekanism:basic_thermodynamic_conductor"
+        }
+    })
+    event.remove({output: "mekanism:basic_chemical_tank"})
+    event.custom({
+        "type": "minecraft:crafting_shaped",
+        "key": {
+            "A": {
+                "tag": "mekanism:alloys/basic"
+            },
+            "O": {
+                "tag": "forge:ingots/osmium"
+            },
+            "J": {
+                "item": 'kubejs:basic_control_circuit_small'
+            }
+        },
+        "pattern": [
+            "AOA",
+            "OJO",
+            "AOA"
+        ],
+        "result": {
+            "item": "mekanism:basic_chemical_tank"
+        }
+    })
+    event.shapeless('9x kubejs:basic_control_circuit_small', ['mekanism:basic_control_circuit'])
 })

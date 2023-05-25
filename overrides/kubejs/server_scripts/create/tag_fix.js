@@ -378,28 +378,164 @@ MoreJSEvents.playerStartTrading((event) => {
 })
 ServerEvents.loaded(event => {
     Utils.server.runCommand("reload")
+    if (!event.server.persistentData.contains('firstload')) {
+        event.server.persistentData.putBoolean('firstload', true)
+        Utils.server.runCommand("gamerule playersSleepingPercentage 66")
+        console.warn('First server load! Lag may be present for a few minutes.')
+    }
 })
 PlayerEvents.loggedOut(event => {
-    console.log("M-Tech-logging: Player " + event.player.username + " logged out(" + event.player.level.dimension + "). X: " + event.player.x + " Y: " + event.player.y + " Z: " + event.player.z)
+    console.log(`M-Tech-logging: Player ${event.player.username} logged out(${event.player.level.dimension}). X: ${event.player.x} Y: ${event.player.y} Z: ${event.player.z}`)
 })
 
-function give_book_after_connect(event) {
+function give_book_after_connect(event, r) {
+    if (r > 10) {
+        console.log("Can't give book to " + event.player.username + " after 10 attempts! Stop trying.")
+        return 0
+    }
     if (event.player.inventory.count(ac_tome) === 0) {
-        console.log("Trying to give book to "+event.player.username)
+        console.log("Trying to give book to " + event.player.username)
         event.player.give(ac_tome)
         event.server.scheduleInTicks(20, e => {
-            give_book_after_connect(event)
-
+            give_book_after_connect(event, r + 1)
         })
     } else {
-        console.log("Given book to "+event.player.username)
+        console.log("Given book to " + event.player.username)
         event.player.stages.add('starting_items')
     }
 }
 
 PlayerEvents.loggedIn(event => {
-    console.log("M-Tech-logging: Player " + event.player.username + " logged in(" + event.player.level.dimension + "). X: " + event.player.x + " Y: " + event.player.y + " Z: " + event.player.z)
+    console.log(`M-Tech-logging: Player ${event.player.username} logged in(${event.player.level.dimension}). X: ${event.player.x} Y: ${event.player.y} Z: ${event.player.z}`)
     if (!event.player.stages.has('starting_items')) {
-        give_book_after_connect(event)
+        give_book_after_connect(event, 0)
+    }
+})
+
+function say(msg) {
+    Utils.server.runCommand("say " + msg)
+}
+
+let is_server_stoping = false
+let is_server_backupping = false
+
+ServerEvents.commandRegistry(event => {
+    event.register(event.getCommands().literal('restart').requires(src => src.hasPermission(2))
+        .executes(command => {
+            let server = command.source.getServer()
+            if (is_server_stoping) {
+                return 1
+            }
+            is_server_stoping = true
+            say("Restart after 15 minutes!")
+            server.scheduleInTicks(18000, e => {
+                say("Restart!")
+                Utils.server.runCommand("stop")
+            })
+            server.scheduleInTicks(17980, e => {
+                say("Restart after 1 second!")
+            })
+            server.scheduleInTicks(17960, e => {
+                say("Restart after 2 seconds!")
+            })
+            server.scheduleInTicks(17940, e => {
+                say("Restart after 3 seconds!")
+            })
+            server.scheduleInTicks(17920, e => {
+                say("Restart after 4 seconds!")
+            })
+            server.scheduleInTicks(17900, e => {
+                say("Restart after 5 seconds!")
+            })
+            server.scheduleInTicks(17880, e => {
+                say("Restart after 6 seconds!")
+            })
+            server.scheduleInTicks(17860, e => {
+                say("Restart after 7 seconds!")
+            })
+            server.scheduleInTicks(17840, e => {
+                say("Restart after 8 seconds!")
+            })
+            server.scheduleInTicks(17820, e => {
+                say("Restart after 9 seconds!")
+            })
+            server.scheduleInTicks(17800, e => {
+                say("Restart after 10 seconds!")
+            })
+            server.scheduleInTicks(17700, e => {
+                say("Restart after 15 seconds!")
+            })
+            server.scheduleInTicks(17400, e => {
+                say("Restart after 30 seconds!")
+            })
+            server.scheduleInTicks(16800, e => {
+                say("Restart after 1 minute!")
+            })
+            server.scheduleInTicks(15600, e => {
+                say("Restart after 2 minutes!")
+            })
+            server.scheduleInTicks(14400, e => {
+                say("Restart after 3 minutes!")
+            })
+            server.scheduleInTicks(12000, e => {
+                say("Restart after 5 minutes!")
+            })
+            server.scheduleInTicks(6000, e => {
+                say("Restart after 10 minutes!")
+            })
+            return 1
+        })
+    )
+    event.register(event.getCommands().literal('mtechbackup').requires(src => src.hasPermission(2))
+        .executes(command => {
+            let server = command.source.getServer()
+            if (is_server_backupping) {
+                return 1
+            }
+            is_server_backupping = true
+            say("Backup after 1 minute! Can cause a little serverside lag!")
+            server.scheduleInTicks(20 * 60, e => {
+                server.runCommand("backup start")
+                tick_count_to_backup = 0
+                is_server_backupping = false
+            })
+            server.scheduleInTicks(20 * 59, e => {
+                say("Backup after 1 second!")
+            })
+            server.scheduleInTicks(20 * 58, e => {
+                say("Backup after 2 seconds!")
+            })
+            server.scheduleInTicks(20 * 57, e => {
+                say("Backup after 3 seconds!")
+            })
+            server.scheduleInTicks(20 * 56, e => {
+                say("Backup after 4 seconds!")
+            })
+            server.scheduleInTicks(20 * 55, e => {
+                say("Backup after 5 seconds!")
+            })
+            server.scheduleInTicks(20 * 50, e => {
+                say("Backup after 10 seconds!")
+            })
+            server.scheduleInTicks(20 * 30, e => {
+                say("Backup after 30 seconds!")
+            })
+            return 1
+        })
+    )
+})
+let tick_count_to_stop = 0
+let tick_count_to_backup = 0
+ServerEvents.tick(event => {
+    tick_count_to_stop++
+    tick_count_to_backup++
+
+    if (Utils.server.isDedicated() && tick_count_to_stop >= 558000) {
+        Utils.server.runCommand("restart")
+        tick_count_to_stop = 0
+    }
+    if (tick_count_to_backup >= 180000) {
+        Utils.server.runCommand("mtechbackup")
+        tick_count_to_backup = 0
     }
 })

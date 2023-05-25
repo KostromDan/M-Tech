@@ -1,10 +1,10 @@
 {
 	// Allow the creation of backups automatically
-	"enabled": true,
+	"enabled": false,
 	// Permission level to use the /backup command
 	"command_permission_level": 3,
 	// Only send backup status to server ops
-	"notify_op_only": true,
+	"notify_op_only": false,
 	// Don't send backup status at all
 	"do_not_notify": false,
 	// Maximum number of backups to keep
