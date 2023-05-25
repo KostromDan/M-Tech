@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
                 "tag": "forge:ingots/iron"
             },
             "J": {
-                "item": 'kubejs:basic_control_circuit_small'
+                "item": 'mekanism:basic_control_circuit_small'
             }
         },
         "pattern": [
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
                 "tag": "forge:ingots/steel"
             },
             "J": {
-                "item": 'kubejs:basic_control_circuit_small'
+                "item": 'mekanism:basic_control_circuit_small'
             }
         },
         "pattern": [
@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
                 "tag": "forge:ingots/steel"
             },
             "J": {
-                "item": 'kubejs:basic_control_circuit_small'
+                "item": 'mekanism:basic_control_circuit_small'
             }
         },
         "pattern": [
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
                 "tag": "forge:ingots/steel"
             },
             "J": {
-                "item": 'kubejs:basic_control_circuit_small'
+                "item": 'mekanism:basic_control_circuit_small'
             }
         },
         "pattern": [
@@ -221,7 +221,7 @@ ServerEvents.recipes(event => {
                 "tag": "forge:ingots/steel"
             },
             "J": {
-                "item": 'kubejs:basic_control_circuit_small'
+                "item": 'mekanism:basic_control_circuit_small'
             }
         },
         "pattern": [
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
                 "tag": "forge:ingots/osmium"
             },
             "J": {
-                "item": 'kubejs:basic_control_circuit_small'
+                "item": 'mekanism:basic_control_circuit_small'
             }
         },
         "pattern": [
@@ -256,7 +256,7 @@ ServerEvents.recipes(event => {
             "item": "mekanism:basic_chemical_tank"
         }
     })
-    event.shapeless('9x kubejs:basic_control_circuit_small', ['mekanism:basic_control_circuit'])
+    event.shapeless('9x mekanism:basic_control_circuit_small', ['mekanism:basic_control_circuit'])
     event.custom({
         "type": "mekanism:crushing",
         "input": {

@@ -16,9 +16,9 @@
 		canBeTrue = true
 
 	[permissions.sneakBehavior]
-		canBeNone = true
-		canBeInvertFelling = true
 		canBeInvertChopping = true
+		canBeInvertFelling = true
+		canBeNone = true
 
 	[permissions.treeMustHaveLeaves]
 		canBeFalse = true
@@ -35,17 +35,17 @@
 [treeDetection]
 	#Maximum number of log blocks that can be detected to belong to one tree
 	#Range: 1 ~ 8096
-	maxTreeBlocks = 320
+	maxTreeBlocks = 2048
 	#Maximum number of leaves blocks that can destroyed when a tree is felled
 	#Range: 1 ~ 8096
-	maxLeavesBlocks = 1024
+	maxLeavesBlocks = 4096
 	#Destroy leaves when a tree is felled
 	breakLeaves = true
 	#Non-decayable leaves are ignored when detecting leaves
 	ignorePersistentLeaves = true
 	#Maximum distance from log blocks to destroy non-standard leaves blocks (e.g. mushroom caps) when felling
 	#Range: 0 ~ 16
-	maxBreakLeavesDistance = 7
+	maxBreakLeavesDistance = 16
 
 	[treeDetection.logs]
 		#Blocks that should be considered choppable
@@ -83,7 +83,7 @@
 	[chopCounting.linear]
 		#The number of chops per block required to fell a tree; if chopsPerBlock = 0.5, it will take 50 chops to fell a 100 block tree
 		#Range: 0.0 ~ 7.0
-		chopsPerBlock = 1.0
+		chopsPerBlock = 0.5
 		#The base number of chops required to fell a tree regardless of its size
 		#Range: -10000.0 ~ 10000.0
 		baseNumChops = 0.0

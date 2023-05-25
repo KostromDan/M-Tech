@@ -25,7 +25,7 @@ fov:0.0
 screenEffectScale:1.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
-gamma:1.0
+gamma:0.0
 renderDistance:12
 simulationDistance:6
 entityDistanceScaling:1.0
@@ -37,7 +37,7 @@ ao:2
 prioritizeChunkUpdates:2
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","inmemory:jaopca","quark:emote_resources","file/TZP_1.19.2_2.6.zip","Everycomp Generated Pack","file/M-Tech-custom-fixes-v-0-0-3-rp.zip"]
+resourcePacks:["vanilla","mod_resources","inmemory:jaopca","quark:emote_resources","file/TZP_1.19.2_2.6.zip","Everycomp Generated Pack","file/M-Tech-custom-fixes-v-0-0-3-rp.zip","Supplementaries Generated Pack"]
 incompatibleResourcePacks:["inmemory:jaopca","quark:emote_resources"]
 lastServer:
 lang:en_us
@@ -77,8 +77,8 @@ showAutosaveIndicator:true
 allowServerListing:true
 chatPreview:1
 onlyShowSecureChat:false
-soundCategory_master:0.50352114
-soundCategory_music:0.50352114
+soundCategory_master:0.5070422
+soundCategory_music:0.5070422
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

@@ -1,4 +1,18 @@
-let ac_tome = Item.of('akashictome:tome', '{"akashictome:data":{advancedperipherals:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}},ae2:{Count:1b,id:"ae2:guide"},alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},apotheosis:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"book.apotheosis.name"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"book.apotheosis.name"}]}\'},"patchouli:book":"apotheosis:apoth_chronicle"}},explorerscompass:{Count:1b,id:"explorerscompass:explorerscompass"},ftbquests:{Count:1b,id:"ftbquests:book"},immersiveengineering:{Count:1b,id:"immersiveengineering:manual",tag:{"akashictome:displayName":{text:\'{"translate":"item.immersiveengineering.manual"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.immersiveengineering.manual"}]}\'}}},kubejs:{Count:1b,id:"kubejs:create_manual",tag:{"akashictome:displayName":{text:\'{"translate":"item.kubejs.create_manual"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.kubejs.create_manual"}]}\'}}},kubejs_0:{Count:1b,id:"kubejs:mekanism_guide",tag:{"akashictome:definedMod":"kubejs_0","akashictome:displayName":{text:\'{"translate":"item.kubejs.mekanism_guide"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.kubejs.mekanism_guide"}]}\'}}},naturescompass:{Count:1b,id:"naturescompass:naturescompass"},simpleplanes:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"The Guide to Planes & Helicopters"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"The Guide to Planes & Helicopters"}]}\'},"patchouli:book":"simpleplanes:planes_book"}}},"akashictome:is_morphing":1b}')
+let ac_tome_data = '{"akashictome:data":{' +
+    'advancedperipherals:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}},' +
+    'ae2:{Count:1b,id:"ae2:guide"},' +
+    'alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},' +
+    'apotheosis:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"apotheosis:apoth_chronicle"}},' +
+    'create:{Count:1b,id:"create:create_manual"},' +
+    'explorerscompass:{Count:1b,id:"explorerscompass:explorerscompass",tag:{}},' +
+    'ftbquests:{Count:1b,id:"ftbquests:book"},' +
+    'immersiveengineering:{Count:1b,id:"immersiveengineering:manual"},' +
+    'mekanism:{Count:1b,id:"mekanism:mekanism_guide"},' +
+    'naturescompass:{Count:1b,id:"naturescompass:naturescompass",tag:{}},' +
+    'simpleplanes:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"simpleplanes:planes_book"}}}}'
+let ac_tome = Item.of('akashictome:tome', ac_tome_data)
+let ac_tome_must_include = ['advancedperipherals:manual', "ae2:guide", "alexsmobs:animal_dictionary", "apotheosis:apoth_chronicle", "create:create_manual", "explorerscompass:explorerscompass", "ftbquests:book",
+    "immersiveengineering:manual", "mekanism:mekanism_guide", "naturescompass:naturescompass", "simpleplanes:planes_book"]
 
 function give_book_after_connect(event, r) {
     if (r > 3) {
@@ -32,4 +46,19 @@ PlayerEvents.loggedIn(event => {
 ServerEvents.recipes(event => {
     event.replaceOutput({}, 'akashictome:tome', ac_tome)
     event.shapeless(ac_tome, ['akashictome:tome'])
+})
+ItemEvents.rightClicked(event => {
+    if (event.item == 'akashictome:tome') {
+        let fl = false
+        let nbt = String(event.item.nbt)
+        ac_tome_must_include.forEach(item => {
+            if (!nbt.includes(item)) {
+                fl = true
+            }
+        })
+        if (fl) {
+            event.item.setNbt(ac_tome_data)
+            event.player.tell("Replaced your Akashic Tome to Tome with actual data from the lastest update! Reopen tome!")
+        }
+    }
 })

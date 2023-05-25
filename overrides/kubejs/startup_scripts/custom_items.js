@@ -1,5 +1,5 @@
 StartupEvents.registry('item', event => {
-    event.create('basic_control_circuit_small')
-    event.create('create_manual')
-    event.create('mekanism_guide')
+    event.create('mekanism:basic_control_circuit_small')
+     event.create('mekanism:mekanism_guide')
+    event.create('create:create_manual')
 })

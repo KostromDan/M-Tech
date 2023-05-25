@@ -1,5 +1,5 @@
 ItemEvents.rightClicked(event => {
-    if (event.player.mainHandItem == 'kubejs:create_manual') {
+    if (event.player.mainHandItem == 'create:create_manual') {
         let ray = event.player.rayTrace(64)
         if (ray.block === null) {
             event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder`)

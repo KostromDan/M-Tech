@@ -231,7 +231,7 @@
 				}
 			}]
 			id: "464C38BC03DB6D50"
-			x: -8.0d
+			x: -7.5d
 			y: -11.0d
 			title: "Wither Eye"
 			subtitle: "Dropped by The Wither"
@@ -3156,7 +3156,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "302CC049FAF78788"
-			y: -6.5d
+			y: -6.0d
 			x: 11.5d
 		}
 		{
@@ -3167,7 +3167,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "465C3D66C61E8935"
-			y: -5.5d
+			y: -5.0d
 			x: 11.5d
 		}
 		{
@@ -3178,7 +3178,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "5EB3871BAC7DA2D4"
-			y: -4.5d
+			y: -4.0d
 			x: 11.5d
 		}
 		{
@@ -3189,7 +3189,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "52C7AC10B683C905"
-			y: -3.5d
+			y: -3.0d
 			x: 11.5d
 		}
 		{
@@ -3200,7 +3200,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "5716063030475054"
-			y: -2.5d
+			y: -2.0d
 			x: 11.5d
 		}
 		{
@@ -3211,18 +3211,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "1F4FAB20BEDF046B"
-			y: -1.5d
-			x: 11.5d
-		}
-		{
-			tasks: [{
-				id: "540F0478871A82C5"
-				type: "item"
-				item: "grapplemod:swingupgradeitem"
-			}]
-			dependencies: ["25329BCAB079BF06"]
-			id: "52F29682750C19CF"
-			y: -0.5d
+			y: -1.0d
 			x: 11.5d
 		}
 		{
@@ -3233,7 +3222,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "13D56BAA853EE38F"
-			y: 0.5d
+			y: 0.0d
 			x: 11.5d
 		}
 		{
@@ -3244,7 +3233,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "00679B8299727A02"
-			y: 1.5d
+			y: 1.0d
 			x: 11.5d
 		}
 		{
@@ -3255,7 +3244,7 @@
 			}]
 			dependencies: ["25329BCAB079BF06"]
 			id: "01C6A94790BFC113"
-			y: -7.5d
+			y: -7.0d
 			x: 11.5d
 		}
 		{

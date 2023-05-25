@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => {
     event.remove({
+        output: 'grapplemod:swingupgradeitem'
+    })
+    event.remove({
         output: 'grapplemod:block_grapple_modifier'
     })
     event.custom({

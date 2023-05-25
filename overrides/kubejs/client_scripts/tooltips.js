@@ -16,5 +16,5 @@ ItemEvents.tooltip(tooltip => {
 })
 ItemEvents.tooltip(tooltip => {
     let myMessage = Text.yellow('Right click to item from create, you want to get help, or non create to open page with all items. Works up to 64 blocks!')
-    tooltip.add('kubejs:create_manual', [myMessage])
+    tooltip.add('create:create_manual', [myMessage])
 })
