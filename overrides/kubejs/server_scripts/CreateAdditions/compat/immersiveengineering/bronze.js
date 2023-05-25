@@ -3,7 +3,13 @@ ServerEvents.recipes(event => {
         "type": "create:mixing",
         "ingredients": [
             {
-                "tag": "forge:ingots/nickel"
+                "tag": "forge:ingots/tin"
+            },
+            {
+                "tag": "forge:ingots/copper"
+            },
+            {
+                "tag": "forge:ingots/copper"
             },
             {
                 "tag": "forge:ingots/copper"
@@ -11,8 +17,8 @@ ServerEvents.recipes(event => {
         ],
         "results": [
             {
-                "item": "immersiveengineering:ingot_constantan",
-                "count": 2
+                "item": 'mekanism:ingot_bronze',
+                "count": 4
             }
         ],
         "heatRequirement": "heated"

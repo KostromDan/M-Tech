@@ -1,10 +1,10 @@
 ServerEvents.recipes(event => {event.custom({
   "type": "create:mechanical_crafting",
   "pattern": [
-  	"  A  ",
-    "DBSBD",
-    "BSRSB",
-    "DBCBD"
+  	"SSS",
+    " A ",
+    "CBC",
+    "PEP"
   ],
   "key": {
   	"A": {
@@ -13,20 +13,20 @@ ServerEvents.recipes(event => {event.custom({
     "C": {
       "item": "createaddition:capacitor"
     },
-    "B": {
+    "P": {
       "item": 'create:brass_sheet'
     },
-    "R": {
-      "item": 'createaddition:iron_rod'
+    "B": {
+      "item": "create:brass_casing"
     },
     "S": {
       "item": "createaddition:copper_spool"
     },
-    "D": {
-      "item": 'immersiveengineering:coil_mv'
+    "E": {
+      "item": "create:electron_tube"
     }
   },
   "result": {
-    "item": "createaddition:electric_motor"
+    "item": "createaddition:tesla_coil"
   }
 })})

@@ -3,18 +3,21 @@ ServerEvents.recipes(event => {
         "type": "create:mixing",
         "ingredients": [
             {
-                "tag": "forge:ingots/nickel"
+                "tag": "forge:dusts/iron"
             },
             {
-                "tag": "forge:ingots/copper"
+                "tag": "forge:glass"
+            },
+            {
+                "tag": "forge:glass"
             }
         ],
         "results": [
             {
-                "item": "immersiveengineering:ingot_constantan",
+                "item": "immersiveengineering:insulating_glass",
                 "count": 2
             }
         ],
-        "heatRequirement": "heated"
+        "heatRequirement": "superheated"
     })
 })

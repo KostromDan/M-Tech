@@ -3,16 +3,16 @@
 [wires]
 	#Connector max input in FE/t (Energy transfer).
 	#Range: > 0
-	connector_max_input = 1024
+	connector_max_input = 64
 	#Max wire length in blocks.
 	#Range: 0 ~ 256
 	wire_length = 12
 	#Connector max output in FE/t (Energy transfer).
 	#Range: > 0
-	connector_max_output = 1024
+	connector_max_output = 64
 	#Connector internal input buffer in FE.
 	#Range: > 0
-	connector_input_capacity = 2048
+	connector_input_capacity = 128
 	#Ignore checking if block face can support connector.
 	connector_ignore_face_check = false
 
@@ -111,13 +111,13 @@
 [accumulator]
 	#Accumulator internal capacity in FE.
 	#Range: > 0
-	accumulator_capacity = 4196000
+	accumulator_capacity = 50000
 	#Accumulator max output in FE/t (Energy transfer).
 	#Range: > 0
-	accumulator_max_output = 512
+	accumulator_max_output = 64
 	#Accumulator max input in FE/t (Energy transfer).
 	#Range: > 0
-	accumulator_max_input = 512
+	accumulator_max_input = 64
 
 #Rolling Mill
 [rolling_mill]
