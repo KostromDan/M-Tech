@@ -28,10 +28,15 @@
 		[common.gameplay.griefing]
 			#If enabled, allows block removal on explosions
 			enableBlockRemovalOnExplosions = true
-			#If enabled, allows guns to shoot out glass
+			#If enabled, allows guns to shoot out glass and other fragile objects
 			enableGlassBreaking = true
 			#If true, allows guns enchanted with Fire Starter to light and spread fires on blocks
 			setFireToBlocks = true
+			#If enabled, fragile blocks will drop their loot when broken
+			fragileBlockDrops = true
+			#The base chance that a fragile block is broken when impacted by a bullet. The hardness of a block will scale this value; the harder the block, the lower the final calculated chance will be.
+			#Range: 0.0 ~ 1.0
+			fragileBlockBreakChance = 1.0
 
 	#Properties relating to network
 	[common.network]

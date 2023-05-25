@@ -60,13 +60,6 @@
     "hemp": true,
     "multiblock_icon": true
   },
-  "create": {
-    "filter": true,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "placard": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -74,6 +67,14 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
+  },
+  "create": {
+    "filter": true,
+    "copper_backtank": true,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "placard": true
   },
   "corpse": {
     "corpse": true

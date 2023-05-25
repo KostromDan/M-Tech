@@ -88,3 +88,4 @@ ServerEvents.recipes(event => {
         output: '#forge:nuggets/steel'
     })
 })
+
