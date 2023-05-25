@@ -15,7 +15,7 @@ import time
 import tkinter as tk
 
 zip_path = r'"C:\Program Files\7-Zip\7z.exe"'
-VERSION = '1.2.39'
+VERSION = '1.3.1'
 OUT_DIR = 'Server-Files-' + VERSION
 COPY_DIRS = [
     'config',
@@ -108,7 +108,18 @@ def main():
     os.system('taskkill /F /IM Overwolf.exe')
     time.sleep(1)
     os.system(f'rmdir {OUT_DIR} /s /q')
+    os.system(f'rmdir {os.path.join("config", "jei", "world")} /s /q')
+    NOT_REMOVE = {
+        'integrationHints',
+        'inventoryprofiles.json'
+    }
+    for file_name in os.listdir(os.path.join("config","inventoryprofilesnext")):
+        if file_name not in NOT_REMOVE:
+            os.system(
+                f'rmdir "{os.path.join("config","inventoryprofilesnext", file_name)}" /s /q')
+
     os.system(fr'xcopy.exe .\Server-Files-Static\* .\{OUT_DIR}\ /e /Y')
+
     for file_name in os.listdir(os.path.join(OUT_DIR, 'mods')):
         extention = file_name.split('.')[-1]
         if extention == 'serverjar':
