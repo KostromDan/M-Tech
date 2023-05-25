@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     )
     event.custom({
         "result": {
-            "item": "waystones:return_scroll",
+            "item": "waystones:bound_scroll",
             "count": 1
         },
         "type": "minecraft:crafting_shaped",

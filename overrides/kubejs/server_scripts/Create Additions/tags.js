@@ -12,3 +12,7 @@ ServerEvents.tags('item', event => {
     event.remove('forge:rods/all_metal', 'createaddition:brass_rod')
     event.remove('forge:rods/all_metal', 'createaddition:copper_rod')
 })
+ServerEvents.tags('fluid', event => {
+    event.remove('forge:plantoil', 'createaddition:seed_oil')
+    event.remove('forge:plantoil', 'createaddition:flowing_seed_oil')
+})

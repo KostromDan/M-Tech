@@ -10,8 +10,8 @@
 	quests: [
 		{
 			title: "Black Eye"
-			x: -7.0d
-			y: -9.0d
+			x: -5.5d
+			y: -10.0d
 			subtitle: "Found in Buried Chests"
 			dependencies: ["67CFBF42726C3F40"]
 			id: "45A9281056C76F12"
@@ -29,8 +29,8 @@
 		}
 		{
 			title: "Cold Eye"
-			x: -3.0d
-			y: -9.0d
+			x: -1.5d
+			y: -10.0d
 			subtitle: "Found in Igloos. Attention this eye is very rare, you can spend a lot of time getting it."
 			dependencies: ["26966019E944881D"]
 			id: "174C350B05539928"
@@ -48,8 +48,8 @@
 		}
 		{
 			title: "Corrupted Eye"
-			x: -1.0d
-			y: -9.0d
+			x: 0.5d
+			y: -10.0d
 			subtitle: "Found in Pillager Outposts"
 			dependencies: ["4E96CE62BD13A2B0"]
 			id: "36936B74BA51FB80"
@@ -67,8 +67,8 @@
 		}
 		{
 			title: "Lost Eye"
-			x: -4.0d
-			y: -9.0d
+			x: -2.5d
+			y: -10.0d
 			subtitle: "Found in Mineshafts"
 			dependencies: ["684E118F311EA0D5"]
 			id: "79414E7EFA8111F9"
@@ -86,8 +86,8 @@
 		}
 		{
 			title: "Nether Eye"
-			x: -9.0d
-			y: -9.0d
+			x: -7.5d
+			y: -10.0d
 			subtitle: "Found in Nether Fortresses"
 			dependencies: ["68EC772B0F603ADA"]
 			id: "0E42FA37CE4A8404"
@@ -105,8 +105,8 @@
 		}
 		{
 			title: "Old Eye"
-			x: -5.0d
-			y: -9.0d
+			x: -3.5d
+			y: -10.0d
 			subtitle: "Found in Desert Pyramids"
 			dependencies: ["7E362DC04C71DA6E"]
 			id: "6BB565598AAB7A92"
@@ -124,8 +124,8 @@
 		}
 		{
 			title: "Rogue Eye"
-			x: -6.0d
-			y: -9.0d
+			x: -4.5d
+			y: -10.0d
 			subtitle: "Found in Jungle Pyramids"
 			dependencies: ["666196AFAAF8D206"]
 			id: "46367ADF3E205EF5"
@@ -143,8 +143,8 @@
 		}
 		{
 			title: "Cursed Eye"
-			x: -8.0d
-			y: -9.0d
+			x: -6.5d
+			y: -10.0d
 			subtitle: "Found in Bastions treasure chest"
 			dependencies: ["3AF1AC709F55C172"]
 			id: "1E00067A584D0971"
@@ -162,8 +162,8 @@
 		}
 		{
 			title: "Evil Eye"
-			x: 1.0d
-			y: -9.0d
+			x: 2.5d
+			y: -10.0d
 			subtitle: "Buy it from a master cleric for a rabbit's foot and emeralds."
 			dependencies: ["17B264D313913D40"]
 			id: "041C67E8034FB97A"
@@ -181,8 +181,8 @@
 		}
 		{
 			title: "Guardian Eye"
-			x: -2.0d
-			y: -9.0d
+			x: -0.5d
+			y: -10.0d
 			subtitle: "Get it by Killing Elder Guardian"
 			dependencies: ["4A133A1D005C912D"]
 			id: "47ADD6B5BF8DA077"
@@ -200,8 +200,8 @@
 		}
 		{
 			title: "Magical Eye"
-			x: 0.0d
-			y: -9.0d
+			x: 1.5d
+			y: -10.0d
 			subtitle: "Dropped by Evokers"
 			dependencies: ["238611D672C9E586"]
 			id: "01CE9AADCF0DD634"
@@ -219,8 +219,8 @@
 		}
 		{
 			title: "Wither Eye"
-			x: -10.0d
-			y: -10.5d
+			x: -8.0d
+			y: -11.0d
 			subtitle: "Dropped by The Wither"
 			dependencies: ["79237342ADCEFEA9"]
 			id: "464C38BC03DB6D50"
@@ -238,8 +238,8 @@
 		}
 		{
 			title: "Witch Eye"
-			x: 2.0d
-			y: -10.0d
+			x: 2.5d
+			y: -11.0d
 			subtitle: "Craft it using the witch pupil"
 			dependencies: ["09CC47E6DDB141DA"]
 			id: "1A5444B829EFE989"
@@ -257,8 +257,8 @@
 		}
 		{
 			title: "Undead Eye"
-			x: 3.0d
-			y: -10.0d
+			x: 4.5d
+			y: -11.0d
 			subtitle: "Craft it using an Undead Soul. You can get the Undead Soul by killing a skeleton horse."
 			dependencies: ["7FA0BA619D77B30B"]
 			id: "04E4A81F92AD10FD"
@@ -276,8 +276,8 @@
 		}
 		{
 			title: "Exotic Eye"
-			x: 5.0d
-			y: -10.0d
+			x: 6.5d
+			y: -11.0d
 			subtitle: "Craft it using aquatic items"
 			dependencies: [
 				"5E716672E8DC6023"
@@ -402,8 +402,8 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: -6.0d
+			x: -7.0d
+			y: -7.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "3F60137CEC196791"
@@ -1417,14 +1417,14 @@
 		{
 			x: -3.5d
 			y: 0.0d
-			subtitle: "Bow that can shoot and set up torches."
+			subtitle: "Use a slingshot to put torches, blocks at a considerable distance from you."
 			dependencies: ["35FA3C2E42143217"]
 			id: "17D99FBBACB024DC"
 			tasks: [{
 				id: "788EC71FAE954EDE"
 				type: "item"
 				item: {
-					id: "torchbowmod:torchbow"
+					id: "supplementaries:slingshot"
 					Count: 1b
 					tag: {
 						Damage: 0
@@ -2993,8 +2993,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -6.5d
+			x: -8.0d
+			y: -7.5d
 			dependencies: ["3F60137CEC196791"]
 			id: "68C3C1354353EB1A"
 			tasks: [{
@@ -3004,8 +3004,8 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: -7.5d
+			x: -10.0d
+			y: -8.5d
 			dependencies: ["747CA72B797333AA"]
 			id: "765A60D676EA0A6D"
 			tasks: [{
@@ -3015,38 +3015,17 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: -8.5d
-			subtitle: "The Return Scroll is an item added by Waystones that, when used, is consumed and teleports you to the last Waystone, activated for the first time."
-			dependencies: ["765A60D676EA0A6D"]
-			id: "41EBE4463971C2C1"
-			tasks: [{
-				id: "7DF10232E0D15550"
-				type: "item"
-				item: "waystones:return_scroll"
-			}]
-		}
-		{
-			x: -11.0d
-			y: -7.0d
-			dependencies: ["68C3C1354353EB1A"]
+			x: -9.0d
+			y: -8.0d
+			dependencies: [
+				"68C3C1354353EB1A"
+				"55760CCE35DBA351"
+			]
 			id: "747CA72B797333AA"
 			tasks: [{
 				id: "5EBF2C1B2D4AFC9A"
 				type: "item"
 				item: "minecraft:blaze_powder"
-			}]
-		}
-		{
-			x: -5.0d
-			y: 0.0d
-			subtitle: "Shoot 9 torches at once!"
-			dependencies: ["17D99FBBACB024DC"]
-			id: "44C7655ECA3808A6"
-			tasks: [{
-				id: "15C8593AE6ECE410"
-				type: "item"
-				item: "torchbowmod:multitorch"
 			}]
 		}
 		{
@@ -3143,7 +3122,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: 5.0d
 			y: -3.0d
 			dependencies: ["77F4B00E7E4B0979"]
 			id: "4C5232099E83DFCE"
@@ -3154,11 +3133,11 @@
 			}]
 		}
 		{
-			x: 21.5d
-			y: 7.0d
+			x: 7.5d
+			y: -3.0d
 			dependencies: [
 				"4C5232099E83DFCE"
-				"58F6489569480121"
+				"5F586E2E9EC11503"
 			]
 			id: "25329BCAB079BF06"
 			tasks: [{
@@ -3168,8 +3147,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 3.5d
+			x: 11.5d
+			y: -6.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "302CC049FAF78788"
 			tasks: [{
@@ -3179,8 +3158,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 4.5d
+			x: 11.5d
+			y: -5.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "465C3D66C61E8935"
 			tasks: [{
@@ -3190,8 +3169,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 5.5d
+			x: 11.5d
+			y: -4.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "5EB3871BAC7DA2D4"
 			tasks: [{
@@ -3201,8 +3180,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 6.5d
+			x: 11.5d
+			y: -3.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "52C7AC10B683C905"
 			tasks: [{
@@ -3212,8 +3191,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 7.5d
+			x: 11.5d
+			y: -2.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "5716063030475054"
 			tasks: [{
@@ -3223,8 +3202,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 8.5d
+			x: 11.5d
+			y: -1.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "1F4FAB20BEDF046B"
 			tasks: [{
@@ -3234,8 +3213,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 9.5d
+			x: 11.5d
+			y: -0.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "52F29682750C19CF"
 			tasks: [{
@@ -3245,8 +3224,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 10.5d
+			x: 11.5d
+			y: 0.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "13D56BAA853EE38F"
 			tasks: [{
@@ -3256,8 +3235,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 11.5d
+			x: 11.5d
+			y: 1.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "00679B8299727A02"
 			tasks: [{
@@ -3267,8 +3246,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 2.5d
+			x: 11.5d
+			y: -7.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "01C6A94790BFC113"
 			tasks: [{
@@ -3292,8 +3271,8 @@
 		}
 		{
 			icon: "minecraft:chiseled_sandstone"
-			x: -5.0d
-			y: -8.0d
+			x: -3.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "7E362DC04C71DA6E"
@@ -3304,8 +3283,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -8.5d
+			x: -8.5d
+			y: -9.0d
 			dependencies: ["68EC772B0F603ADA"]
 			id: "2A89DAD93AB8F848"
 			tasks: [{
@@ -3317,8 +3296,8 @@
 		}
 		{
 			icon: "minecraft:nether_star"
-			x: -10.0d
-			y: -9.5d
+			x: -8.5d
+			y: -10.0d
 			dependencies: ["2A89DAD93AB8F848"]
 			id: "79237342ADCEFEA9"
 			tasks: [
@@ -3337,8 +3316,8 @@
 		}
 		{
 			icon: "minecraft:nether_bricks"
-			x: -9.0d
-			y: -8.0d
+			x: -7.5d
+			y: -9.0d
 			dependencies: ["3F60137CEC196791"]
 			id: "68EC772B0F603ADA"
 			tasks: [{
@@ -3349,8 +3328,8 @@
 		}
 		{
 			icon: "minecraft:polished_blackstone_bricks"
-			x: -8.0d
-			y: -8.0d
+			x: -6.5d
+			y: -9.0d
 			dependencies: ["3F60137CEC196791"]
 			id: "3AF1AC709F55C172"
 			tasks: [{
@@ -3361,8 +3340,8 @@
 		}
 		{
 			icon: "minecraft:snow_block"
-			x: -3.0d
-			y: -8.0d
+			x: -1.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "26966019E944881D"
@@ -3374,8 +3353,8 @@
 		}
 		{
 			icon: "minecraft:mossy_cobblestone"
-			x: -6.0d
-			y: -8.0d
+			x: -4.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "666196AFAAF8D206"
@@ -3387,8 +3366,8 @@
 		}
 		{
 			icon: "minecraft:lantern"
-			x: -4.0d
-			y: -8.0d
+			x: -2.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "684E118F311EA0D5"
@@ -3400,8 +3379,8 @@
 		}
 		{
 			icon: "lootr:lootr_chest"
-			x: -7.0d
-			y: -8.0d
+			x: -5.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "67CFBF42726C3F40"
@@ -3413,8 +3392,8 @@
 		}
 		{
 			icon: "minecraft:prismarine"
-			x: -2.0d
-			y: -8.0d
+			x: -0.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "4A133A1D005C912D"
@@ -3426,8 +3405,8 @@
 		}
 		{
 			icon: "minecraft:dark_oak_log"
-			x: -1.0d
-			y: -8.0d
+			x: 0.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "4E96CE62BD13A2B0"
@@ -3438,8 +3417,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -8.0d
+			x: 1.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "238611D672C9E586"
@@ -3451,8 +3430,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -8.0d
+			x: 3.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "5C073B45D0DAEBC9"
@@ -3464,8 +3443,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -9.0d
+			x: 3.5d
+			y: -10.0d
 			dependencies: ["5C073B45D0DAEBC9"]
 			id: "09CC47E6DDB141DA"
 			tasks: [{
@@ -3475,8 +3454,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -8.0d
+			x: 4.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "62EEB68CF68DB865"
@@ -3488,8 +3467,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -9.0d
+			x: 4.5d
+			y: -10.0d
 			dependencies: ["62EEB68CF68DB865"]
 			id: "7FA0BA619D77B30B"
 			tasks: [{
@@ -3499,8 +3478,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -8.0d
+			x: 2.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "17B264D313913D40"
@@ -3511,8 +3490,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -9.0d
+			x: 5.5d
+			y: -10.0d
 			dependencies: ["5D7A16DDF33D4188"]
 			id: "24EAFACA5F9D0975"
 			tasks: [{
@@ -3523,8 +3502,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -8.0d
+			x: 5.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "5D7A16DDF33D4188"
@@ -3536,8 +3515,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -8.0d
+			x: 6.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "6CD9F3A8887FC8E5"
@@ -3550,8 +3529,8 @@
 		}
 		{
 			icon: "minecraft:tube_coral"
-			x: 6.0d
-			y: -8.0d
+			x: 7.5d
+			y: -9.0d
 			dependencies: ["3213708E164F5CE1"]
 			dependency_requirement: "all_started"
 			id: "5E716672E8DC6023"
@@ -3579,8 +3558,8 @@
 			]
 		}
 		{
-			x: -13.5d
-			y: -7.5d
+			x: -11.0d
+			y: -9.0d
 			subtitle: "The Bound Scroll is an item added by Waystones. The Bound Scroll can be bound to an activated Waystone and when used will be consumed and teleport you to the Waystone it was bound to."
 			dependencies: ["765A60D676EA0A6D"]
 			id: "42C7DD914A221390"

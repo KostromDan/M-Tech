@@ -51,9 +51,3 @@ function del_item_more_than(event, ingredient, max_count) {
 PlayerEvents.inventoryChanged(event => {
     del_item_more_than(event, 'sophisticatedbackpacks:backpack', 1)
 })
-ItemEvents.pickedUp(event => {
-    del_item_more_than(event, 'sophisticatedbackpacks:backpack', 1)
-})
-PlayerEvents.inventoryClosed(event => {
-    del_item_more_than(event, 'sophisticatedbackpacks:backpack', 1)
-})

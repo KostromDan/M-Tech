@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "KostromDan",
+      "uniqueId": "a23d9d09-0e25-4763-aa13-f7e8e8715812"
+    },
+    "time": 1683020730593,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Nfc2J0wgi5"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "KostromDan",
+      "uniqueId": "a23d9d09-0e25-4763-aa13-f7e8e8715812"
+    },
+    "time": 1682928611954,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/C3scFnsu99"
+    }
+  }
+]

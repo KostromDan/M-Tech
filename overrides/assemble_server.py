@@ -15,7 +15,7 @@ import time
 import tkinter as tk
 
 zip_path = r'"C:\Program Files\7-Zip\7z.exe"'
-VERSION = '1.3.1'
+VERSION = '1.3.2'
 OUT_DIR = 'Server-Files-' + VERSION
 COPY_DIRS = [
     'config',
@@ -109,14 +109,22 @@ def main():
     time.sleep(1)
     os.system(f'rmdir {OUT_DIR} /s /q')
     os.system(f'rmdir {os.path.join("config", "jei", "world")} /s /q')
+    with open("config/bcc-common.toml", 'r') as in_f:
+        bcc_conf = in_f.readlines()
+    with open("config/bcc-common.toml", 'w') as out_f:
+        for line in bcc_conf:
+            if "modpackVersion" in line:
+                line = f'	modpackVersion = "{VERSION}"\n'
+            out_f.write(line)
     NOT_REMOVE = {
         'integrationHints',
         'inventoryprofiles.json'
     }
-    for file_name in os.listdir(os.path.join("config","inventoryprofilesnext")):
+    for file_name in os.listdir(
+            os.path.join("config", "inventoryprofilesnext")):
         if file_name not in NOT_REMOVE:
             os.system(
-                f'rmdir "{os.path.join("config","inventoryprofilesnext", file_name)}" /s /q')
+                f'rmdir "{os.path.join("config", "inventoryprofilesnext", file_name)}" /s /q')
 
     os.system(fr'xcopy.exe .\Server-Files-Static\* .\{OUT_DIR}\ /e /Y')
 
@@ -165,6 +173,7 @@ def main():
     os.system(f'{zip_path} a -tzip -mx5 -r0 {out_file} {OUT_DIR}')
     os.system(
         '"C:\Program Files (x86)\Overwolf\OverwolfLauncher.exe" -launchapp cchhcaiapeikjbdbpfplgmpobbcdkdaphclbmkbj -from-startmenu')
+    os.system(f'rmdir {OUT_DIR} /s /q')
 
 
 if __name__ == '__main__':
