@@ -21,7 +21,7 @@ toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
 mouseSensitivity:0.5
-fov:0.0
+fov:1.0
 screenEffectScale:1.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
@@ -78,7 +78,7 @@ allowServerListing:true
 chatPreview:1
 onlyShowSecureChat:false
 soundCategory_master:0.5070422
-soundCategory_music:0.5070422
+soundCategory_music:0.50352114
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

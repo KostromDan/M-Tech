@@ -511,13 +511,12 @@
 				item: "createaddition:alternator"
 			}]
 			dependencies: [
-				"58F6489569480121"
 				"5D6B7AEE3256F1A7"
 				"422140008BAD4A2E"
 			]
 			id: "6FEE862F02256B0E"
 			y: 14.5d
-			x: 26.5d
+			x: 38.5d
 		}
 		{
 			tasks: [{
@@ -528,7 +527,7 @@
 			dependencies: ["6FEE862F02256B0E"]
 			id: "4C217E67271D2488"
 			y: 14.5d
-			x: 28.0d
+			x: 40.5d
 		}
 		{
 			tasks: [{
@@ -538,8 +537,8 @@
 			}]
 			dependencies: ["59C7F319B478051D"]
 			id: "5D6B7AEE3256F1A7"
-			y: 11.5d
-			x: 23.0d
+			y: 6.0d
+			x: 28.5d
 		}
 		{
 			tasks: [{
@@ -638,20 +637,18 @@
 			x: 21.0d
 		}
 		{
+			size: 1.5d
+			id: "422140008BAD4A2E"
+			x: 36.0d
+			y: 14.5d
+			subtitle: "Build big mining contraption to do it easy and fast."
+			dependencies: ["7D65C22457A98829"]
 			tasks: [{
 				id: "6E2648E5842A8257"
 				type: "item"
 				item: "minecraft:netherite_ingot"
+				count: 36L
 			}]
-			dependencies: [
-				"74A60D96F6226F52"
-				"39698A97C8F7B9D4"
-				"6177FCC39908B9E7"
-			]
-			subtitle: "Build big mining contraption to do it easy and fast."
-			id: "422140008BAD4A2E"
-			y: 14.5d
-			x: 23.5d
 		}
 		{
 			tasks: [{
@@ -1478,7 +1475,7 @@
 			}]
 			dependencies: ["5B5DD8E892FFAA82"]
 			id: "7FEB4F5957453EB9"
-			y: -9.5d
+			y: -13.0d
 			x: -20.5d
 		}
 		{
@@ -1489,7 +1486,7 @@
 			}]
 			dependencies: ["7FEB4F5957453EB9"]
 			id: "63F5801A626EEEF4"
-			y: -10.5d
+			y: -13.5d
 			x: -21.5d
 		}
 		{
@@ -1522,7 +1519,7 @@
 			}]
 			dependencies: ["7FEB4F5957453EB9"]
 			id: "0B1B71832E1AFED9"
-			y: -9.5d
+			y: -12.5d
 			x: -21.5d
 		}
 		{
@@ -1537,7 +1534,7 @@
 				"63F5801A626EEEF4"
 			]
 			id: "790BFC727B4004CC"
-			y: -9.5d
+			y: -13.0d
 			x: -22.5d
 		}
 		{
@@ -1574,7 +1571,7 @@
 				"5B5DD8E892FFAA82"
 			]
 			id: "44DEDCB40AC4FA24"
-			y: -13.5d
+			y: -11.5d
 			x: -20.5d
 		}
 		{
@@ -1643,7 +1640,7 @@
 				"44DEDCB40AC4FA24"
 			]
 			id: "132588D751A4C104"
-			y: -13.5d
+			y: -11.5d
 			x: -22.5d
 		}
 		{
@@ -1885,7 +1882,7 @@
 			}]
 			dependencies: ["5B5DD8E892FFAA82"]
 			id: "21CA3452943210B9"
-			y: -12.5d
+			y: -10.5d
 			x: -20.5d
 		}
 		{
@@ -1896,7 +1893,7 @@
 			}]
 			dependencies: ["21CA3452943210B9"]
 			id: "00D6B29CB9EE773E"
-			y: -12.5d
+			y: -10.5d
 			x: -21.5d
 		}
 		{
@@ -1911,7 +1908,7 @@
 				"5B5DD8E892FFAA82"
 			]
 			id: "4AF1E4BC79243F61"
-			y: -11.5d
+			y: -9.5d
 			x: -20.5d
 		}
 		{
@@ -1926,7 +1923,7 @@
 				"4AF1E4BC79243F61"
 			]
 			id: "2D3FC567AF0C7725"
-			y: -11.5d
+			y: -9.5d
 			x: -22.5d
 		}
 		{
@@ -2981,7 +2978,7 @@
 			dependencies: ["4C217E67271D2488"]
 			id: "01B3C279ADB8FA7F"
 			y: 14.0d
-			x: 29.0d
+			x: 41.5d
 		}
 		{
 			tasks: [{
@@ -2992,7 +2989,7 @@
 			dependencies: ["4C217E67271D2488"]
 			id: "7F23E7405E44063B"
 			y: 15.0d
-			x: 29.0d
+			x: 41.5d
 		}
 		{
 			tasks: [{
@@ -3451,11 +3448,12 @@
 				entity: "minecraft:skeleton_horse"
 				value: 1L
 			}]
-			dependency_requirement: "all_started"
-			dependencies: ["3213708E164F5CE1"]
 			id: "62EEB68CF68DB865"
-			y: -9.0d
 			x: 4.5d
+			y: -9.0d
+			subtitle: "A “skeleton trap horse” is a hostile skeleton horse spawned from a fraction of lightning generated naturally by a thunderstorm 2.25–6.75% chance. In this modpack, you can blow through the soul fire, using a fan from a create mod, turning an ordinary horse into this one."
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
 		}
 		{
 			tasks: [{
@@ -3571,6 +3569,433 @@
 			id: "42C8367898216806"
 			y: 1.5d
 			x: -3.5d
+		}
+		{
+			tasks: [{
+				id: "5E459A3550D4894C"
+				type: "item"
+				item: "create:empty_schematic"
+			}]
+			dependencies: ["744FD1DFF6664B06"]
+			id: "11136069CB36B617"
+			y: 7.0d
+			x: 16.0d
+		}
+		{
+			tasks: [{
+				id: "2DC8CA87EC59DB1C"
+				type: "item"
+				item: "create:schematicannon"
+			}]
+			description: [""]
+			guide_page: "create.fandom.com/wiki/Schematicannon"
+			id: "0DFE8567FC3AF8D2"
+			x: 24.0d
+			y: 7.0d
+			dependencies: ["275BF682BCA32E90"]
+			subtitle: "The Schematicannon is a special type of machine used to build structures with the use of Schematics. It is a useful contraption which is primarily used within Survival Mode to deploy structures block-by-block, as the function of direct placement for Schematics are limited exclusively to Creative Mode."
+		}
+		{
+			tasks: [{
+				id: "23E220347816B1DA"
+				type: "item"
+				item: "create:schematic_table"
+			}]
+			dependencies: ["11136069CB36B617"]
+			id: "275BF682BCA32E90"
+			y: 7.0d
+			x: 20.0d
+		}
+		{
+			size: 2.0d
+			id: "75C5A0B456237F63"
+			icon: "create:mechanical_drill"
+			x: 24.0d
+			y: 14.5d
+			title: "Small Drill Contraption"
+			rewards: [{
+				id: "661D688B9490DE6A"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Mirror: "NONE"
+						Bounds: [
+							4
+							5
+							14
+						]
+						Deployed: 0b
+						File: "m_tech_small_drill_contraption.nbt"
+						Rotation: "NONE"
+					}
+				}
+			}]
+			subtitle: "This is your first resource mining machine. You only need 5 drills to build it. After accumulating resources, you will receive schematics for its construction as a reward. Position it in the world and load it into Schematicannon along with gunpowder, the machine will be built. All mining contrations, the schematics of which are included in the modpack by default, are stable and replace water and lava. They can safely pass through any liquid without harming themselves or the controlling player. It is understood that with the help of this machine you will quickly accumulate enough resources for the next one."
+			dependencies: [
+				"0DFE8567FC3AF8D2"
+				"74A60D96F6226F52"
+				"39698A97C8F7B9D4"
+				"6177FCC39908B9E7"
+			]
+			tasks: [
+				{
+					id: "6A0C39B6EBD6C296"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "686E08CF088E9363"
+					type: "item"
+					item: {
+						id: "create:attribute_filter"
+						Count: 1b
+						tag: { }
+					}
+					count: 13L
+				}
+				{
+					id: "16C841F942A1BFBF"
+					type: "item"
+					item: "minecraft:barrel"
+				}
+				{
+					id: "65B7FFEFF4017FB0"
+					type: "item"
+					item: "create:cart_assembler"
+				}
+				{
+					id: "2490D55538608ABE"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "0E51ED5F061232F4"
+					type: "item"
+					item: "create:deployer"
+					count: 15L
+				}
+				{
+					id: "3A0C5250174E9544"
+					type: "item"
+					item: "minecraft:lever"
+				}
+				{
+					id: "3852BB1B763465C7"
+					type: "item"
+					item: "create:mechanical_drill"
+					count: 5L
+				}
+				{
+					id: "4ADA59012B2C2D19"
+					type: "item"
+					item: "create:mechanical_plough"
+					count: 17L
+				}
+				{
+					id: "65375C45765FD2A1"
+					type: "item"
+					item: "minecraft:minecart"
+				}
+				{
+					id: "39FD5259A7D7D156"
+					type: "item"
+					item: "create:portable_storage_interface"
+					count: 2L
+				}
+				{
+					id: "56B45CDD036C51E4"
+					type: "item"
+					item: "minecraft:powered_rail"
+				}
+				{
+					id: "6172951430797C05"
+					type: "item"
+					item: "create:white_seat"
+				}
+				{
+					id: "55891BBAE2C55EE7"
+					type: "item"
+					item: "create:andesite_casing"
+					count: 55L
+				}
+				{
+					id: "149312C23A01ADBC"
+					type: "item"
+					item: "create:item_vault"
+					count: 36L
+				}
+			]
+		}
+		{
+			size: 2.5d
+			id: "513EB6CA99C16ACC"
+			icon: "create:mechanical_drill"
+			x: 28.0d
+			y: 14.5d
+			title: "Drill Contraption"
+			rewards: [{
+				id: "6B1C9F5035D9F894"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Mirror: "NONE"
+						Bounds: [
+							4
+							5
+							14
+						]
+						Deployed: 0b
+						Rotation: "NONE"
+						File: "m_tech_drill_contraption.nbt"
+					}
+				}
+			}]
+			subtitle: "You can expand this machine to speed up the extraction of resources, for this, increase the first layer of drills from the front in the outward direction (this comment applies to the following contraption as well)."
+			dependencies: ["75C5A0B456237F63"]
+			tasks: [
+				{
+					id: "768DA4414A6D2042"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5CAF553ECA1B320A"
+					type: "item"
+					item: {
+						id: "create:attribute_filter"
+						Count: 1b
+						tag: { }
+					}
+					count: 20L
+				}
+				{
+					id: "3C2D12D866C767E1"
+					type: "item"
+					item: "minecraft:barrel"
+				}
+				{
+					id: "67ECFDD8AB7246AD"
+					type: "item"
+					item: "create:cart_assembler"
+				}
+				{
+					id: "5C0F5906A16B533C"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "63B5E0C9B7131096"
+					type: "item"
+					item: "create:deployer"
+					count: 22L
+				}
+				{
+					id: "02350C232BB703E0"
+					type: "item"
+					item: "minecraft:lever"
+				}
+				{
+					id: "02AA1589C2B0FA86"
+					type: "item"
+					item: "create:mechanical_drill"
+					count: 30L
+				}
+				{
+					id: "5998BB22754DA64F"
+					type: "item"
+					item: "create:mechanical_plough"
+					count: 22L
+				}
+				{
+					id: "20C2B6548003B620"
+					type: "item"
+					item: "minecraft:minecart"
+				}
+				{
+					id: "00711364AEA95C8D"
+					type: "item"
+					item: "create:portable_storage_interface"
+					count: 2L
+				}
+				{
+					id: "68797E3FE83845F2"
+					type: "item"
+					item: "minecraft:powered_rail"
+					count: 17L
+				}
+				{
+					id: "076B278AB2DA024F"
+					type: "item"
+					item: "create:white_seat"
+				}
+				{
+					id: "6D5ABA0C5C31699C"
+					type: "item"
+					item: "create:andesite_casing"
+					count: 30L
+				}
+				{
+					id: "4B218D4C74ACC1AC"
+					type: "item"
+					item: "create:item_vault"
+					count: 68L
+				}
+			]
+		}
+		{
+			size: 3.0d
+			id: "7D65C22457A98829"
+			icon: "create:mechanical_drill"
+			x: 32.5d
+			y: 14.5d
+			title: "Big Daddy"
+			rewards: [{
+				id: "6A2207C2E08483C7"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Mirror: "NONE"
+						Bounds: [
+							4
+							5
+							14
+						]
+						Deployed: 0b
+						Rotation: "NONE"
+						File: "m_tech_big_daddy.nbt"
+					}
+				}
+			}]
+			subtitle: "After building this machine, go to the nether at height 10, install the initial rails on it, contraption on them and after about 2-3 hours, accumulate enough resources for 36 netherite ingots."
+			dependencies: ["513EB6CA99C16ACC"]
+			tasks: [
+				{
+					id: "4AE887232E174543"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3D3C4D273538B65B"
+					type: "item"
+					item: {
+						id: "create:attribute_filter"
+						Count: 1b
+						tag: { }
+					}
+					count: 80L
+				}
+				{
+					id: "43CF777BCE19DC6D"
+					type: "item"
+					item: "minecraft:barrel"
+				}
+				{
+					id: "67288E5AA0AC2001"
+					type: "item"
+					item: "create:cart_assembler"
+				}
+				{
+					id: "4F84A615F8D68CA1"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "59BA5E2B71554B16"
+					type: "item"
+					item: "create:deployer"
+					count: 82L
+				}
+				{
+					id: "61652598EAD5CFAD"
+					type: "item"
+					item: "minecraft:lever"
+				}
+				{
+					id: "7FEC263015766BAD"
+					type: "item"
+					item: "create:mechanical_drill"
+					count: 126L
+				}
+				{
+					id: "39D90855EEE7E059"
+					type: "item"
+					item: "create:mechanical_plough"
+					count: 82L
+				}
+				{
+					id: "47D8BF9034362C04"
+					type: "item"
+					item: "minecraft:minecart"
+				}
+				{
+					id: "426D1B7E0ED060E0"
+					type: "item"
+					item: "create:portable_storage_interface"
+					count: 2L
+				}
+				{
+					id: "5C62A374599527C7"
+					type: "item"
+					item: "minecraft:powered_rail"
+					count: 17L
+				}
+				{
+					id: "298B8A3DB4A0F38D"
+					type: "item"
+					item: "create:white_seat"
+				}
+				{
+					id: "5F187D7224F8B503"
+					type: "item"
+					item: "create:andesite_casing"
+					count: 38L
+				}
+				{
+					id: "3F7FFF8135A3D716"
+					type: "item"
+					item: "create:item_vault"
+					count: 302L
+				}
+			]
 		}
 	]
 }

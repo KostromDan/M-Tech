@@ -4,6 +4,7 @@
             "value": false
         },
         "highlight_foused_items_foreground": false,
+        "enable_updates_check": false,
         "first_run": false
     },
     "GuiSettings": {

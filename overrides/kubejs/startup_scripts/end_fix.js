@@ -3,8 +3,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$PlayerCh
 })
 
 global.ChangedDim = (event) => {
-    let dimTo = event.getTo()
-    if (dimTo == "minecraft:the_end") {
+    if (event.getTo() == "minecraft:the_end") {
         do_bbb_tick = true
     }
 }

@@ -15,7 +15,7 @@ import time
 import tkinter as tk
 
 zip_path = r'"C:\Program Files\7-Zip\7z.exe"'
-VERSION = '1.3.8'
+VERSION = '1.3.9'
 OUT_DIR = 'Server-Files-' + VERSION
 COPY_DIRS = [
     'config',
@@ -171,6 +171,7 @@ def main():
     except FileNotFoundError:
         pass
     os.system(f'{zip_path} a -tzip -mx5 -r0 {out_file} {OUT_DIR}')
+    print(f'{zip_path} a -tzip -mx5 -r0 {out_file} {OUT_DIR}')
     os.system(
         '"C:\Program Files (x86)\Overwolf\OverwolfLauncher.exe" -launchapp cchhcaiapeikjbdbpfplgmpobbcdkdaphclbmkbj -from-startmenu')
     os.system(f'rmdir {OUT_DIR} /s /q')

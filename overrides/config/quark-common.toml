@@ -418,6 +418,8 @@
 		"Add To Wandering Trader Rare" = false
 		"Draw Hud" = true
 		"Hud On Top" = false
+		#Experimental. Determines if quills should be multithreaded instead. Will ignore quill speed. This could drastically improve performance as it execute the logic off the main thread ideally causing no lag at all
+		"Multi Threaded" = true
 
 	[tools.parrot_eggs]
 		#The chance feeding a parrot will produce an egg
@@ -1690,6 +1692,8 @@
 		"Automatically Convert" = true
 		#Matrix Enchanting can be done with short (<= 3px blocks) instead of air around the enchanting table. Set this to false to disable this behaviour.
 		"Allow Short Block Enchanting" = true
+		#Add specific enchantments to matrix enchanter. Meant for treasure ones
+		"Treasure Whitelist" = []
 
 	[oddities.magnets]
 		#Any items you place in this list will be derived so that any block made of it will become magnetizable
