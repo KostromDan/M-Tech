@@ -76,6 +76,11 @@
     "crafting_blueprint": true,
     "placard": true
   },
+  "apotheosis": {
+    "adventure": true,
+    "ench": true,
+    "spawner": true
+  },
   "corpse": {
     "corpse": true
   },
