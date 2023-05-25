@@ -30,32 +30,38 @@ function create_manual_right_click(event) {
         let ray = event.player.rayTrace(64)
         let ponder = JsonIO.read('kubejs/ponder.json')
         if (ponder == null) {
-            event.player.tell('The file "kubejs/ponder.json" does not exist, move it from the client to the server files for create_manual to work properly.')
+            event.player.tell('The file "kubejs/ponder.json" does not exist on the server side, move it from the client to the server files so that create_manual works properly.')
             event.player.sendData('openPonderTagIndexScreen', {})
             return;
         }
+        ponder = ponder.get("ponder")
         if (!event.player.stages.has('notified_about_create_manual_options')) {
             event.player.stages.add('notified_about_create_manual_options')
-            if (Platform.isForge) {
+            if (Platform.isForge()) {
                 event.player.tell("Shift + scroll if you want to change screen mode!")
             }
-
         }
-        if (ray.block !== null &&
-            ponder.get("ponder").contains(ray.block.id) &&
-            !event.player.isCrouching()) {
-            event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder ${ray.block.id}`)
-        } else {
-            let page_type = get_page_type(ponder, event.player)
-            if (page_type == 'PonderTagIndexScreen') {
-                event.player.sendData('openPonderTagIndexScreen', {})
+        if (ray.block !== null && !event.player.isCrouching()) {
+            if (ponder.contains(ray.block.id)) {
+                event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder ${ray.block.id}`)
                 return;
+            } else {
+                for (const drop of ray.block.getDrops()) {
+                    if (ponder.contains(drop.id)) {
+                        event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder ${drop.id}`)
+                        return;
+                    }
+                }
             }
-            if (page_type == 'PonderUI') {
-                event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder`)
-                return;
-            }
-
+        }
+        let page_type = get_page_type(ponder, event.player)
+        if (page_type == 'PonderTagIndexScreen') {
+            event.player.sendData('openPonderTagIndexScreen', {})
+            return;
+        }
+        if (page_type == 'PonderUI') {
+            event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder`)
+            return;
         }
     }
 }
@@ -76,9 +82,7 @@ NetworkEvents.fromClient('create_manual_change_screen', event => {
         screen = "PonderTagIndexScreen"
     }
     event.player.persistentData.create_manual_page_type = screen
-    event.server.runCommandSilent(`title KostromDan actionbar "Now manual will open ${screen}!"`)
-
-
+    event.server.runCommandSilent(`title ${event.player.username} actionbar "Now manual will open ${screen}!"`)
 })
 
 ServerEvents.commandRegistry(event => {
@@ -92,7 +96,6 @@ ServerEvents.commandRegistry(event => {
                         player.persistentData.create_manual_page_type = "PonderTagIndexScreen"
                         player.tell("Now create manual will open PonderTagIndexScreen!")
                         return 1;
-
                     })
                 )
                 .then(Commands.literal("PonderUI")
@@ -101,7 +104,6 @@ ServerEvents.commandRegistry(event => {
                         player.persistentData.create_manual_page_type = "PonderUI"
                         player.tell("Now create manual will open PonderUI!")
                         return 1;
-
                     })
                 )
                 .then(Commands.literal("reset")
@@ -110,7 +112,6 @@ ServerEvents.commandRegistry(event => {
                         player.persistentData.remove('create_manual_page_type')
                         player.tell("Now create manual will open default server value!")
                         return 1;
-
                     })
                 )
             )
@@ -122,7 +123,6 @@ ServerEvents.commandRegistry(event => {
                         set_page_type("PonderTagIndexScreen")
                         player.tell("Now create manual will open PonderTagIndexScreen by default!")
                         return 1;
-
                     })
                 )
                 .then(Commands.literal("PonderUI")
@@ -131,7 +131,6 @@ ServerEvents.commandRegistry(event => {
                         set_page_type("PonderUI")
                         player.tell("Now create manual will open PonderUI by default!")
                         return 1;
-
                     })
                 )
             )
@@ -144,4 +143,7 @@ ServerEvents.commandRegistry(event => {
                 })
             )
     )
+})
+ServerEvents.recipes(event => {
+    event.shapeless('create:create_manual', ['minecraft:book', 'create:andesite_alloy'])
 })

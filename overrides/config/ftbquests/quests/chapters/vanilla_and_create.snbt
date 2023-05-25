@@ -510,13 +510,14 @@
 				type: "item"
 				item: "createaddition:alternator"
 			}]
+			dependency_requirement: "one_completed"
 			dependencies: [
 				"5D6B7AEE3256F1A7"
 				"422140008BAD4A2E"
 			]
 			id: "6FEE862F02256B0E"
 			y: 14.5d
-			x: 38.5d
+			x: 33.5d
 		}
 		{
 			tasks: [{
@@ -527,7 +528,7 @@
 			dependencies: ["6FEE862F02256B0E"]
 			id: "4C217E67271D2488"
 			y: 14.5d
-			x: 40.5d
+			x: 35.5d
 		}
 		{
 			tasks: [{
@@ -538,7 +539,7 @@
 			dependencies: ["59C7F319B478051D"]
 			id: "5D6B7AEE3256F1A7"
 			y: 6.0d
-			x: 28.5d
+			x: 33.5d
 		}
 		{
 			tasks: [{
@@ -639,7 +640,7 @@
 		{
 			size: 1.5d
 			id: "422140008BAD4A2E"
-			x: 36.0d
+			x: 31.0d
 			y: 14.5d
 			subtitle: "Build big mining contraption to do it easy and fast."
 			dependencies: ["7D65C22457A98829"]
@@ -1244,7 +1245,7 @@
 			dependencies: ["744FD1DFF6664B06"]
 			id: "59C7F319B478051D"
 			y: 6.0d
-			x: 16.0d
+			x: 23.5d
 		}
 		{
 			tasks: [{
@@ -1341,8 +1342,8 @@
 							phaserope: 0b
 							attract: 0b
 							motoracceleration: 0.2d
-							verticalthrowangle: 0.0d
 							hookgravity: 1.0d
+							verticalthrowangle: 0.0d
 							crc32: 2252267022L
 							maxlen: 30.0d
 							motormaxspeed: 4.0d
@@ -2978,7 +2979,7 @@
 			dependencies: ["4C217E67271D2488"]
 			id: "01B3C279ADB8FA7F"
 			y: 14.0d
-			x: 41.5d
+			x: 36.5d
 		}
 		{
 			tasks: [{
@@ -2989,7 +2990,7 @@
 			dependencies: ["4C217E67271D2488"]
 			id: "7F23E7405E44063B"
 			y: 15.0d
-			x: 41.5d
+			x: 36.5d
 		}
 		{
 			tasks: [{
@@ -3590,7 +3591,7 @@
 			description: [""]
 			guide_page: "create.fandom.com/wiki/Schematicannon"
 			id: "0DFE8567FC3AF8D2"
-			x: 24.0d
+			x: 23.5d
 			y: 7.0d
 			dependencies: ["275BF682BCA32E90"]
 			subtitle: "The Schematicannon is a special type of machine used to build structures with the use of Schematics. It is a useful contraption which is primarily used within Survival Mode to deploy structures block-by-block, as the function of direct placement for Schematics are limited exclusively to Creative Mode."
@@ -3604,13 +3605,13 @@
 			dependencies: ["11136069CB36B617"]
 			id: "275BF682BCA32E90"
 			y: 7.0d
-			x: 20.0d
+			x: 21.0d
 		}
 		{
-			size: 2.0d
+			size: 1.5d
 			id: "75C5A0B456237F63"
 			icon: "create:mechanical_drill"
-			x: 24.0d
+			x: 23.5d
 			y: 14.5d
 			title: "Small Drill Contraption"
 			rewards: [{
@@ -3637,12 +3638,12 @@
 					}
 				}
 			}]
-			subtitle: "This is your first resource mining machine. You only need 5 drills to build it. After accumulating resources, you will receive schematics for its construction as a reward. Position it in the world and load it into Schematicannon along with gunpowder, the machine will be built. All mining contrations, the schematics of which are included in the modpack by default, are stable and replace water and lava. They can safely pass through any liquid without harming themselves or the controlling player. It is understood that with the help of this machine you will quickly accumulate enough resources for the next one."
+			subtitle: "This is your first resource mining machine. You only need 5 drills to build it. After accumulating resources, you will receive schematics for its construction as a reward. Position it in the world and load it into Schematicannon along with gunpowder, the machine will be built. All mining contrations, the schematics of which are included in the modpack by default, are stable and replace water and lava. They can safely pass through any liquid without harming themselves or the controlling player. It is understood that with the help of this machine you will quickly accumulate enough resources for the next one. You can not use ready-made schematics and build something of your own. It is also recommended to make a drill factory, because you will need a lot of them."
 			dependencies: [
 				"0DFE8567FC3AF8D2"
-				"74A60D96F6226F52"
-				"39698A97C8F7B9D4"
 				"6177FCC39908B9E7"
+				"14F3E7DF937B195D"
+				"74A60D96F6226F52"
 			]
 			tasks: [
 				{
@@ -3740,10 +3741,10 @@
 			]
 		}
 		{
-			size: 2.5d
+			size: 2.25d
 			id: "513EB6CA99C16ACC"
 			icon: "create:mechanical_drill"
-			x: 28.0d
+			x: 26.0d
 			y: 14.5d
 			title: "Drill Contraption"
 			rewards: [{
@@ -3869,10 +3870,10 @@
 			]
 		}
 		{
-			size: 3.0d
+			size: 2.5d
 			id: "7D65C22457A98829"
 			icon: "create:mechanical_drill"
-			x: 32.5d
+			x: 28.5d
 			y: 14.5d
 			title: "Big Daddy"
 			rewards: [{

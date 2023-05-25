@@ -21,7 +21,7 @@ NetworkEvents.fromServer('openPonderTagIndexScreen', event => {
 
 ItemEvents.tooltip(tooltip => {
     let text = null
-    if (Platform.isForge) {
+    if (Platform.isForge()) {
         text = "Shift + scroll to change screen mode!"
     } else {
         text = 'Use "/create_manual_config page_type <...>" to change screen mode!'
