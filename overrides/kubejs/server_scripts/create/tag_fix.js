@@ -26,6 +26,22 @@ ServerEvents.tags('item', event => {
 
 })
 ServerEvents.recipes(event => {
+    function fix_ore(name, ingot, dust) {
+        if (ingot) {
+            event.replaceInput({}, 'immersiveengineering:ingot_' + name, 'mekanism:ingot_' + name)
+            event.replaceInput({}, '#forge:ingots/' + name, 'mekanism:ingot_' + name)
+            event.replaceOutput({}, 'immersiveengineering:ingot_' + name, 'mekanism:ingot_' + name)
+            event.replaceOutput({}, 'immersiveengineering:nugget_' + name, 'mekanism:nugget_' + name)
+            event.replaceInput({}, 'immersiveengineering:nugget_' + name, 'mekanism:nugget_' + name)
+            event.replaceInput({}, '#forge:nuggets/' + name, 'mekanism:nugget_' + name)
+        }
+        if (dust) {
+            event.replaceInput({}, '#forge:dusts/' + name, 'mekanism:dust_' + name)
+            event.replaceInput({}, 'immersiveengineering:dust_' + name, 'mekanism:dust_' + name)
+            event.replaceOutput({}, 'immersiveengineering:dust_' + name, 'mekanism:dust_' + name)
+        }
+    }
+
     event.replaceInput({mod: 'create'}, '#forge:plates/iron', 'create:iron_sheet')
     event.replaceInput({mod: 'create'}, '#forge:plates/copper', 'create:copper_sheet')
     event.replaceInput({mod: 'create'}, '#forge:plates/brass', 'create:brass_sheet')
@@ -35,6 +51,42 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod: 'create_enchantment_industry'}, '#forge:plates/copper', 'create:copper_sheet')
     event.replaceInput({mod: 'create_enchantment_industry'}, '#forge:plates/brass', 'create:brass_sheet')
     event.replaceInput({mod: 'create_enchantment_industry'}, '#forge:plates/gold', 'create:golden_sheet')
+
+    event.replaceOutput({}, 'immersiveengineering:dust_coke', 'mekanism:dust_coal')
+    event.replaceOutput({}, 'immersiveengineering:dust_sulfur', 'mekanism:dust_sulfur')
+    event.replaceInput({}, 'immersiveengineering:dust_coke', 'mekanism:dust_coal')
+    event.replaceInput({}, 'immersiveengineering:dust_sulfur', 'mekanism:dust_sulfur')
+    fix_ore('steel', true, true)
+    fix_ore('uranium', true, true)
+    fix_ore('lead', true, true)
+    fix_ore('gold', false, true)
+    fix_ore('iron', false, true)
+    fix_ore('copper', false, true)
+    event.replaceInput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
+    event.replaceOutput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
+
+    event.custom({
+        "type": "mekanism:crushing",
+        "input": {
+            "ingredient": [{"item": 'minecraft:ender_pearl'}]
+        },
+        "output": {"count": 1, "item": 'ae2:ender_dust'}
+    })
+    event.custom({
+        "type": "immersiveengineering:crusher",
+        "energy": 3000,
+        "input": {"item": 'minecraft:ender_pearl'},
+        "result": {"item": 'ae2:ender_dust'},
+        "secondaries": []
+    })
+    event.custom({
+        "type": "immersiveengineering:crusher",
+        "energy": 3000,
+        "input": {"item": 'ae2:sky_stone_block'},
+        "result": {"item": 'ae2:sky_dust'},
+        "secondaries": []
+    })
+
 })
 ServerEvents.loaded(event => {
     Utils.server.runCommand("reload")
