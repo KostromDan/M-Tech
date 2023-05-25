@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "M-Tech",
-  "version": "1.2.25",
+  "version": "1.2.26",
   "author": "devaverin",
   "files": [
     {
@@ -241,7 +241,7 @@
     },
     {
       "projectID": 509285,
-      "fileID": 4183385,
+      "fileID": 4476781,
       "required": true
     },
     {

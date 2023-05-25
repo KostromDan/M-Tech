@@ -135,7 +135,7 @@
 	#The first line of text under the app name
 	description = "Playing online, In %world%."
 	#The second line of text under the app name
-	state = "Day: %day%,\nBiome: %biome%,\nServer: %servername%,\nPlayers: %players%"
+	state = "Day: %day%,\nBiome: %biome%,\nPlayers: %players%,\nServer: %servername%"
 	#The Asset ID of the image to display as the large image
 	largeImageKey = ["https://media.forgecdn.net/avatars/774/529/638114737491408263.png"]
 	#The text that gets displayed when the large image is hovered
