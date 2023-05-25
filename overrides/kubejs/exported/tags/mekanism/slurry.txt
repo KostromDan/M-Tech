@@ -1,0 +1,51 @@
+To refresh this file, delete it and run /reload command again! Last updated: Nov 17, 2022, 4:28:49 PM
+
+#mekanism:dirty/zinc
+- jaopca:mekanism_dirty.zinc? (from inmemory:jaopca)
+
+#mekanism:clean/zinc
+- jaopca:mekanism_clean.zinc? (from inmemory:jaopca)
+
+#mekanism:dirty
+- mekanism:dirty_iron (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:dirty_gold (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:dirty_osmium (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:dirty_copper (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:dirty_tin (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:dirty_lead (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:dirty_uranium (from Mekanism-1.19.2-10.3.5.473.jar)
+- jaopca:mekanism_dirty.aluminum? (from inmemory:jaopca)
+- jaopca:mekanism_dirty.nickel? (from inmemory:jaopca)
+- jaopca:mekanism_dirty.silver? (from inmemory:jaopca)
+- jaopca:mekanism_dirty.zinc? (from inmemory:jaopca)
+
+#mekanism:dirty/aluminum
+- jaopca:mekanism_dirty.aluminum? (from inmemory:jaopca)
+
+#mekanism:dirty/nickel
+- jaopca:mekanism_dirty.nickel? (from inmemory:jaopca)
+
+#mekanism:clean
+- mekanism:clean_iron (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:clean_gold (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:clean_osmium (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:clean_copper (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:clean_tin (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:clean_lead (from Mekanism-1.19.2-10.3.5.473.jar)
+- mekanism:clean_uranium (from Mekanism-1.19.2-10.3.5.473.jar)
+- jaopca:mekanism_clean.aluminum? (from inmemory:jaopca)
+- jaopca:mekanism_clean.nickel? (from inmemory:jaopca)
+- jaopca:mekanism_clean.silver? (from inmemory:jaopca)
+- jaopca:mekanism_clean.zinc? (from inmemory:jaopca)
+
+#mekanism:dirty/silver
+- jaopca:mekanism_dirty.silver? (from inmemory:jaopca)
+
+#mekanism:clean/nickel
+- jaopca:mekanism_clean.nickel? (from inmemory:jaopca)
+
+#mekanism:clean/aluminum
+- jaopca:mekanism_clean.aluminum? (from inmemory:jaopca)
+
+#mekanism:clean/silver
+- jaopca:mekanism_clean.silver? (from inmemory:jaopca)
