@@ -5,7 +5,7 @@ StartupEvents.registry('item', event => {
 ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent', event => {
     global.ChangedDim(event)
 })
-
+let dragon_is_summoning = false
 global.ChangedDim = (event) => {
     let dimTo = event.getTo()
     let dimFrom = event.getFrom()
@@ -19,7 +19,11 @@ global.ChangedDim = (event) => {
             console.log(`M-Tech-logging: Player ${player.username} tried to cheat the end dimension!`)
             server.runCommand(`execute in minecraft:overworld run tp ${player.username} 0 400 0`)
             server.runCommand(`effect give ${player.username} minecraft:slow_falling 100`)
-        } else if (!player.data.ftbquests.isCompleted("181B66292B3EA3E5") && !player.stages.has('dragon_summoned')) {
+        } else if (!player.data.ftbquests.isCompleted("181B66292B3EA3E5") && !player.stages.has('dragon_summoned' && !dragon_is_summoning)) {
+            dragon_is_summoning = true
+            server.scheduleInTicks(4000, callback => {
+                dragon_is_summoning =false
+            })
             server.scheduleInTicks(100, callback => {
                 if (level.getDragons().size() == 0) {
                     let positions = [
@@ -35,7 +39,7 @@ global.ChangedDim = (event) => {
                     level.dragonFight().tryRespawn()
                     console.log(`M-Tech-logging: Player ${player.username} Haven't reached the end yet, summoning dragon!`)
                     player.tell('You are in the end first time, but another player already killed dragon, summoning dragon for you!')
-                    event.player.stages.add('dragon_summoned')
+                    player.stages.add('dragon_summoned')
                 }
             })
         }
