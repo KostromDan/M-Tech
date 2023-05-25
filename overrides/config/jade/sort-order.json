@@ -83,6 +83,7 @@
   "create:placard": null,
   "create:exact_block": null,
   "create:filter": null,
+  "create:goggles": null,
   "mekanism:data_provider": null,
   "mekanism:entity_data_provider": null,
   "mekanism:tooltip_renderer": null,
