@@ -87,6 +87,9 @@
     "ench": true,
     "spawner": true
   },
+  "waystones": {
+    "waystone": true
+  },
   "corpse": {
     "corpse": true
   },
