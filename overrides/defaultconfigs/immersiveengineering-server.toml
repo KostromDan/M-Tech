@@ -378,10 +378,10 @@
 		vein_size = 0
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		min_y = -32
+		min_y = -24
 		#The maximum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		max_y = 80
+		max_y = 64
 		#The number of veins attempted to be generated per chunk
 		#Range: > 0
 		attempts_per_chunk = 8

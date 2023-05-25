@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "M-Tech",
-  "version": "1.2.26",
+  "version": "1.2.27",
   "author": "devaverin",
   "files": [
     {
@@ -71,7 +71,12 @@
     },
     {
       "projectID": 231951,
-      "fileID": 4415892,
+      "fileID": 4478894,
+      "required": true
+    },
+    {
+      "projectID": 429235,
+      "fileID": 4117906,
       "required": true
     },
     {
@@ -255,6 +260,11 @@
       "required": true
     },
     {
+      "projectID": 448233,
+      "fileID": 4404949,
+      "required": true
+    },
+    {
       "projectID": 238222,
       "fileID": 4434397,
       "required": true
@@ -286,7 +296,7 @@
     },
     {
       "projectID": 404465,
-      "fileID": 4461006,
+      "fileID": 4478919,
       "required": true
     },
     {
@@ -365,6 +375,11 @@
       "required": true
     },
     {
+      "projectID": 659897,
+      "fileID": 4481910,
+      "required": true
+    },
+    {
       "projectID": 415974,
       "fileID": 3912029,
       "required": true
@@ -405,6 +420,11 @@
       "required": true
     },
     {
+      "projectID": 506948,
+      "fileID": 4014255,
+      "required": true
+    },
+    {
       "projectID": 382216,
       "fileID": 4442628,
       "required": true
@@ -436,7 +456,7 @@
     },
     {
       "projectID": 404468,
-      "fileID": 4367026,
+      "fileID": 4477315,
       "required": true
     },
     {
@@ -461,7 +481,7 @@
     },
     {
       "projectID": 289412,
-      "fileID": 4461030,
+      "fileID": 4478932,
       "required": true
     },
     {
@@ -571,7 +591,7 @@
     },
     {
       "projectID": 499980,
-      "fileID": 4467602,
+      "fileID": 4478861,
       "required": true
     },
     {
@@ -716,7 +736,7 @@
     },
     {
       "projectID": 314906,
-      "fileID": 4443732,
+      "fileID": 4478935,
       "required": true
     },
     {
@@ -746,7 +766,7 @@
     },
     {
       "projectID": 243121,
-      "fileID": 4469559,
+      "fileID": 4480516,
       "required": true
     },
     {

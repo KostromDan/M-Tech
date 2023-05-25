@@ -47,7 +47,7 @@ function throw_item(event, item) {
 }
 
 EntityEvents.death(event => {
-    if (event.entity.getType().contains('minecraft:wither')) {
+    if (event.entity.getType()==='minecraft:wither') {
         let itemEntity = event.level.createEntity("item")
         itemEntity.y = event.entity.y
         itemEntity.x = event.entity.x
