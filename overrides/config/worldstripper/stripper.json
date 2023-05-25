@@ -45,6 +45,7 @@
     "minecraft:kelp_plant",
     "minecraft:deepslate",
     "minecraft:tuff",
-    "minecraft:glow_lichen"
+    "minecraft:glow_lichen",
+    "mekanism:deepslate_lead_ore"
   ]
 }
