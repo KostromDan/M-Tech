@@ -29,9 +29,7 @@
     "LockedSlotsSettings": {
         "locked_slots_disable_quick_move_throw": false,
         "locked_slots_disable_throw_for_non_stackable": false,
-        "locked_slots_empty_hotbar_as_semi_locked": {
-            "value": false
-        }
+        "locked_slots_empty_hotbar_blacklist": "carryon,minecraft:trident"
     },
     "AutoRefillSettings": {
         "tool_damage_threshold": 40,

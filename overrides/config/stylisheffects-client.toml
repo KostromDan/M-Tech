@@ -58,7 +58,7 @@
 		max_columns = 5
 		#Screen side to render status effects on.
 		#Allowed Values: LEFT, RIGHT
-		screen_side = "LEFT"
+		screen_side = "RIGHT"
 		#Offset on x-axis.
 		#Range: > 0
 		offset_x = 3

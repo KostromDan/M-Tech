@@ -169,6 +169,10 @@ ServerEvents.recipes(event => {
         type: "minecraft:crafting_shapeless",
         output: 'minecraft:blaze_powder'
     })
+    event.remove({
+        type: "minecraft:crafting_shapeless",
+        output: 'createdeco:zinc_sheet'
+    })
     event.custom({
         "type": "create:milling",
         "ingredients": [
