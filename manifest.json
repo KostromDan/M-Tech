@@ -3,7 +3,7 @@
     "version": "1.19.2",
     "modLoaders": [
       {
-        "id": "forge-43.2.9",
+        "id": "forge-43.2.10",
         "primary": true
       }
     ]
@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "M-Tech",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "author": "devaverin",
   "files": [
     {
@@ -56,7 +56,7 @@
     },
     {
       "projectID": 618298,
-      "fileID": 4503931,
+      "fileID": 4520497,
       "required": true
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "projectID": 619320,
-      "fileID": 4503929,
+      "fileID": 4520686,
       "required": true
     },
     {
@@ -251,7 +251,7 @@
     },
     {
       "projectID": 289412,
-      "fileID": 4507916,
+      "fileID": 4521253,
       "required": true
     },
     {
@@ -406,7 +406,7 @@
     },
     {
       "projectID": 317716,
-      "fileID": 4375449,
+      "fileID": 4519258,
       "required": true
     },
     {
@@ -536,7 +536,7 @@
     },
     {
       "projectID": 419699,
-      "fileID": 4476084,
+      "fileID": 4521273,
       "required": true
     },
     {
@@ -581,7 +581,7 @@
     },
     {
       "projectID": 407206,
-      "fileID": 4501825,
+      "fileID": 4520412,
       "required": true
     },
     {
@@ -611,7 +611,7 @@
     },
     {
       "projectID": 628539,
-      "fileID": 4510943,
+      "fileID": 4520259,
       "required": true
     },
     {
@@ -671,7 +671,7 @@
     },
     {
       "projectID": 509285,
-      "fileID": 4504123,
+      "fileID": 4519287,
       "required": true
     },
     {

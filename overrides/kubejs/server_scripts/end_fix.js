@@ -1,40 +1,60 @@
-let tick_to_find_players = 0
+let tick_to_find_players = 80
 let dragon_is_summoning = false
 let tick_summon_freeze = -1
 let players_already_summoning_func_running = []
 let summoning_for_player = "none"
 let noRecursing = false
+let do_bbb_tick = false
+let players_can_be_in_wall = []
 
 EntityEvents.hurt(event => {
     if (noRecursing) return
     noRecursing = true
     let set_recursion_in_the_end_to_false = true
-    if (event.source.type == "outOfWorld" && event.entity.level.dimension == "minecraft:the_end" && event.entity.isPlayer()) {
-        event.cancel();
-        if (summoning_for_player == event.player.username) {
-            event.server.runCommand(`execute as ${event.entity.uuid} at @s in minecraft:the_end run tp @s 0 -10 0`)
-            event.server.runCommand(`effect give ${event.entity.uuid} minecraft:slow_falling 40`)
-            set_recursion_in_the_end_to_false = false
-            event.server.scheduleInTicks(50, callback => {
-                if (kill_crystals(event.level) && dragon_is_summoning) {
-                    event.server.runCommand(`say Player ${event.player.username} ran from summoning dragon!`)
-                    dragon_is_summoning = false
-                    tick_summon_freeze = -1
-                    summoning_for_player = "none"
-                    event.player.stages.remove('dragon_summoned')
-                }
-                noRecursing = false
+    if (event.entity.isPlayer()) {
+        if (event.source.type == "outOfWorld") {
+            event.cancel();
+            if (event.entity.level.dimension == "minecraft:the_end") {
+                if (summoning_for_player == event.player.username) {
+                    event.server.runCommand(`execute as ${event.entity.uuid} at @s in minecraft:the_end run tp @s 0 -10 0`)
+                    event.server.runCommand(`effect give ${event.entity.uuid} minecraft:slow_falling 40`)
+                    set_recursion_in_the_end_to_false = false
+                    event.server.scheduleInTicks(50, callback => {
+                        if (kill_crystals(event.level) && dragon_is_summoning) {
+                            event.server.runCommand(`say Player ${event.player.username} ran from summoning dragon!`)
+                            dragon_is_summoning = false
+                            tick_summon_freeze = -1
+                            summoning_for_player = "none"
+                            event.player.stages.remove('dragon_summoned')
+                        }
+                        noRecursing = false
 
+                    })
+                }
+            }
+            let dim = "minecraft:overworld"
+            let height = 400
+            if (event.entity.level.dimension == "minecraft:the_nether") {
+                dim = "minecraft:the_nether"
+                height = 250
+                players_can_be_in_wall.push(event.player.username)
+                event.server.scheduleInTicks(20 * 30, callback => {
+                    players_can_be_in_wall = players_can_be_in_wall.filter((el) => el !== event.player.username);
+                })
+            }
+            let tick = 1
+            if (!set_recursion_in_the_end_to_false) {
+                tick = 51
+            }
+            event.server.scheduleInTicks(tick, callback => {
+                event.server.runCommand(`execute as ${event.entity.uuid} at @s in ${dim} run tp @s ~ ${height} ~`)
+                event.server.runCommand(`effect give ${event.entity.uuid} minecraft:slow_falling 40`)
             })
-        }
-        let tick = 1
-        if (!set_recursion_in_the_end_to_false) {
-            tick = 51
-        }
-        event.server.scheduleInTicks(tick, callback => {
-            event.server.runCommand(`execute as ${event.entity.uuid} at @s in minecraft:overworld run tp @s ~ 400 ~`)
+        } else if (event.source.type == "inWall" && players_can_be_in_wall.includes(event.player.username)) {
+            event.cancel()
+            event.server.runCommand(`execute as ${event.entity.uuid} at @s in minecraft:the_nether run tp @s ~ ~-1 ~`)
             event.server.runCommand(`effect give ${event.entity.uuid} minecraft:slow_falling 40`)
-        })
+        }
     }
     if (set_recursion_in_the_end_to_false) {
         noRecursing = false
@@ -116,16 +136,31 @@ function kill_crystals(level) {
     })
     positions = positions.filter((el) => !ready_positions.includes(el));
     return positions.length == 0;
-
-
 }
+
+EntityEvents.spawned(event => {
+    let entity = event.entity
+    if (entity.type == 'minecraft:end_crystal') {
+        if (Math.abs(entity.x % 1) <= 0.1) {
+            event.server.runCommand(`execute in minecraft:the_end run summon minecraft:end_crystal ${entity.x + 0.5} ${entity.y} ${entity.z + 0.5} {Motion: [0.0d, 0.0d, 0.0d], Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [218.30145f, 0.0f], FallDistance: 0.0f, CanUpdate: 1b, Fire: -1s, ForgeCaps: {"minecraft:treechopchop_settings_capability": {isSynced: 0b, sneakBehavior: "INVERT_CHOPPING", treesMustHaveLeaves: 1b, chopInCreativeMode: 0b, choppingEnabled: 1b, fellingEnabled: 1b}}, ShowBottom: 1b}`)
+            event.cancel()
+        }
+    }
+})
 
 ServerEvents.tick(event => {
     tick_to_find_players++
+    if (do_bbb_tick) {
+        event.server.runCommandSilent('function amc_dp_bbbattle_gen:ender_dragon/ender_dragon_main')
+        if (tick_to_find_players % 10 === 5) {
+            event.server.runCommandSilent('function amc_dp_bbbattle_gen:ender_dragon/ender_dragon_main_5_tick')
+        }
+    }
     if (tick_to_find_players > 100) {
         tick_to_find_players = 0
         let players = event.server.players
         let server = event.server
+        do_bbb_tick = false
         players.forEach(player => {
             if (player.level.dimension === 'minecraft:the_end') {
                 let level = player.level
@@ -141,12 +176,17 @@ ServerEvents.tick(event => {
                     console.log(`M-Tech-logging: Player ${player.username} tried to cheat the end dimension!`)
                     server.runCommand(`execute in minecraft:overworld run tp ${player.username} 0 400 0`)
                     server.runCommand(`effect give ${player.username} minecraft:slow_falling 40`)
-                } else if ((!player.data.ftbquests.isCompleted("181B66292B3EA3E5")) && (player.x >= 200 || player.z >= 200 || player.x <= -200 || player.z <= -200)) {
-                    player.tell("To leave the dragon island you need to kill the dragon. You are teleported to the center of the island! If you are not ready to fight the dragon, then just jump into the void, you will not die, you will be teleported to overworld!")
-                    console.log(`M-Tech-logging: Player ${player.username} tried to leave dragon island without killing dragon!`)
-                    server.runCommand(`effect give ${player.username} minecraft:slow_falling 40`)
-                    server.runCommand(`execute as ${player.username} at @s in minecraft:the_end run tp @s 0 400 0`)
-                } else if (player.data.ftbquests.isCompleted("6A72CB008C10DA05") && !player.data.ftbquests.isCompleted("181B66292B3EA3E5") && !player.stages.has('dragon_summoned' && !dragon_is_summoning)) {
+                } else if (player.x >= 200 || player.z >= 200 || player.x <= -200 || player.z <= -200) {
+                    if (!player.data.ftbquests.isCompleted("181B66292B3EA3E5")) {
+                        player.tell("To leave the dragon island you need to kill the dragon. You are teleported to the center of the island! If you are not ready to fight the dragon, then just jump into the void, you will not die, you will be teleported to overworld!")
+                        console.log(`M-Tech-logging: Player ${player.username} tried to leave dragon island without killing dragon!`)
+                        server.runCommand(`effect give ${player.username} minecraft:slow_falling 40`)
+                        server.runCommand(`execute as ${player.username} at @s in minecraft:the_end run tp @s 0 400 0`)
+                    }
+                } else {
+                    do_bbb_tick = true
+                }
+                if (player.data.ftbquests.isCompleted("6A72CB008C10DA05") && !player.data.ftbquests.isCompleted("181B66292B3EA3E5") && !player.stages.has('dragon_summoned' && !dragon_is_summoning)) {
                     if (!players_already_summoning_func_running.includes(player.username)) {
                         players_already_summoning_func_running.push(player.username)
                         server.scheduleInTicks(301, callback => {

@@ -23,15 +23,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/curseforge/minecraft/Instances/M-Tech/kubejs/server_scripts",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/curseforge/minecraft/Instances/M-Tech/config/paxi/datapacks/data&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\curseforge\minecraft\Instances\M-Tech\kubejs\server_scripts" />
@@ -90,6 +90,10 @@
       <workItem from="1682446268922" duration="13101000" />
       <workItem from="1682515013093" duration="13810000" />
       <workItem from="1682619385164" duration="27143000" />
+      <workItem from="1683120470529" duration="262000" />
+      <workItem from="1683131486995" duration="6512000" />
+      <workItem from="1683138587096" duration="38000" />
+      <workItem from="1683178014687" duration="842000" />
     </task>
     <servers />
   </component>
