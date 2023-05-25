@@ -3058,6 +3058,39 @@
 				item: "minecraft:blaze_powder"
 			}]
 		}
+		{
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["17D99FBBACB024DC"]
+			id: "44C7655ECA3808A6"
+			tasks: [{
+				id: "15C8593AE6ECE410"
+				type: "item"
+				item: "torchbowmod:multitorch"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.5d
+			dependencies: ["13958CCA4782144D"]
+			id: "090907240CD1DD18"
+			tasks: [{
+				id: "02AAF19177FA798F"
+				type: "item"
+				item: "comforts:rope_and_nail"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			dependencies: ["13958CCA4782144D"]
+			id: "05EAD90CED8593BB"
+			tasks: [{
+				id: "397CAD0FFDB7FCED"
+				type: "item"
+				item: "comforts:hammock_white"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

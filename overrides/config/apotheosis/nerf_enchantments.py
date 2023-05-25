@@ -9,7 +9,7 @@ with open('enchantments.cfg','r') as in_f:
             print(level)
         elif stage == 1:
             stage = 0
-            out.append(f'    I:"Max Level"={level}')
+            line = f'    I:"Max Level"={level}'
             continue
         out.append(line)
 with open('enchantments.cfg','w') as out_f:

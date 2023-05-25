@@ -61,8 +61,8 @@ ServerEvents.recipes(event => {
     fix_ore('gold', false, true)
     fix_ore('iron', false, true)
     fix_ore('copper', false, true)
-    event.replaceInput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
     event.replaceOutput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
+    event.replaceOutput({}, 'create:copper_nugget', 'immersiveengineering:nugget_copper')
 
     event.remove({id: 'waystones:warp_plate'})
     event.remove({id: 'waystones:bound_scroll'})

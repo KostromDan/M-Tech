@@ -90,6 +90,9 @@
   "waystones": {
     "waystone": true
   },
+  "lootr": {
+    "info": true
+  },
   "corpse": {
     "corpse": true
   },
