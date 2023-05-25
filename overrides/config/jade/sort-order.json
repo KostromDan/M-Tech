@@ -90,6 +90,7 @@
   "mekanism:entity_data_provider": null,
   "mekanism:tooltip_renderer": null,
   "mekanism:remove_builtin": null,
+  "waystones:waystone": null,
   "immersiveengineering:hemp": null,
   "immersiveengineering:multiblock_icon": null,
   "minecraft:brewing_stand": null,

@@ -65,6 +65,76 @@ ServerEvents.recipes(event => {
     event.replaceInput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
     event.replaceOutput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
 
+    event.remove({mod: 'waystones'})
+    event.custom({
+        "result": {
+            "item": "waystones:return_scroll",
+            "count": 1
+        },
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "GEG",
+            "PPP"
+        ],
+        "key": {
+            "G": {
+                "tag": "balm:gold_nuggets"
+            },
+            "E": {
+                "item": "waystones:warp_dust"
+            },
+            "P": {
+                "item": "minecraft:paper"
+            }
+        }
+    })
+    event.custom({
+            "result": {
+                "item": "waystones:warp_dust",
+                "count": 1
+            },
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": 'ae2:ender_dust'
+                },
+                {
+                    "item": 'minecraft:blaze_powder'
+                },
+                {
+                    "item": "minecraft:amethyst_shard"
+                }
+            ]
+        }
+    )
+    event.remove({
+        type: "minecraft:crafting_shaped",
+        output: 'minecraft:blaze_powder'
+    })
+    event.remove({
+        type: "minecraft:crafting_shapeless",
+        output: 'minecraft:blaze_powder'
+    })
+    event.custom({
+        "type": "create:milling",
+        "ingredients": [
+            {
+                "item": 'minecraft:blaze_rod'
+            }
+        ],
+        "processingTime": 50,
+        "results": [
+            {
+                "count": 2,
+                "item": 'minecraft:blaze_powder'
+            },
+            {
+                "chance": 0.75,
+                "item": 'minecraft:blaze_powder'
+            }
+        ]
+    })
+
 
     event.custom({
         "type": "mekanism:crushing",
