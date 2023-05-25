@@ -97,7 +97,7 @@
 	#The first line of text under the app name
 	description = "%player% is joining a game"
 	#The second line of text under the app name
-	state = "Joining Game,\nWorld: %savename%,\nDifficulty: %difficulty%,\n"
+	state = "Joining Game"
 	#The Asset ID of the image to display as the large image
 	largeImageKey = ["https://media.forgecdn.net/avatars/774/529/638114737491408263.png"]
 	#The text that gets displayed when the large image is hovered
@@ -116,7 +116,7 @@
 	#The first line of text under the app name
 	description = "Playing single player, In %world%."
 	#The second line of text under the app name
-	state = "Day: %day%,\nBiome: %biome%,\nTime: %gametime%,\nPosition: %position%,\nWorld: %savename%,\nWeather: %weather%,\nDifficulty: %difficulty%,\n "
+	state = "Day: %day%,\nBiome: %biome%"
 	#The Asset ID of the image to display as the large image
 	largeImageKey = ["https://media.forgecdn.net/avatars/774/529/638114737491408263.png"]
 	#The text that gets displayed when the large image is hovered
@@ -135,7 +135,7 @@
 	#The first line of text under the app name
 	description = "Playing online, In %world%."
 	#The second line of text under the app name
-	state = "Day: %day%,\nBiome: %biome%,\nTime: %gametime%,\nServer: %servername%,\nPlayers: %players%,\nPosition: %position%,\nWeather: %weather%,\nDifficulty: %difficulty%,\n"
+	state = "Day: %day%,\nBiome: %biome%,\nServer: %servername%,\nPlayers: %players%"
 	#The Asset ID of the image to display as the large image
 	largeImageKey = ["https://media.forgecdn.net/avatars/774/529/638114737491408263.png"]
 	#The text that gets displayed when the large image is hovered

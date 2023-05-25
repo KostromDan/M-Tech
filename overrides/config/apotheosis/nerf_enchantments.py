@@ -44,7 +44,6 @@ for mod in mod_list:
             continue
         for cur_lvl in range(1, lvl + 1):
             mnoz = cur_lvl / lvl
-            print(mnoz)
             recipe_list.append(gen_recipe(ench, cur_lvl, int(64 * mnoz)))
     command = cmd.replace("RECIPE_LIST", " ,".join(recipe_list))
     print(mod, ' ', len(command), '\n', command, sep='')

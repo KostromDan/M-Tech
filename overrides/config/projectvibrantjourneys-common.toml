@@ -19,7 +19,7 @@
 	#Enable generation of fallen trees
 	enableFallenTrees = true
 	#Enable generation of sea oats
-	enableSeaOats = true
+	enableSeaOats = false
 	#Enable generation of cattails
 	enableCattails = false
 	#Enable generation of beach grass

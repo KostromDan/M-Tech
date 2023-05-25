@@ -1457,7 +1457,7 @@
 		}
 		{
 			x: 1.5d
-			y: -19.5d
+			y: -19.0d
 			dependencies: [
 				"11710D97905F8332"
 				"7368DCD352CDC7AF"
@@ -3089,6 +3089,30 @@
 				id: "397CAD0FFDB7FCED"
 				type: "item"
 				item: "comforts:hammock_white"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -19.0d
+			dependencies: ["181B66292B3EA3E5"]
+			id: "5D0D043A1D8A9795"
+			tasks: [{
+				id: "3777D342E9089436"
+				type: "advancement"
+				advancement: "minecraft:end/respawn_dragon"
+				criterion: ""
+			}]
+		}
+		{
+			x: -0.5d
+			y: -20.0d
+			dependencies: ["5D0D043A1D8A9795"]
+			id: "2A3C0B01B19953C0"
+			tasks: [{
+				id: "2FD169F7176FE45E"
+				type: "advancement"
+				advancement: "progressivebosses:max_diff_dragon"
+				criterion: ""
 			}]
 		}
 	]
