@@ -3,7 +3,7 @@
     "version": "1.19.2",
     "modLoaders": [
       {
-        "id": "forge-43.2.4",
+        "id": "forge-43.2.6",
         "primary": true
       }
     ]
@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "M-Tech",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "devaverin",
   "files": [
     {
@@ -87,6 +87,11 @@
     {
       "projectID": 431725,
       "fileID": 4131803,
+      "required": true
+    },
+    {
+      "projectID": 390886,
+      "fileID": 4328861,
       "required": true
     },
     {
@@ -325,18 +330,23 @@
       "required": true
     },
     {
+      "projectID": 373014,
+      "fileID": 3906118,
+      "required": true
+    },
+    {
       "projectID": 250398,
       "fileID": 4050343,
       "required": true
     },
     {
-      "projectID": 688223,
-      "fileID": 4354808,
+      "projectID": 248787,
+      "fileID": 3872808,
       "required": true
     },
     {
-      "projectID": 248787,
-      "fileID": 3872808,
+      "projectID": 688223,
+      "fileID": 4354808,
       "required": true
     },
     {
@@ -400,13 +410,13 @@
       "required": true
     },
     {
-      "projectID": 227887,
-      "fileID": 4413365,
+      "projectID": 454372,
+      "fileID": 4407413,
       "required": true
     },
     {
-      "projectID": 454372,
-      "fileID": 4407413,
+      "projectID": 227887,
+      "fileID": 4413365,
       "required": true
     },
     {
@@ -415,13 +425,13 @@
       "required": true
     },
     {
-      "projectID": 357540,
-      "fileID": 4153724,
+      "projectID": 404183,
+      "fileID": 4046639,
       "required": true
     },
     {
-      "projectID": 404183,
-      "fileID": 4046639,
+      "projectID": 357540,
+      "fileID": 4153724,
       "required": true
     },
     {
@@ -430,13 +440,13 @@
       "required": true
     },
     {
-      "projectID": 631401,
-      "fileID": 4031226,
+      "projectID": 316582,
+      "fileID": 3920717,
       "required": true
     },
     {
-      "projectID": 316582,
-      "fileID": 3920717,
+      "projectID": 631401,
+      "fileID": 4031226,
       "required": true
     },
     {
@@ -495,18 +505,13 @@
       "required": true
     },
     {
-      "projectID": 404465,
-      "fileID": 4415391,
-      "required": true
-    },
-    {
       "projectID": 410295,
       "fileID": 4136430,
       "required": true
     },
     {
-      "projectID": 513688,
-      "fileID": 4167132,
+      "projectID": 404465,
+      "fileID": 4415391,
       "required": true
     },
     {
