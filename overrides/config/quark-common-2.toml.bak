@@ -441,8 +441,6 @@
 		"Deepslate Tweak Needs Haste2" = true
 		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
 		"Librarians Exchange Ancient Tomes" = true
-		#Also applies a random curse along each book
-		"Curse Gear" = false
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
@@ -871,14 +869,6 @@
 		[world.monster_box.dimensions]
 			"Is Blacklist" = false
 			Dimensions = ["minecraft:overworld"]
-
-	[world.glimmering_weald]
-		#Experimental, dont change if you dont know what you are doing. Weirdness min value from which biome will spawn. Decreasing will make biome appear more often
-		#Allowed values: [-2,2]
-		"Min Weirdness Range" = 1.5499999523162842
-		#Experimental, dont change if you dont know what you are doing. Weirdness max value until which biome will spawn. Increasing will make biome appear more often
-		#Allowed values: [-2,2]
-		"Max Weirdness Range" = 2.0
 
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
