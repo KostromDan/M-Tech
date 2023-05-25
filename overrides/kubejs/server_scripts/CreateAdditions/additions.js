@@ -28,7 +28,6 @@ ServerEvents.recipes(event => {
     event.replaceOutput({}, 'akashictome:tome', Item.of('akashictome:tome',
         '{"akashictome:data":{' +
         'advancedperipherals:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}},' +
-        'alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},' +
         'naturescompass:{Count:1b,id:"naturescompass:naturescompass"},' +
         'ftbquests:{Count:1b,id:"ftbquests:book"},' +
         'apotheosis:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"book.apotheosis.name"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"book.apotheosis.name"}]}\'},"patchouli:book":"apotheosis:apoth_chronicle"}},' +
