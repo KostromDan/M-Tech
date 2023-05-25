@@ -65,6 +65,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
     event.replaceOutput({}, '#forge:nuggets/copper', 'immersiveengineering:nugget_copper')
 
+
     event.custom({
         "type": "mekanism:crushing",
         "input": {

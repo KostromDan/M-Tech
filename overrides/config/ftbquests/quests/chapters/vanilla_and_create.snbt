@@ -2992,6 +2992,28 @@
 				item: "sophisticatedstorage:xp_pump_upgrade"
 			}]
 		}
+		{
+			x: 29.0d
+			y: 14.0d
+			dependencies: ["4C217E67271D2488"]
+			id: "01B3C279ADB8FA7F"
+			tasks: [{
+				id: "4852A9ECEC559580"
+				type: "item"
+				item: "createaddition:accumulator"
+			}]
+		}
+		{
+			x: 29.0d
+			y: 15.0d
+			dependencies: ["4C217E67271D2488"]
+			id: "7F23E7405E44063B"
+			tasks: [{
+				id: "30774C8F8549BAAC"
+				type: "item"
+				item: "createaddition:modular_accumulator"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
