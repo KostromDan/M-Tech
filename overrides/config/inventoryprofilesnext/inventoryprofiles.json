@@ -16,7 +16,6 @@
         "enable_profiles_ui": {
             "value": false
         },
-        "continuous_crafting_saved_value": false,
         "show_regular_sort_button": {
             "value": false
         },

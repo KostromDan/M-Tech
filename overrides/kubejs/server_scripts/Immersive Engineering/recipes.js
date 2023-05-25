@@ -65,6 +65,13 @@ ServerEvents.recipes(event => {
         "secondaries": []
     })
     event.custom({
+        "type": "immersiveengineering:crusher",
+        "energy": 3000,
+        "input": {"item": 'minecraft:obsidian'},
+        "result": {"count": 5, "item": 'create:powdered_obsidian'},
+        "secondaries": []
+    })
+    event.custom({
         "type": "immersiveengineering:fermenter",
         "energy": 6400,
         "fluid": {"amount": 80, "fluid": "immersiveengineering:ethanol"},

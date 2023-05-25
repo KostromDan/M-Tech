@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({output: 'ae2:engineering_processor_press'})
     event.remove({output: 'ae2:calculation_processor_press'})
     event.remove({output: 'ae2:inscriber'})
+    event.remove({output: 'ae2:charger'})
     event.custom({
         "type": "immersiveengineering:metal_press",
         "energy": 2400,
@@ -144,6 +145,28 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 100
+    })
+    event.custom({
+        "type": "minecraft:crafting_shaped",
+        "key": {
+            "a": {
+                "tag": "forge:ingots/iron"
+            },
+            "b": {
+                "tag": "forge:ingots/copper"
+            },
+            "c": {
+                "item": 'ae2:calculation_processor'
+            }
+        },
+        "pattern": [
+            "aba",
+            "ac ",
+            "aba"
+        ],
+        "result": {
+            "item": "ae2:charger"
+        }
     })
 
 

@@ -273,4 +273,11 @@ ServerEvents.recipes(event => {
         },
         "output": {"count": 1, "item": 'ae2:ender_dust'}
     })
+    event.custom({
+        "type": "mekanism:crushing",
+        "input": {
+            "ingredient": [{"item": 'minecraft:obsidian'}]
+        },
+        "output": {"count": 9, "item": 'create:powdered_obsidian'}
+    })
 })
