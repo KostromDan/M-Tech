@@ -1622,6 +1622,39 @@
 				item: "comforts:sleeping_bag_white"
 			}]
 		}
+		{
+			x: -2.0d
+			y: 6.0d
+			dependencies: ["6401FEEE988E35AC"]
+			id: "5CBECC41F8B61910"
+			tasks: [{
+				id: "77A63EB90D2EBAF3"
+				type: "item"
+				item: "create_enchantment_industry:printer"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 6.0d
+			dependencies: ["6401FEEE988E35AC"]
+			id: "66C1CAB8174B9C99"
+			tasks: [{
+				id: "5CBB0A165AA14841"
+				type: "item"
+				item: "create_enchantment_industry:disenchanter"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 23.5d
+			dependencies: ["678AC2A9E602F8FC"]
+			id: "5808D4FA31757274"
+			tasks: [{
+				id: "2A3C8423F76D0452"
+				type: "item"
+				item: "create_enchantment_industry:enchanting_guide"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

@@ -4,18 +4,32 @@
 	order_index: 2
 	filename: "phase_3"
 	title: "Phase 3"
+	icon: "mekanism:alloy_atomic"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.0d
-		y: 0.0d
-		subtitle: "Phase is physicly ready, but quests will come in one of the next update!"
-		id: "13DA0D3F6708E986"
-		tasks: [{
-			id: "3519F2E77F3DE15D"
-			type: "item"
-			item: "minecraft:bedrock"
-		}]
-	}]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Phase is physicly ready, but quests will come in one of the next update!"
+			id: "13DA0D3F6708E986"
+			tasks: [{
+				id: "3519F2E77F3DE15D"
+				type: "item"
+				item: "minecraft:bedrock"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["29CC582D5C7CB122"]
+			id: "7E1FD50704218F25"
+			tasks: [{
+				id: "7C36458F7434B7C8"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

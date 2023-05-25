@@ -46,5 +46,22 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    event.custom({
+        "type": "create:compacting",
+        "heatRequirement": "superheated",
+        "ingredients": [
+            {
+                "item": 'ae2:fluix_dust'
+            }, {
+                "item": 'minecraft:smooth_basalt'
+            }
+        ],
+        "results": [
+            {
+                "item": 'ae2:sky_stone_block'
+            }
+        ]
+    })
+
 
 })

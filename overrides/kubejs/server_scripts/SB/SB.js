@@ -34,7 +34,7 @@ const CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
 
 function throw_item(event, item) {
     let itemEntity = event.level.createEntity("item")
-    itemEntity.y = event.player.y+0.5
+    itemEntity.y = event.player.y + 0.5
     itemEntity.x = event.player.x
     itemEntity.z = event.player.z
     itemEntity.item = item
@@ -69,10 +69,11 @@ function deep_inventory_search(event, ingredient, del_more_than) {
 
 function del_item_more_than(event, ingredient, max_count) {
     while (deep_inventory_search(event, ingredient, max_count) > max_count) {
-        event.player.tell("You can have only one standard backpack in the inventory. Craft iron-tier or higher backpack to be able to carry an unlimited number of backpacks.")
+        event.player.tell("You can have only one standard backpack in your inventory! Create a backpack of iron level or higher to be able to carry an unlimited number of backpacks. One of the backpacks was thrown to the ground!")
         let item = event.player.inventory.extractItem(event.player.inventory.find(ingredient), max_count, false)
         throw_item(event, item)
-    }й
+    }
+    й
 }
 
 PlayerEvents.inventoryChanged(event => {
