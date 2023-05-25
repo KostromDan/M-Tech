@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
                 "item": 'minecraft:netherite_ingot'
             },
             "D": {
-                "item": 'create:shaft'
+                "item": 'create:rotation_speed_controller'
             }
 
         },
@@ -51,19 +51,23 @@ ServerEvents.recipes(event => {
                 "item": 'immersiveengineering:coil_lv'
             },
             "C": {
-                "item": 'minecraft:netherite_ingot'
+                "item": 'minecraft:netherite_block'
             },
             "D": {
-                "item": 'create:shaft'
+                "item": 'create:rotation_speed_controller'
+            },
+            "E":{
+                "item": 'create:railway_casing'
             }
+
 
         },
         "pattern": [
-            "ABBBA",
-            "BCBCB",
-            "BBDBB",
-            "BCBCB",
-            "ABBBA"
+            "ABEBA",
+            "BCBAB",
+            "EBDBE",
+            "BABCB",
+            "ABEBA"
         ],
         "result": {
             "item": 'createaddition:alternator'
