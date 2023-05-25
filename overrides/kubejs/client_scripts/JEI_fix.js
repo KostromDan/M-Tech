@@ -22,4 +22,6 @@ JEIEvents.hideItems(event => {
     event.hide('immersiveengineering:dust_iron')
     event.hide('create:copper_nugget')
     event.hide('createaddition:zinc_sheet')
+    event.hide('createbigcannons:cast_iron_nugget')
+    event.hide('createbigcannons:cast_iron_ingot')
 })

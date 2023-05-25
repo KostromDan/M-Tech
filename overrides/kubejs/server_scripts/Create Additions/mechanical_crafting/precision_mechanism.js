@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {event.custom({
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "tag": "forge:plates/gold"
+    "item": 'create:golden_sheet'
   },
   "loops": 5,
   "results": [

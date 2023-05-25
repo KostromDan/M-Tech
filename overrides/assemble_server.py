@@ -15,7 +15,7 @@ import time
 import tkinter as tk
 
 zip_path = r'"C:\Program Files\7-Zip\7z.exe"'
-VERSION = '1.3.7'
+VERSION = '1.3.8'
 OUT_DIR = 'Server-Files-' + VERSION
 COPY_DIRS = [
     'config',
@@ -24,7 +24,6 @@ COPY_DIRS = [
     'mods'
 ]
 ONLY_CLIENT_MODS = [
-    'canary',
     'DefaultSettings',
     'JCPlugin',
     'MyServerIsCompatible',

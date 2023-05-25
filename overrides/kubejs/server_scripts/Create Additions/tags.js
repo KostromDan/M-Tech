@@ -11,6 +11,9 @@ ServerEvents.tags('item', event => {
     event.remove('forge:rods/all_metal', 'createaddition:gold_rod')
     event.remove('forge:rods/all_metal', 'createaddition:brass_rod')
     event.remove('forge:rods/all_metal', 'createaddition:copper_rod')
+
+    event.remove('forge:plates/netherite', 'createdeco:netherite_sheet')
+    event.remove('forge:plates/cast_iron', 'createdeco:cast_iron_sheet')
 })
 ServerEvents.tags('fluid', event => {
     event.remove('forge:plantoil', 'createaddition:seed_oil')

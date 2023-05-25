@@ -179,14 +179,14 @@ ServerEvents.commandRegistry(event => {
                             let server = ctx.source.getServer()
                             let player = ctx.source.player
                             server.persistentData.do_backup = arg1
-                            player.tell(`Current value is ${server.persistentData.do_backup}`)
+                            player.tell(`Value changed to: ${server.persistentData.do_backup.toString()}`)
 
                             return 1
                         })
                     ).executes(ctx => {// no argument
                         let server = ctx.source.getServer()
                         let player = ctx.source.player
-                        player.tell(`Current value is ${server.persistentData.do_backup}`)
+                        player.tell(`Current value is: ${server.persistentData.do_backup}`)
 
                         return 1
                     })
@@ -198,14 +198,14 @@ ServerEvents.commandRegistry(event => {
                             let server = ctx.source.getServer()
                             let player = ctx.source.player
                             server.persistentData.do_restart = arg1
-                            player.tell(`Current value is ${server.persistentData.do_restart}`)
+                            player.tell(`Value changed to: ${server.persistentData.do_restart}`)
 
                             return 1
                         })
                     ).executes(ctx => {// no argument
                         let server = ctx.source.getServer()
                         let player = ctx.source.player
-                        player.tell(`Current value is ${server.persistentData.do_restart}`)
+                        player.tell(`Current value is: ${server.persistentData.do_restart}`)
 
                         return 1
                     })
@@ -217,14 +217,14 @@ ServerEvents.commandRegistry(event => {
                             let server = ctx.source.getServer()
                             let player = ctx.source.player
                             server.persistentData.time_between_backup = arg1
-                            player.tell(`Current value is ${server.persistentData.time_between_backup}`)
+                            player.tell(`Value changed to: ${server.persistentData.time_between_backup}`)
 
                             return 1
                         })
                     ).executes(ctx => {// no argument
                         let server = ctx.source.getServer()
                         let player = ctx.source.player
-                        player.tell(`Current value is ${server.persistentData.time_between_backup}`)
+                        player.tell(`Current value is: ${server.persistentData.time_between_backup}`)
 
                         return 1
                     })
@@ -236,14 +236,14 @@ ServerEvents.commandRegistry(event => {
                             let server = ctx.source.getServer()
                             let player = ctx.source.player
                             server.persistentData.time_between_restart = arg1
-                            player.tell(`Current value is ${server.persistentData.time_between_restart}`)
+                            player.tell(`Value changed to: ${server.persistentData.time_between_restart}`)
 
                             return 1
                         })
                     ).executes(ctx => {// no argument
                         let server = ctx.source.getServer()
                         let player = ctx.source.player
-                        player.tell(`Current value is ${server.persistentData.time_between_restart}`)
+                        player.tell(`Current value is: ${server.persistentData.time_between_restart}`)
                         return 1
                     })
                 )

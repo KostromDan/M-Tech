@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {event.custom({
 	{
 		"Z":
 		{
-			"tag": "forge:plates/zinc"
+			"item": 'createdeco:zinc_sheet'
 		},
 		"C":
 		{
