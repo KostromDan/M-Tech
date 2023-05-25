@@ -317,8 +317,8 @@
 			}]
 		}
 		{
-			x: 49.0d
-			y: 2.5d
+			x: 48.0d
+			y: 3.0d
 			dependencies: ["61C32576A1F2327A"]
 			id: "17BFB95A0189FB3F"
 			tasks: [{
@@ -339,8 +339,8 @@
 			}]
 		}
 		{
-			x: 36.5d
-			y: 4.5d
+			x: 35.5d
+			y: 5.0d
 			dependencies: ["0B71AC3E5C1D674C"]
 			id: "6B30141EE4AE9B72"
 			tasks: [{
@@ -350,8 +350,8 @@
 			}]
 		}
 		{
-			x: 35.5d
-			y: 4.0d
+			x: 34.5d
+			y: 4.5d
 			dependencies: ["5F85DB6B0106BFDF"]
 			id: "0B71AC3E5C1D674C"
 			tasks: [{
@@ -361,8 +361,8 @@
 			}]
 		}
 		{
-			x: 36.5d
-			y: 5.5d
+			x: 35.5d
+			y: 6.0d
 			dependencies: ["2A9FFA97B1761E9D"]
 			id: "285FD7BBB2DD30F4"
 			tasks: [{
@@ -372,8 +372,8 @@
 			}]
 		}
 		{
-			x: 34.5d
-			y: 4.0d
+			x: 33.5d
+			y: 4.5d
 			dependencies: ["40D0FBD09458089F"]
 			id: "5F85DB6B0106BFDF"
 			tasks: [{
@@ -395,8 +395,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 3.0d
+			x: 38.5d
+			y: 3.5d
 			dependencies: [
 				"285FD7BBB2DD30F4"
 				"6B30141EE4AE9B72"
@@ -409,8 +409,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 4.0d
+			x: 38.5d
+			y: 4.5d
 			dependencies: [
 				"6B30141EE4AE9B72"
 				"285FD7BBB2DD30F4"
@@ -423,8 +423,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 5.0d
+			x: 38.5d
+			y: 5.5d
 			dependencies: [
 				"6B30141EE4AE9B72"
 				"285FD7BBB2DD30F4"
@@ -437,8 +437,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 6.0d
+			x: 38.5d
+			y: 6.5d
 			dependencies: [
 				"6B30141EE4AE9B72"
 				"285FD7BBB2DD30F4"
@@ -451,8 +451,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 7.0d
+			x: 38.5d
+			y: 7.5d
 			dependencies: [
 				"6B30141EE4AE9B72"
 				"285FD7BBB2DD30F4"
@@ -465,8 +465,8 @@
 			}]
 		}
 		{
-			x: 41.5d
-			y: 5.5d
+			x: 40.5d
+			y: 6.0d
 			dependencies: [
 				"1CA42D22203B84DC"
 				"168A4CDA45A67AFA"
@@ -482,9 +482,9 @@
 			}]
 		}
 		{
-			x: 34.5d
-			y: 5.5d
-			dependencies: ["7E6A9581AAED0A6C"]
+			x: 33.5d
+			y: 6.0d
+			dependencies: ["0000000000000793"]
 			id: "2A9FFA97B1761E9D"
 			tasks: [{
 				id: "60E9284409C5E024"
@@ -530,8 +530,8 @@
 			}]
 		}
 		{
-			x: 48.0d
-			y: 3.5d
+			x: 47.0d
+			y: 4.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "768497BA3A97AEA5"
 			tasks: [{
@@ -541,8 +541,8 @@
 			}]
 		}
 		{
-			x: 48.0d
-			y: 4.5d
+			x: 47.0d
+			y: 5.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "5AA865453319C61D"
 			tasks: [{
@@ -552,8 +552,8 @@
 			}]
 		}
 		{
-			x: 46.0d
-			y: 4.5d
+			x: 45.0d
+			y: 5.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "1D51232C9556FE15"
 			tasks: [{
@@ -563,8 +563,8 @@
 			}]
 		}
 		{
-			x: 49.0d
-			y: 4.5d
+			x: 48.0d
+			y: 5.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "22A84127FE81D594"
 			tasks: [{
@@ -574,8 +574,8 @@
 			}]
 		}
 		{
-			x: 45.0d
-			y: 2.5d
+			x: 44.0d
+			y: 3.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "412169970DB9637A"
 			tasks: [{
@@ -585,8 +585,8 @@
 			}]
 		}
 		{
-			x: 47.0d
-			y: 4.5d
+			x: 46.0d
+			y: 5.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "21E69D362E293314"
 			tasks: [{
@@ -596,8 +596,8 @@
 			}]
 		}
 		{
-			x: 45.0d
-			y: 3.5d
+			x: 44.0d
+			y: 4.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "7FA113B3C719F798"
 			tasks: [{
@@ -607,8 +607,8 @@
 			}]
 		}
 		{
-			x: 44.0d
-			y: 2.5d
+			x: 43.0d
+			y: 3.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "04E80141339F1447"
 			tasks: [{
@@ -618,8 +618,8 @@
 			}]
 		}
 		{
-			x: 44.0d
-			y: 4.5d
+			x: 43.0d
+			y: 5.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "5969450EF881A0F5"
 			tasks: [{
@@ -629,8 +629,8 @@
 			}]
 		}
 		{
-			x: 45.0d
-			y: 4.5d
+			x: 44.0d
+			y: 5.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "60E1FACD3EEF6B4D"
 			tasks: [{
@@ -640,8 +640,8 @@
 			}]
 		}
 		{
-			x: 49.0d
-			y: 3.5d
+			x: 48.0d
+			y: 4.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "61C32576A1F2327A"
 			tasks: [{
@@ -651,8 +651,8 @@
 			}]
 		}
 		{
-			x: 48.0d
-			y: 7.5d
+			x: 47.0d
+			y: 8.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "0C3E9AC8FE5B8E72"
 			tasks: [{
@@ -662,8 +662,8 @@
 			}]
 		}
 		{
-			x: 49.0d
-			y: 5.5d
+			x: 48.0d
+			y: 6.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "68E45E53FC6B0BE8"
 			tasks: [{
@@ -673,8 +673,8 @@
 			}]
 		}
 		{
-			x: 49.0d
-			y: 6.5d
+			x: 48.0d
+			y: 7.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "01719E3098A2CB7C"
 			tasks: [{
@@ -684,8 +684,8 @@
 			}]
 		}
 		{
-			x: 49.0d
-			y: 7.5d
+			x: 48.0d
+			y: 8.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "42A451AE89613526"
 			tasks: [{
@@ -695,8 +695,8 @@
 			}]
 		}
 		{
-			x: 44.0d
-			y: 5.5d
+			x: 43.0d
+			y: 6.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "74001819DAD7A1FA"
 			tasks: [{
@@ -706,8 +706,8 @@
 			}]
 		}
 		{
-			x: 44.0d
-			y: 6.5d
+			x: 43.0d
+			y: 7.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "34079921D55D1493"
 			tasks: [{
@@ -717,8 +717,8 @@
 			}]
 		}
 		{
-			x: 44.0d
-			y: 3.5d
+			x: 43.0d
+			y: 4.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "5CCC35C4BFDC3934"
 			tasks: [{
@@ -728,8 +728,8 @@
 			}]
 		}
 		{
-			x: 46.0d
-			y: 3.5d
+			x: 45.0d
+			y: 4.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "3CB1B2AF332D0939"
 			tasks: [{
@@ -739,8 +739,8 @@
 			}]
 		}
 		{
-			x: 45.0d
-			y: 5.5d
+			x: 44.0d
+			y: 6.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "04EBCBCBF9CAF005"
 			tasks: [{
@@ -750,8 +750,8 @@
 			}]
 		}
 		{
-			x: 45.0d
-			y: 6.5d
+			x: 44.0d
+			y: 7.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "607A38A1C9B2296A"
 			tasks: [{
@@ -761,8 +761,8 @@
 			}]
 		}
 		{
-			x: 46.0d
-			y: 5.5d
+			x: 45.0d
+			y: 6.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "3078360A51AE4769"
 			tasks: [{
@@ -772,8 +772,8 @@
 			}]
 		}
 		{
-			x: 46.0d
-			y: 6.5d
+			x: 45.0d
+			y: 7.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "7A8DF9148E1B8F49"
 			tasks: [{
@@ -783,8 +783,8 @@
 			}]
 		}
 		{
-			x: 47.0d
-			y: 5.5d
+			x: 46.0d
+			y: 6.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "038EE0B80DDBACF6"
 			tasks: [{
@@ -794,8 +794,8 @@
 			}]
 		}
 		{
-			x: 48.0d
-			y: 5.5d
+			x: 47.0d
+			y: 6.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "1ACE9C3C58414024"
 			tasks: [{
@@ -805,8 +805,8 @@
 			}]
 		}
 		{
-			x: 44.0d
-			y: 7.5d
+			x: 43.0d
+			y: 8.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "256B2E995CD2C958"
 			tasks: [{
@@ -816,8 +816,8 @@
 			}]
 		}
 		{
-			x: 47.0d
-			y: 3.5d
+			x: 46.0d
+			y: 4.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "40EA2E8CFD3F18AA"
 			tasks: [{
@@ -827,8 +827,8 @@
 			}]
 		}
 		{
-			x: 48.0d
-			y: 6.5d
+			x: 47.0d
+			y: 7.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "43951608A2960F8D"
 			tasks: [{
@@ -838,8 +838,8 @@
 			}]
 		}
 		{
-			x: 47.0d
-			y: 6.5d
+			x: 46.0d
+			y: 7.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "7481CF98998E25B6"
 			tasks: [{
@@ -849,8 +849,8 @@
 			}]
 		}
 		{
-			x: 45.0d
-			y: 7.5d
+			x: 44.0d
+			y: 8.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "5D45CEE0F7832C23"
 			tasks: [{
@@ -860,8 +860,8 @@
 			}]
 		}
 		{
-			x: 46.0d
-			y: 7.5d
+			x: 45.0d
+			y: 8.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "00E3A15FA4EF97A7"
 			tasks: [{
@@ -871,8 +871,8 @@
 			}]
 		}
 		{
-			x: 47.0d
-			y: 7.5d
+			x: 46.0d
+			y: 8.0d
 			dependencies: ["28E9F5E191721EE0"]
 			id: "591F8D1CE230FAA0"
 			tasks: [{
@@ -1898,8 +1898,8 @@
 			}]
 		}
 		{
-			x: 39.0d
-			y: -1.0d
+			x: 38.0d
+			y: -0.5d
 			dependencies: ["2BE5BA4041AC634B"]
 			id: "09141E4BBA5F76F3"
 			tasks: [{
@@ -1909,8 +1909,8 @@
 			}]
 		}
 		{
-			x: 38.0d
-			y: 0.0d
+			x: 37.0d
+			y: 0.5d
 			dependencies: ["0822FC3DC1B51033"]
 			id: "390E84FE690012B7"
 			tasks: [{
@@ -1920,8 +1920,8 @@
 			}]
 		}
 		{
-			x: 38.0d
-			y: -1.0d
+			x: 37.0d
+			y: -0.5d
 			dependencies: ["390E84FE690012B7"]
 			id: "77A758C0C4BFDB37"
 			tasks: [{
@@ -1931,8 +1931,8 @@
 			}]
 		}
 		{
-			x: 38.0d
-			y: -2.0d
+			x: 37.0d
+			y: -1.5d
 			dependencies: ["77A758C0C4BFDB37"]
 			id: "66B800C5EC81ACBC"
 			tasks: [{
@@ -1942,8 +1942,8 @@
 			}]
 		}
 		{
-			x: 38.0d
-			y: -3.0d
+			x: 37.0d
+			y: -2.5d
 			dependencies: ["66B800C5EC81ACBC"]
 			id: "1045D7A9F1BC3F78"
 			tasks: [{
@@ -1953,8 +1953,8 @@
 			}]
 		}
 		{
-			x: 39.0d
-			y: 2.0d
+			x: 38.0d
+			y: 2.5d
 			dependencies: ["285FD7BBB2DD30F4"]
 			id: "0822FC3DC1B51033"
 			tasks: [{
@@ -1964,8 +1964,8 @@
 			}]
 		}
 		{
-			x: 39.0d
-			y: 0.0d
+			x: 38.0d
+			y: 0.5d
 			dependencies: ["0822FC3DC1B51033"]
 			id: "2BE5BA4041AC634B"
 			tasks: [{
@@ -1975,8 +1975,8 @@
 			}]
 		}
 		{
-			x: 40.0d
-			y: 0.0d
+			x: 39.0d
+			y: 0.5d
 			dependencies: ["0822FC3DC1B51033"]
 			id: "2521B04FECE66B86"
 			tasks: [{
@@ -1986,8 +1986,8 @@
 			}]
 		}
 		{
-			x: 41.0d
-			y: 0.0d
+			x: 40.0d
+			y: 0.5d
 			dependencies: ["0822FC3DC1B51033"]
 			id: "40118747316B7BF7"
 			tasks: [{
@@ -1997,8 +1997,8 @@
 			}]
 		}
 		{
-			x: 42.0d
-			y: 0.0d
+			x: 41.0d
+			y: 0.5d
 			dependencies: ["0822FC3DC1B51033"]
 			id: "2381A6B7C8534082"
 			tasks: [{
@@ -2157,8 +2157,8 @@
 			}]
 		}
 		{
-			x: 36.5d
-			y: 3.0d
+			x: 35.5d
+			y: 3.5d
 			dependencies: ["6B30141EE4AE9B72"]
 			id: "2263F009152B3EA4"
 			tasks: [{
@@ -2174,8 +2174,8 @@
 			}]
 		}
 		{
-			x: 35.5d
-			y: 2.5d
+			x: 34.5d
+			y: 3.0d
 			dependencies: ["0B71AC3E5C1D674C"]
 			id: "32481A2A66C1A089"
 			tasks: [{
@@ -2370,7 +2370,7 @@
 		}
 		{
 			x: 30.0d
-			y: 7.0d
+			y: 3.5d
 			dependencies: ["480C5DA989D3D6DA"]
 			id: "6651E699A91EFD66"
 			tasks: [{
@@ -2381,7 +2381,7 @@
 		}
 		{
 			x: 30.0d
-			y: 4.0d
+			y: 5.5d
 			dependencies: ["480C5DA989D3D6DA"]
 			id: "5D873158D8EB6258"
 			tasks: [{
@@ -2392,7 +2392,7 @@
 		}
 		{
 			x: 30.0d
-			y: 5.0d
+			y: 6.5d
 			dependencies: ["480C5DA989D3D6DA"]
 			id: "1BFF1B8A1897C1B9"
 			tasks: [{
@@ -2403,7 +2403,7 @@
 		}
 		{
 			x: 30.0d
-			y: 6.0d
+			y: 7.5d
 			dependencies: ["480C5DA989D3D6DA"]
 			id: "7E6A9581AAED0A6C"
 			tasks: [{
@@ -2413,30 +2413,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 14.0d
-			dependencies: ["5A78174C41616106"]
-			id: "159B1775F6C2FCAE"
-			tasks: [{
-				id: "29E943C5FCD014B7"
-				type: "item"
-				item: "mekanismgenerators:reactor_glass"
-			}]
-		}
-		{
-			x: 39.5d
-			y: 15.0d
-			dependencies: ["159B1775F6C2FCAE"]
-			id: "210318EBD3E3BB49"
-			tasks: [{
-				id: "5DC35B7B2C27CD0A"
-				type: "item"
-				item: "mekanismgenerators:laser_focus_matrix"
-			}]
-		}
-		{
-			x: 40.5d
-			y: 10.0d
+			x: 40.0d
+			y: 10.5d
 			dependencies: ["122597964F554E82"]
 			id: "65C2ED8244F80C89"
 			tasks: [{
@@ -2446,8 +2424,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 10.0d
+			x: 38.5d
+			y: 10.5d
 			dependencies: ["017E3B7C6BA02B47"]
 			id: "122597964F554E82"
 			tasks: [{
@@ -2457,8 +2435,8 @@
 			}]
 		}
 		{
-			x: 38.5d
-			y: 9.5d
+			x: 37.5d
+			y: 10.0d
 			dependencies: ["46260BAD9E191EC8"]
 			dependency_requirement: "all_started"
 			id: "017E3B7C6BA02B47"
@@ -2469,8 +2447,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 11.0d
+			x: 38.5d
+			y: 11.5d
 			dependencies: ["5A78174C41616106"]
 			id: "1CA4D65423EB4988"
 			tasks: [{
@@ -2480,8 +2458,8 @@
 			}]
 		}
 		{
-			x: 38.0d
-			y: 11.5d
+			x: 37.0d
+			y: 13.0d
 			dependencies: ["285FD7BBB2DD30F4"]
 			id: "5A78174C41616106"
 			tasks: [{
@@ -2491,8 +2469,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 12.0d
+			x: 38.5d
+			y: 12.5d
 			dependencies: ["5A78174C41616106"]
 			id: "775C04DC4D2CD67B"
 			tasks: [{
@@ -2502,8 +2480,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 13.0d
+			x: 38.5d
+			y: 13.5d
 			dependencies: ["5A78174C41616106"]
 			id: "043042B0251EB434"
 			tasks: [{
@@ -2513,8 +2491,8 @@
 			}]
 		}
 		{
-			x: 32.0d
-			y: 11.5d
+			x: 31.0d
+			y: 1.0d
 			dependencies: ["5FE8DDDE6D79F2AC"]
 			id: "4E7FC47D650E8082"
 			tasks: [{
@@ -2524,8 +2502,8 @@
 			}]
 		}
 		{
-			x: 31.0d
-			y: 11.5d
+			x: 32.0d
+			y: 1.0d
 			dependencies: ["5FE8DDDE6D79F2AC"]
 			id: "4E3C23EBA65F2F69"
 			tasks: [{
@@ -2536,7 +2514,7 @@
 		}
 		{
 			x: 30.0d
-			y: 9.5d
+			y: 2.5d
 			dependencies: ["6651E699A91EFD66"]
 			id: "5FE8DDDE6D79F2AC"
 			tasks: [{
@@ -2547,7 +2525,7 @@
 		}
 		{
 			x: 30.0d
-			y: 11.5d
+			y: 1.0d
 			dependencies: ["5FE8DDDE6D79F2AC"]
 			id: "202682F4B8A2C11F"
 			tasks: [{
@@ -2558,7 +2536,7 @@
 		}
 		{
 			x: 29.0d
-			y: 11.5d
+			y: 1.0d
 			dependencies: ["5FE8DDDE6D79F2AC"]
 			id: "4513C0B731D2F370"
 			tasks: [{
@@ -2569,7 +2547,7 @@
 		}
 		{
 			x: 28.0d
-			y: 11.5d
+			y: 1.0d
 			dependencies: ["5FE8DDDE6D79F2AC"]
 			id: "79245D684FEC3118"
 			tasks: [{
@@ -2590,8 +2568,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 8.0d
+			x: 38.5d
+			y: 8.5d
 			dependencies: [
 				"6B30141EE4AE9B72"
 				"285FD7BBB2DD30F4"
@@ -2605,8 +2583,8 @@
 			}]
 		}
 		{
-			x: 41.0d
-			y: 8.0d
+			x: 40.0d
+			y: 8.5d
 			dependencies: ["258E6CFA3DD7A796"]
 			id: "3475869049757DF2"
 			tasks: [{
@@ -2630,7 +2608,10 @@
 		{
 			x: 26.0d
 			y: -11.0d
-			dependencies: ["6F14023772ADB4FA"]
+			dependencies: [
+				"6F14023772ADB4FA"
+				"6F14023772ADB4FA"
+			]
 			id: "7AAE95899627CAB3"
 			tasks: [{
 				id: "686EB12D5B771313"
@@ -2683,13 +2664,9 @@
 			}]
 		}
 		{
-			x: 41.0d
-			y: 9.0d
-			dependencies: [
-				"3475869049757DF2"
-				"4157DE06D0CD8BF5"
-				"258E6CFA3DD7A796"
-			]
+			x: 42.0d
+			y: 9.5d
+			dependencies: ["00000000000007B1"]
 			id: "71E2639E66C79150"
 			tasks: [{
 				id: "2EF34889716F4916"
@@ -2698,8 +2675,8 @@
 			}]
 		}
 		{
-			x: 42.5d
-			y: 9.0d
+			x: 44.0d
+			y: 9.5d
 			dependencies: ["71E2639E66C79150"]
 			id: "0EEEBF7CE68FD945"
 			tasks: [{
@@ -2721,7 +2698,7 @@
 		}
 		{
 			x: 30.0d
-			y: -1.5d
+			y: -2.0d
 			dependencies: ["1BCB54DD599FEF74"]
 			id: "1CC08959CA40D5F3"
 			tasks: [{
@@ -2767,8 +2744,8 @@
 			}]
 		}
 		{
-			x: 37.5d
-			y: 3.0d
+			x: 36.5d
+			y: 3.5d
 			dependencies: ["6B30141EE4AE9B72"]
 			id: "6C2BBACA664CB971"
 			tasks: [{
@@ -2789,8 +2766,8 @@
 			}]
 		}
 		{
-			x: 34.5d
-			y: 10.0d
+			x: 33.5d
+			y: 10.5d
 			dependencies: ["0772DC3610252964"]
 			id: "3EE40D819698EDF9"
 			tasks: [{
@@ -2979,8 +2956,8 @@
 			}]
 		}
 		{
-			x: 34.0d
-			y: 3.0d
+			x: 33.0d
+			y: 3.5d
 			dependencies: ["313E14BBA95F4E6E"]
 			id: "40D0FBD09458089F"
 			tasks: [{
@@ -2990,9 +2967,9 @@
 			}]
 		}
 		{
-			x: 34.5d
-			y: 6.5d
-			dependencies: ["7E6A9581AAED0A6C"]
+			x: 33.5d
+			y: 7.0d
+			dependencies: ["0000000000000793"]
 			id: "2C08DEB5C8401C55"
 			tasks: [{
 				id: "17F0E4B65DFAC855"
@@ -3067,8 +3044,8 @@
 			}]
 		}
 		{
-			x: 31.0d
-			y: 13.5d
+			x: 32.0d
+			y: -1.0d
 			dependencies: ["5C382A10FB0A3193"]
 			id: "07B329E95848777C"
 			tasks: [{
@@ -3078,8 +3055,8 @@
 			}]
 		}
 		{
-			x: 31.0d
-			y: 12.5d
+			x: 32.0d
+			y: 0.0d
 			dependencies: ["4E3C23EBA65F2F69"]
 			id: "5C382A10FB0A3193"
 			tasks: [{
@@ -3111,8 +3088,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 9.0d
+			x: 38.5d
+			y: 9.5d
 			dependencies: [
 				"017E3B7C6BA02B47"
 				"285FD7BBB2DD30F4"
@@ -3180,8 +3157,8 @@
 			}]
 		}
 		{
-			x: 36.0d
-			y: 6.5d
+			x: 35.0d
+			y: 7.0d
 			dependencies: ["2C08DEB5C8401C55"]
 			id: "0772DC3610252964"
 			tasks: [{
@@ -3191,8 +3168,8 @@
 			}]
 		}
 		{
-			x: 35.5d
-			y: 1.0d
+			x: 34.5d
+			y: 1.5d
 			dependencies: ["32481A2A66C1A089"]
 			id: "5633AF2E4226C044"
 			tasks: [{
@@ -3202,8 +3179,8 @@
 			}]
 		}
 		{
-			x: 36.5d
-			y: 16.0d
+			x: 35.5d
+			y: 15.5d
 			dependencies: ["2C25459C69BB48EE"]
 			id: "796DEE462ACD1F7A"
 			tasks: [{
@@ -3213,8 +3190,8 @@
 			}]
 		}
 		{
-			x: 39.5d
-			y: 16.0d
+			x: 38.5d
+			y: 15.5d
 			dependencies: ["56E61A0C5DF604EC"]
 			id: "4FCC40DE2AFE09F6"
 			tasks: [{
@@ -3238,8 +3215,8 @@
 			}]
 		}
 		{
-			x: 37.5d
-			y: 16.0d
+			x: 36.5d
+			y: 15.5d
 			dependencies: [
 				"796DEE462ACD1F7A"
 				"1EE0F4284C241B4B"
@@ -3253,8 +3230,8 @@
 			}]
 		}
 		{
-			x: 36.5d
-			y: 17.0d
+			x: 35.5d
+			y: 16.5d
 			dependencies: ["29D2E3B3E996A4A4"]
 			id: "4313C069BB9F0FCE"
 			tasks: [{
@@ -3265,8 +3242,8 @@
 			}]
 		}
 		{
-			x: 36.5d
-			y: 15.0d
+			x: 35.5d
+			y: 14.5d
 			dependencies: ["194322DBECD65AB9"]
 			id: "1EE0F4284C241B4B"
 			tasks: [{
@@ -3277,8 +3254,8 @@
 			}]
 		}
 		{
-			x: 38.5d
-			y: 16.0d
+			x: 37.5d
+			y: 15.5d
 			dependencies: ["403C9C0057C98871"]
 			id: "56E61A0C5DF604EC"
 			tasks: [{
@@ -3289,8 +3266,8 @@
 			}]
 		}
 		{
-			x: 34.5d
-			y: 15.0d
+			x: 33.5d
+			y: 14.5d
 			dependencies: ["7E73DB37185FE140"]
 			dependency_requirement: "all_started"
 			id: "104152514BAE8E10"
@@ -3302,8 +3279,8 @@
 			}]
 		}
 		{
-			x: 35.5d
-			y: 17.0d
+			x: 34.5d
+			y: 16.5d
 			dependencies: [
 				"4F47FE554E443EE5"
 				"4B468E388B62A396"
@@ -3317,8 +3294,8 @@
 			}]
 		}
 		{
-			x: 34.5d
-			y: 16.5d
+			x: 33.5d
+			y: 16.0d
 			dependencies: ["5E5E9362C0130CFF"]
 			dependency_requirement: "all_started"
 			id: "4B468E388B62A396"
@@ -3329,8 +3306,8 @@
 			}]
 		}
 		{
-			x: 34.5d
-			y: 17.5d
+			x: 33.5d
+			y: 17.0d
 			dependencies: ["4E63B85585A156EA"]
 			dependency_requirement: "all_started"
 			id: "4F47FE554E443EE5"
@@ -3341,8 +3318,8 @@
 			}]
 		}
 		{
-			x: 35.5d
-			y: 15.0d
+			x: 34.5d
+			y: 14.5d
 			dependencies: ["104152514BAE8E10"]
 			id: "194322DBECD65AB9"
 			tasks: [{
@@ -3452,7 +3429,7 @@
 		}
 		{
 			x: 30.0d
-			y: -2.5d
+			y: -3.0d
 			dependencies: ["6B6B1DAFCD376F02"]
 			id: "3FBA90CA91520B29"
 			tasks: [{
@@ -3470,6 +3447,485 @@
 				id: "1542726AB0910160"
 				type: "item"
 				item: "simpleplanes:solar_panel"
+			}]
+		}
+		{
+			title: "Fuel Rod Assembly"
+			icon: "mekanismgenerators:control_rod_assembly"
+			x: 32.0d
+			y: 6.5d
+			subtitle: "Nuclear Launch Detected"
+			description: [
+				"The Fuel Rod Assembly is what actually holds the fissile material during the reaction. Having more allows the reactor to burn fuel faster."
+				""
+				"One assembly consists of a Control Rod Assembly at the top of a column of Fuel Assemblies. Assemblies must not touch, so arranging them in a checkerboard is ideal."
+				""
+				"The materials gathered up to this point are enough to build a 5x5x9 reactor with glass top and sides, which is quite a respectable starting reactor. Use the Configurator to set the Reactor Ports appropriately."
+				""
+				"Tip: Place an Input Valve near the top of the structure, in line with the vents for the turbine, to allow for simpler routing of Mechanical Pipes."
+				"Similarly, the Coolant Output is best placed lower in the structure, again in line with the Turbine's Input Valve, to simplify routing of Pressurized Tubes."
+			]
+			dependencies: [
+				"000000000000079A"
+				"1BFF1B8A1897C1B9"
+				"7E6A9581AAED0A6C"
+			]
+			min_width: 250
+			id: "0000000000000793"
+			tasks: [
+				{
+					id: "0000000000000794"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					count: 30L
+				}
+				{
+					id: "00000000000007A4"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+					count: 5L
+				}
+			]
+		}
+		{
+			title: "Fission Reactor Casing"
+			icon: "mekanismgenerators:fission_reactor_casing"
+			x: 32.0d
+			y: 4.5d
+			subtitle: "Limiting Exposure"
+			description: [
+				"The first step in actually constructing a fission reactor is building a safe place to put it. Something that keeps all that radiation at bay."
+				""
+				"The Fission reactor itself can be quite large, up to 18x18x18 if one so desires. Though it is wise to keep the entire structure contained within a single chunk. There's no sense starting off that large, however, so we'll focus on something a little more reasonable with a 5x5 base and 9 blocks tall."
+				""
+				"The Configurator may be used to toggle the ports between \"Input Only\", \"Output Waste\", and \"Output Coolant\". Be sure to set these accordingly."
+				""
+				"Note: F3 + G will show the chunk boundaries. Try to plan out your reactor accordingly."
+			]
+			dependencies: [
+				"6651E699A91EFD66"
+				"146BA620950E4A0E"
+			]
+			min_width: 250
+			id: "0000000000000795"
+			tasks: [
+				{
+					id: "0000000000000796"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+					count: 69L
+				}
+				{
+					id: "0000000000000798"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+					count: 4L
+				}
+				{
+					id: "0000000000000799"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 87L
+				}
+			]
+			rewards: [{
+				id: "0000000000000818"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Safety Precautions"
+			x: 32.0d
+			y: 5.5d
+			subtitle: "Getting Out In Front"
+			description: [
+				"History has shown us time and time again that a Safety-First approach is the only sane way to work with something as dangerous as nuclear physics. Three Mile Island may have been a disaster, but the fact that nobody died is a testament to the importance of safety protocols."
+				""
+				"With that said, it's worth the effort to build some safety systems into a Mekanism fission reactor as well. The wiki has an excellent entry on circuit breakers here: "
+				""
+				"https://wiki.aidancbrady.com/wiki/Fission_Reactor"
+				""
+				"The reactor may go super-critical and explode if it overheats, the leading cause of which is that it has run out of coolant. Therefore, the circuit breaker should trigger on High Temperature. It may also be prudent to build a second circuit breaker for Excess Waste to prevent venting radiation into the surrounding environment."
+			]
+			dependencies: [
+				"0000000000000795"
+				"5D873158D8EB6258"
+			]
+			min_width: 255
+			id: "000000000000079A"
+			tasks: [{
+				id: "000000000000079B"
+				type: "item"
+				item: "mekanismgenerators:fission_reactor_logic_adapter"
+				count: 2L
+			}]
+		}
+		{
+			title: "Fusion Reactor"
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			x: 40.5d
+			y: 13.5d
+			subtitle: "Star in a Box"
+			description: [
+				"Fusion, the power of the stars, without which no heavier elements would exist."
+				""
+				"The Mekanism Wiki will assist in building the odd shape of this structure, however building the fuel supply chain is up to you. Be sure to use Reactor glass on all sides to dramatically reduce the cost of building this structure."
+				""
+				"There are a few important things to keep in mind with a Fusion Reactor. First and foremost, this is a safe energy supply that, unlike a Fission Reactor, will never melt down or cause any adverse effects."
+				""
+				"● When fueling the Reactor, pipe in Deuterium and Tritium separately."
+				""
+				"● The Reactor generates very little FE directly. To get the most out of it, run water through to convert to steam. Then run the steam through an Industrial Turbine. Like the Fission Reactor, keeping up with the water requirements will likely require recycling the Steam back to Water in the Turbine."
+				""
+				"● Piping in D-T Fuel in addition to the direct Deuterium and Tritium feeds will drastically increase the heat of the reactor, causing it to generate steam far more quickly."
+				""
+				"● Connecting the Fusion Reactor to a Thermoelectric Boiler is another great way of boosting the total steam production, and therefore power production."
+			]
+			dependencies: [
+				"1CA4D65423EB4988"
+				"043042B0251EB434"
+				"775C04DC4D2CD67B"
+				"58F4528A02C01CA1"
+			]
+			min_width: 300
+			id: "00000000000007B6"
+			tasks: [
+				{
+					id: "00000000000007B7"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_controller"
+				}
+				{
+					id: "00000000000007E0"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					count: 36L
+				}
+				{
+					id: "00000000000007E1"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_port"
+					count: 4L
+				}
+				{
+					id: "00000000000007E2"
+					type: "item"
+					item: "mekanismgenerators:laser_focus_matrix"
+				}
+				{
+					id: "00000000000007E3"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 24L
+				}
+			]
+		}
+		{
+			title: "Industrial Turbine"
+			icon: "mekanismgenerators:turbine_blade"
+			x: 30.0d
+			y: -1.0d
+			subtitle: "Bursting at the Seams"
+			description: [
+				"The Fission Reactor doesn't produce useful energy on its own. Rather, the steam it generates must be run through an Industrial Turbine in order to generate FE. The Turbine is also critical for recycling steam into water to return to the Fission Reactor for cooling. Without this reprocessing loop, it is exceptionally difficult to provide enough coolant to keep the Reactor running."
+				""
+				"The Turbine itself is a complex multiblock with various rules governing where and how the parts go together. Refer to the Wiki for help in building the turbine. The materials gathered so far are enough to build a 5x5x9 Turbine with glass sides."
+				""
+				"The Reactor will automatically output Steam from a Coolant Output Port. The steam must be passed into one of the Turbine Ports via Pressurized Tube and Water then automatically outputs from any of the Vents at the top of the structure and can be passed back to an input port on the Reactor."
+				""
+				"Power can than be extracted from another Turbine Port."
+				""
+				"WARNING: If the Turbine's power buffer fills up it will stop running, steam and water flow will halt, and the attached Reactor's heat will rapidly rise to dangerous levels resulting in a potential meltdown situation."
+				""
+			]
+			dependencies: [
+				"5FE8DDDE6D79F2AC"
+				"4E3C23EBA65F2F69"
+				"202682F4B8A2C11F"
+				"4513C0B731D2F370"
+				"4E7FC47D650E8082"
+				"79245D684FEC3118"
+				"5C382A10FB0A3193"
+				"07B329E95848777C"
+			]
+			dependency_requirement: "one_completed"
+			min_width: 300
+			id: "00000000000007B8"
+			tasks: [
+				{
+					id: "00000000000007B9"
+					type: "item"
+					item: "mekanismgenerators:turbine_blade"
+					count: 10L
+				}
+				{
+					id: "00000000000007BA"
+					type: "item"
+					item: "mekanismgenerators:electromagnetic_coil"
+					count: 3L
+				}
+				{
+					id: "00000000000007BB"
+					type: "item"
+					item: "mekanism:pressure_disperser"
+					count: 8L
+				}
+				{
+					id: "00000000000007BC"
+					type: "item"
+					item: "mekanismgenerators:rotational_complex"
+				}
+				{
+					id: "00000000000007BD"
+					type: "item"
+					item: "mekanismgenerators:saturating_condenser"
+					count: 6L
+				}
+				{
+					id: "00000000000007BE"
+					type: "item"
+					item: "mekanism:structural_glass"
+					count: 58L
+				}
+				{
+					id: "00000000000007BF"
+					type: "item"
+					item: "mekanismgenerators:turbine_casing"
+					count: 69L
+				}
+				{
+					id: "00000000000007C0"
+					type: "item"
+					item: "mekanismgenerators:turbine_rotor"
+					count: 5L
+				}
+				{
+					id: "00000000000007C1"
+					type: "item"
+					item: "mekanismgenerators:turbine_valve"
+					count: 2L
+				}
+				{
+					id: "00000000000007C2"
+					type: "item"
+					item: "mekanismgenerators:turbine_vent"
+					count: 33L
+				}
+			]
+		}
+		{
+			title: "Laser Amplification"
+			icon: "mekanism:laser_amplifier"
+			x: 43.0d
+			y: 13.5d
+			subtitle: "This One Goes to Eleven"
+			description: [
+				"In order to actually kickstart a Fusion Reactor, a highly focused and energetic burst of energy is required."
+				""
+				"Laser Amplifiers will collect up to five laser beams and combine them into a single powerful beam. Amplifiers may also be chained together, with one amplifier feeding into another."
+				""
+				"The final amplifier in the chain should be pointed at the Laser Focus Matrix in the Fusion Reactor and should be set to be Redstone Pulse mode. Once it has accumulated enough energy, providing a redstone pulse will release it all in an instant."
+				""
+				"A filled Hohlraum must be present in the Fusion Reactor as well."
+			]
+			dependencies: [
+				"00000000000007B6"
+				"122597964F554E82"
+				"4FCC40DE2AFE09F6"
+			]
+			min_width: 250
+			id: "00000000000007DC"
+			tasks: [
+				{
+					id: "00000000000007DD"
+					type: "item"
+					item: "mekanism:laser_amplifier"
+					count: 2L
+				}
+				{
+					id: "00000000000007DE"
+					type: "item"
+					item: "mekanism:laser"
+					count: 9L
+				}
+			]
+		}
+		{
+			title: "Thermoelectric Boiler"
+			icon: "mekanism:superheating_element"
+			x: 32.0d
+			y: -2.0d
+			subtitle: "It's Gettin' Hot In Here"
+			description: [
+				"Water Cooling is a great place to start, but it has its limits. Sodium may be used instead to dissipate even more heat, allowing the reactor to run at higher burn rates."
+				""
+				"In order to make use of Sodium, however, a new multiblock is required: The Thermoelectric Boiler."
+				""
+				"● Sodium is heated to Superheated Sodium in the Fission Reactor."
+				""
+				"● Superheated Sodium is passed into the Boiler where it heats water to steam."
+				""
+				"● The Boiler outputs cooled Sodium, which is recycled through the Fission Reactor."
+				""
+				"● The Steam is passed through the turbine, producing FE and water which is recycled through the Boiler."
+				""
+				"The Boiler itself may be nearly any size, up to 18x18x18, however a small one is very capable of dissipating a lot of heat. The quest requires materials for a 5x9x5 boiler. When scaling up, it’s more likely that the Turbine will need to be expanded than the Boiler."
+				""
+			]
+			dependencies: ["00000000000007B8"]
+			min_width: 250
+			id: "0000000000000E78"
+			tasks: [
+				{
+					id: "0000000000000E79"
+					type: "item"
+					item: "mekanism:boiler_casing"
+					count: 80L
+				}
+				{
+					id: "0000000000000E7A"
+					type: "item"
+					item: "mekanism:boiler_valve"
+					count: 4L
+				}
+				{
+					id: "0000000000000E7B"
+					type: "item"
+					item: "mekanism:pressure_disperser"
+					count: 9L
+				}
+				{
+					id: "0000000000000E7C"
+					type: "item"
+					item: "mekanism:structural_glass"
+					count: 78L
+				}
+				{
+					id: "0000000000000E7D"
+					type: "item"
+					item: "mekanism:superheating_element"
+					count: 9L
+				}
+			]
+		}
+		{
+			title: "Thermal Evaporation Plant"
+			icon: "mekanism:thermal_evaporation_controller"
+			x: 27.0d
+			y: -12.0d
+			subtitle: "Reduce By Half, Simmer Gently"
+			description: [
+				"Before getting too deep into nuclear physics, a little ground-work will be needed. The Thermal Evaporation Plant will feature heavily in the coming processes so understanding it is going to be vital."
+				""
+				"Gather the requested materials and build a Thermal Evaporation Plant. The structure will have a 4x4 base in a rectangular prism shape. The sides may also be made of Structural Glass and it can be extended vertically up to 18 blocks tall."
+				""
+				"The Evaporation Plant functions with heat, which can be provided through a variety of means. The easiest will be to hook a Resistive Heater up to one of the Valves and give it power. Note that the amount of power used by the Resistive Heater can be set in the GUI. Experiment to find the right balance of power."
+				""
+				"Water or other fluids may then be piped in to one of the other Valves. As the Water heats, it will be converted to Brine which may then be piped out of the third Valve."
+			]
+			dependencies: [
+				"6F14023772ADB4FA"
+				"6278DFDAADD7AF8D"
+				"7AAE95899627CAB3"
+			]
+			min_width: 300
+			id: "00000000000006C7"
+			tasks: [
+				{
+					id: "00000000000006C9"
+					type: "item"
+					item: "mekanism:thermal_evaporation_block"
+					count: 36L
+				}
+				{
+					id: "00000000000006CA"
+					type: "item"
+					item: "mekanism:thermal_evaporation_valve"
+					count: 3L
+				}
+				{
+					id: "00000000000006CB"
+					type: "item"
+					item: "mekanism:thermal_evaporation_controller"
+				}
+				{
+					id: "000000000000086E"
+					type: "item"
+					item: "mekanism:structural_glass"
+					count: 36L
+				}
+			]
+		}
+		{
+			title: "Supercritical Phase Shifter"
+			icon: "mekanism:sps_casing"
+			x: 40.0d
+			y: 9.5d
+			subtitle: "I've Giv'n Her All We've Got, Captain"
+			description: [
+				"You had a stockpile of Uranium, right? Yeah. You're going to need a lot to build this structure, which is used for generating Antimatter from Nuclear Waste."
+				""
+				"Refer to the Mekanism Wiki for assistance with the shape of this structure. Two ports with Supercharged Coils will accept power input. The other two ports will be used for inputting waste and outputting antimatter."
+				""
+				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that sufficient power and waste can be supplied."
+			]
+			dependencies: [
+				"4157DE06D0CD8BF5"
+				"3475869049757DF2"
+			]
+			min_width: 275
+			id: "00000000000007B1"
+			tasks: [
+				{
+					id: "00000000000007B2"
+					type: "item"
+					item: "mekanism:sps_casing"
+					count: 60L
+				}
+				{
+					id: "00000000000007B3"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 122L
+				}
+				{
+					id: "00000000000007B4"
+					type: "item"
+					item: "mekanism:sps_port"
+					count: 4L
+				}
+				{
+					id: "00000000000007B5"
+					type: "item"
+					item: "mekanism:supercharged_coil"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 38.5d
+			y: 14.5d
+			dependencies: ["5A78174C41616106"]
+			id: "58F4528A02C01CA1"
+			tasks: [{
+				id: "508087CFA8B3D1E0"
+				type: "item"
+				item: "mekanismgenerators:laser_focus_matrix"
+			}]
+		}
+		{
+			x: 30.0d
+			y: 4.5d
+			dependencies: ["480C5DA989D3D6DA"]
+			id: "146BA620950E4A0E"
+			tasks: [{
+				id: "648844B3337DCA9D"
+				type: "item"
+				item: "mekanismgenerators:reactor_glass"
 			}]
 		}
 	]

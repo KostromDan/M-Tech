@@ -258,7 +258,7 @@
 	"Inventory Sorting" = false
 	"Hotbar Changer" = false
 	"Expanded Item Interactions" = true
-	"Easy Transfering" = true
+	"Easy Transfering" = false
 	"Automatic Tool Restock" = true
 
 	[management.quick_armor_swapping]
