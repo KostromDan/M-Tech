@@ -21,9 +21,9 @@
 	#Enable generation of sea oats
 	enableSeaOats = true
 	#Enable generation of cattails
-	enableCattails = true
+	enableCattails = false
 	#Enable generation of beach grass
-	enableBeachGrass = true
+	enableBeachGrass = false
 	#Enable generation of bark mushrooms
 	enableBarkMushrooms = true
 	#Enable generation of glowcap
@@ -33,7 +33,7 @@
 	#Enable generation of nether nettles
 	enableNetherNettles = true
 	#Enable generation of short grass
-	enableShortGrass = true
+	enableShortGrass = false
 	#Enable generation of natural cobwebs
 	enableNaturalCobwebs = true
 	#Enable generation of small cacti
@@ -41,15 +41,15 @@
 	#Enable generation of prickly bushes
 	enablePricklyBush = true
 	#Enable generation of reeds
-	enableReeds = true
+	enableReeds = false
 	#Enable generation of icicles
 	"enableIcicles " = true
 	#Enable generation of extra lilypads in lakes
-	enableExtraLilypads = true
+	enableExtraLilypads = false
 	#Enable generation of extra seagrass in lakes
-	enableExtraSeagrass = true
+	enableExtraSeagrass = false
 	#Enable generation of extra grass in rivers
-	enableExtraRiverGrass = true
+	enableExtraRiverGrass = false
 	#Enable moss carpets in old growth taiga biomes
 	enableMossCarpets = true
 	#Enable of tide pools in stony shores
@@ -57,7 +57,7 @@
 	#Enable cave roots
 	enableCaveRoots = true
 	#Enable better ruined nether portals
-	enableBetterRuinedNetherPortals = true
+	enableBetterRuinedNetherPortals = false
 
 ["Entity Options"]
 	#Enable spawning of tropical fish in jungles

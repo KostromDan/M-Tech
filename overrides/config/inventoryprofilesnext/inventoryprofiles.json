@@ -13,7 +13,7 @@
         "enable_inventory_settings_button": {
             "value": false
         },
-        "enable_inventory_buttons": {
+        "show_regular_sort_button": {
             "value": false
         },
         "show_sort_in_columns_button": {
