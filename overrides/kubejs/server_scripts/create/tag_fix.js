@@ -385,18 +385,18 @@ ServerEvents.loaded(event => {
     }
 })
 PlayerEvents.loggedOut(event => {
-    console.log(`M-Tech-logging: Player ${event.player.username} logged out(${event.player.level.dimension}). X: ${event.player.x} Y: ${event.player.y} Z: ${event.player.z}`)
+    console.log(`M-Tech-logging: Player ${event.player.username} logged out(${event.player.level.dimension}). ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}!`)
 })
 
 function give_book_after_connect(event, r) {
-    if (r > 10) {
-        console.log("Can't give book to " + event.player.username + " after 10 attempts! Stop trying.")
+    if (r > 30) {
+        console.log("Can't give book to " + event.player.username + " after 30 attempts! Stop trying.")
         return 0
     }
     if (event.player.inventory.count(ac_tome) === 0) {
         console.log("Trying to give book to " + event.player.username)
         event.player.give(ac_tome)
-        event.server.scheduleInTicks(20, e => {
+        event.server.scheduleInTicks(20 * (r + 1), e => {
             give_book_after_connect(event, r + 1)
         })
     } else {
@@ -406,7 +406,7 @@ function give_book_after_connect(event, r) {
 }
 
 PlayerEvents.loggedIn(event => {
-    console.log(`M-Tech-logging: Player ${event.player.username} logged in(${event.player.level.dimension}). X: ${event.player.x} Y: ${event.player.y} Z: ${event.player.z}`)
+    console.log(`M-Tech-logging: Player ${event.player.username} logged in(${event.player.level.dimension}). ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}!`)
     if (!event.player.stages.has('starting_items')) {
         give_book_after_connect(event, 0)
     }

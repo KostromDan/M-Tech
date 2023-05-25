@@ -15,7 +15,7 @@ import time
 import tkinter as tk
 
 zip_path = r'"C:\Program Files\7-Zip\7z.exe"'
-VERSION = '1.2.35'
+VERSION = '1.2.36'
 OUT_DIR = 'Server-Files-' + VERSION
 COPY_DIRS = [
     'config',
@@ -24,6 +24,8 @@ COPY_DIRS = [
     'mods'
 ]
 ONLY_CLIENT_MODS = [
+    'DefaultSettings',
+    'JCPlugin',
     'MyServerIsCompatible',
     'lightspeed',
     'yeetusexperimentus',
@@ -136,23 +138,6 @@ def main():
     modify_bat_sh_file('startserver.bat', custom_options)
     modify_bat_sh_file('startserver.sh', custom_options)
     os.remove(os.path.join(OUT_DIR, 'custom_assemble_options.json'))
-
-    dyn_cfg_path = os.path.join(OUT_DIR, 'config', 'dynview-common.toml')
-    with open(dyn_cfg_path, 'r') as in_f:
-        dyn_cfg = in_f.readlines()
-    dyn_modify_options = {"minChunkViewDist": "dyn_view_min_view",
-                          "maxChunkViewDist": "dyn_view_max_view",
-                          "minSimulationDist": "dyn_view_min_simulation",
-                          "maxSimulationDist": "dyn_view_max_simulation"}
-    with open(dyn_cfg_path, 'w') as out_f:
-        out = []
-        for line in dyn_cfg:
-            for modify_option, param in dyn_modify_options.items():
-                if modify_option in line:
-                    value = line.split(' = ')[1].strip()
-                    line = line.replace(value, str(custom_options[param]))
-            out.append(line)
-        out_f.write(''.join(out))
     with open(os.path.join(OUT_DIR, 'user_jvm_args.txt'), 'r') as in_f:
         jmv_options = in_f.read()
     jmv_options = jmv_options.replace('{{max_memory_G}}',

@@ -131,6 +131,20 @@ ServerEvents.recipes(event => {
         ],
         "time": 400
     })
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "additives": [],
+        "energy": 51200,
+        "input": {
+            "item": 'ae2:certus_quartz_dust'
+        },
+        "results": [
+            {
+                "item": 'ae2:silicon'
+            }
+        ],
+        "time": 100
+    })
 
 
 })

@@ -213,7 +213,7 @@
 	#Base feature for the Elder Guardian harder fights.
 	["Elder Guardian".Base]
 		#If true, the player will not be able to break blocks when an Elder Guardian is nearby.
-		"Adventure mode" = true
+		"Adventure mode" = false
 		#The range from any Elder Guardian at which players get adventure mode. It's advised to increase this (to about 80) with YUNG's Better Ocean Monuments.
 		#Range: 4.9E-324 ~ 1.7976931348623157E308
 		"Adventure mode Range" = 48.0

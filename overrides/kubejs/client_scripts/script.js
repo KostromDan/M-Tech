@@ -10,6 +10,10 @@ ItemEvents.tooltip(tooltip => {
     let myMessage = Text.yellow('You can have only one backpack of this type in the inventory!')
     tooltip.add('sophisticatedbackpacks:backpack', [myMessage])
 })
+ItemEvents.tooltip(tooltip => {
+    let myMessage = Text.yellow('Reset with a left click on the air!')
+    tooltip.add('akashictome:tome', [myMessage])
+})
 JEIEvents.hideItems(event => {
     event.hide('immersiveengineering:ore_lead')
     event.hide('immersiveengineering:deepslate_ore_lead')

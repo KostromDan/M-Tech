@@ -259,7 +259,7 @@
 			title: "Undead Eye"
 			x: 4.5d
 			y: -8.0d
-			subtitle: "Craft it using an Undead Soul"
+			subtitle: "Craft it using an Undead Soul. You can get the Undead Soul by killing a skeleton horse."
 			dependencies: ["3213708E164F5CE1"]
 			id: "04E4A81F92AD10FD"
 			tasks: [{
@@ -294,9 +294,12 @@
 			}]
 		}
 		{
+			title: "The way to the end is clear."
+			icon: "minecraft:ender_eye"
 			x: -0.5d
 			y: -13.0d
-			subtitle: "You need any different 12/15 eyes."
+			subtitle: "You need any different 12/15 eyes. Without this achievement, you will not be able to get to the end, even if the portal is already opened by another player. Attention! If you do not heed this warning, you will be teleported very high and far into the overworld and will most likely die."
+			min_required_dependencies: 12
 			dependencies: [
 				"45A9281056C76F12"
 				"174C350B05539928"
@@ -315,19 +318,18 @@
 				"79414E7EFA8111F9"
 				"47ADD6B5BF8DA077"
 			]
-			dependency_requirement: "one_completed"
 			id: "6A72CB008C10DA05"
 			tasks: [{
-				id: "4F9972A59E07649A"
+				id: "41E39BDC0E4FE711"
 				type: "advancement"
-				advancement: "minecraft:story/follow_ender_eye"
+				advancement: "endrem:main/root"
 				criterion: ""
 			}]
 		}
 		{
 			x: -0.5d
-			y: -14.0d
-			dependencies: ["6A72CB008C10DA05"]
+			y: -15.0d
+			dependencies: ["4E662F4D6EF3E134"]
 			id: "69F920C65A71B0C3"
 			tasks: [{
 				id: "04CF7C7439B7B7FC"
@@ -338,7 +340,7 @@
 		}
 		{
 			x: -0.5d
-			y: -15.0d
+			y: -16.0d
 			dependencies: ["69F920C65A71B0C3"]
 			id: "181B66292B3EA3E5"
 			tasks: [{
@@ -350,7 +352,7 @@
 		}
 		{
 			x: -0.5d
-			y: -16.0d
+			y: -17.0d
 			dependencies: ["181B66292B3EA3E5"]
 			id: "5412C8396989DED0"
 			tasks: [{
@@ -362,7 +364,7 @@
 		}
 		{
 			x: -0.5d
-			y: -17.0d
+			y: -18.0d
 			dependencies: ["5412C8396989DED0"]
 			id: "4A51F9FE4D6BDA6B"
 			tasks: [{
@@ -374,7 +376,7 @@
 		}
 		{
 			x: -1.5d
-			y: -17.5d
+			y: -18.5d
 			dependencies: ["4A51F9FE4D6BDA6B"]
 			id: "00F4710A06FB2C4A"
 			tasks: [{
@@ -385,7 +387,7 @@
 		}
 		{
 			x: 0.5d
-			y: -17.5d
+			y: -18.5d
 			dependencies: ["4A51F9FE4D6BDA6B"]
 			id: "5250AECF649F06F1"
 			tasks: [{
@@ -409,7 +411,7 @@
 		}
 		{
 			x: -0.5d
-			y: -18.0d
+			y: -19.0d
 			dependencies: ["4A51F9FE4D6BDA6B"]
 			id: "11710D97905F8332"
 			tasks: [{
@@ -420,7 +422,7 @@
 		}
 		{
 			x: -2.5d
-			y: -18.0d
+			y: -19.0d
 			dependencies: ["00F4710A06FB2C4A"]
 			id: "5CF53712DBCF57BE"
 			tasks: [{
@@ -431,7 +433,7 @@
 		}
 		{
 			x: -3.5d
-			y: -18.5d
+			y: -19.5d
 			dependencies: ["5CF53712DBCF57BE"]
 			id: "73FA514B1A5A8DF3"
 			tasks: [{
@@ -442,7 +444,7 @@
 		}
 		{
 			x: -4.5d
-			y: -19.0d
+			y: -20.0d
 			dependencies: ["73FA514B1A5A8DF3"]
 			id: "2C3691FA06D03485"
 			tasks: [{
@@ -453,7 +455,7 @@
 		}
 		{
 			x: -5.5d
-			y: -19.5d
+			y: -20.5d
 			dependencies: ["2C3691FA06D03485"]
 			id: "6A2D5ED6D5BEDF85"
 			tasks: [{
@@ -526,7 +528,7 @@
 		}
 		{
 			x: 0.5d
-			y: -14.5d
+			y: -15.5d
 			subtitle: "Do not forget to collect enough dragon breath so that you do not have to revive dragon later for this."
 			dependencies: ["69F920C65A71B0C3"]
 			id: "4B87BB3B97274BFB"
@@ -539,7 +541,7 @@
 		}
 		{
 			x: 1.5d
-			y: -15.0d
+			y: -16.0d
 			dependencies: ["4B87BB3B97274BFB"]
 			id: "7368DCD352CDC7AF"
 			tasks: [{
@@ -1233,50 +1235,6 @@
 			}]
 		}
 		{
-			x: 24.0d
-			y: 19.5d
-			dependencies: ["6035531FCD9B5244"]
-			id: "56C5952BF8B1CCFA"
-			tasks: [{
-				id: "39F90B87162CB998"
-				type: "item"
-				item: "chunkloaders:basic_chunk_loader"
-			}]
-		}
-		{
-			x: 25.5d
-			y: 19.5d
-			dependencies: ["56C5952BF8B1CCFA"]
-			id: "7B8C497E7F623CE7"
-			tasks: [{
-				id: "51A6F9581DC2B3C6"
-				type: "item"
-				item: "chunkloaders:single_chunk_loader"
-			}]
-		}
-		{
-			x: 24.0d
-			y: 21.5d
-			dependencies: ["56C5952BF8B1CCFA"]
-			id: "31AF5BECE375E697"
-			tasks: [{
-				id: "2BCFD9B641A33B04"
-				type: "item"
-				item: "chunkloaders:advanced_chunk_loader"
-			}]
-		}
-		{
-			x: 24.0d
-			y: 23.5d
-			dependencies: ["31AF5BECE375E697"]
-			id: "0E5F29C9DBF7916D"
-			tasks: [{
-				id: "27CC3B22539E85D5"
-				type: "item"
-				item: "chunkloaders:ultimate_chunk_loader"
-			}]
-		}
-		{
 			x: 20.0d
 			y: 23.5d
 			dependencies: ["76759C0F29F89618"]
@@ -1463,7 +1421,7 @@
 		}
 		{
 			x: 1.5d
-			y: -19.0d
+			y: -20.0d
 			dependencies: [
 				"11710D97905F8332"
 				"7368DCD352CDC7AF"
@@ -1477,7 +1435,7 @@
 		}
 		{
 			x: 2.5d
-			y: -15.5d
+			y: -16.5d
 			dependencies: ["7368DCD352CDC7AF"]
 			id: "6D734D680CBF0481"
 			tasks: [{
@@ -3103,7 +3061,7 @@
 		}
 		{
 			x: -0.5d
-			y: -19.0d
+			y: -20.0d
 			dependencies: ["181B66292B3EA3E5"]
 			id: "5D0D043A1D8A9795"
 			tasks: [{
@@ -3115,7 +3073,7 @@
 		}
 		{
 			x: -0.5d
-			y: -20.0d
+			y: -21.0d
 			dependencies: ["5D0D043A1D8A9795"]
 			id: "2A3C0B01B19953C0"
 			tasks: [{
@@ -3170,7 +3128,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 5.5d
 			y: -3.0d
 			dependencies: ["77F4B00E7E4B0979"]
 			id: "4C5232099E83DFCE"
@@ -3299,6 +3257,19 @@
 				id: "4C7412003AFBF8F7"
 				type: "item"
 				item: "grapplemod:rocketupgradeitem"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -14.0d
+			dependencies: ["6A72CB008C10DA05"]
+			dependency_requirement: "all_started"
+			id: "4E662F4D6EF3E134"
+			tasks: [{
+				id: "3CCC1783E2E13620"
+				type: "advancement"
+				advancement: "minecraft:story/follow_ender_eye"
+				criterion: ""
 			}]
 		}
 	]
