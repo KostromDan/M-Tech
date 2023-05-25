@@ -9,9 +9,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Black Eye - Found in Buried Chests"
+			title: "Black Eye"
 			x: -0.5d
 			y: -8.0d
+			subtitle: "Found in Buried Chests"
 			dependencies: ["3213708E164F5CE1"]
 			id: "45A9281056C76F12"
 			tasks: [{
@@ -27,9 +28,10 @@
 			}]
 		}
 		{
-			title: "Cold Eye - Found in Igloos"
+			title: "Cold Eye"
 			x: -4.5d
 			y: -8.0d
+			subtitle: "Found in Igloos"
 			dependencies: ["3213708E164F5CE1"]
 			id: "174C350B05539928"
 			tasks: [{
@@ -45,9 +47,10 @@
 			}]
 		}
 		{
-			title: "Corrupted Eye - Found in Pillager Outposts"
+			title: "Corrupted Eye"
 			x: 1.5d
 			y: -8.0d
+			subtitle: "Found in Pillager Outposts"
 			dependencies: ["3213708E164F5CE1"]
 			id: "36936B74BA51FB80"
 			tasks: [{
@@ -63,9 +66,10 @@
 			}]
 		}
 		{
-			title: "Lost Eye - Found in Mineshafts"
+			title: "Lost Eye"
 			x: -1.5d
 			y: -8.0d
+			subtitle: "Found in Mineshafts"
 			dependencies: ["3213708E164F5CE1"]
 			id: "79414E7EFA8111F9"
 			tasks: [{
@@ -81,9 +85,10 @@
 			}]
 		}
 		{
-			title: "Nether Eye - Found in Nether Fortresses"
+			title: "Nether Eye"
 			x: -7.5d
 			y: -8.0d
+			subtitle: "Found in Nether Fortresses"
 			dependencies: ["3F60137CEC196791"]
 			id: "0E42FA37CE4A8404"
 			tasks: [{
@@ -99,9 +104,10 @@
 			}]
 		}
 		{
-			title: "Old Eye - Found in Desert Pyramids"
+			title: "Old Eye"
 			x: -2.5d
 			y: -8.0d
+			subtitle: "Found in Desert Pyramids"
 			dependencies: ["3213708E164F5CE1"]
 			id: "6BB565598AAB7A92"
 			tasks: [{
@@ -117,9 +123,10 @@
 			}]
 		}
 		{
-			title: "Rogue Eye - Found in Jungle Pyramids"
+			title: "Rogue Eye"
 			x: -3.5d
 			y: -8.0d
+			subtitle: "Found in Jungle Pyramids"
 			dependencies: ["3213708E164F5CE1"]
 			id: "46367ADF3E205EF5"
 			tasks: [{
@@ -135,9 +142,10 @@
 			}]
 		}
 		{
-			title: "Cursed Eye - Found in Bastions treasure chest"
+			title: "Cursed Eye"
 			x: -6.5d
 			y: -8.0d
+			subtitle: "Found in Bastions treasure chest"
 			dependencies: ["3F60137CEC196791"]
 			id: "1E00067A584D0971"
 			tasks: [{
@@ -153,9 +161,10 @@
 			}]
 		}
 		{
-			title: "Evil Eye - Buy it from a master cleric"
+			title: "Evil Eye"
 			x: 5.5d
 			y: -8.0d
+			subtitle: "Buy it from a master cleric"
 			dependencies: ["3213708E164F5CE1"]
 			id: "041C67E8034FB97A"
 			tasks: [{
@@ -171,9 +180,10 @@
 			}]
 		}
 		{
-			title: "Guardian Eye - Get it by Killing Elder Guardian"
+			title: "Guardian Eye"
 			x: 0.5d
 			y: -8.0d
+			subtitle: "Get it by Killing Elder Guardian"
 			dependencies: ["3213708E164F5CE1"]
 			id: "47ADD6B5BF8DA077"
 			tasks: [{
@@ -189,9 +199,10 @@
 			}]
 		}
 		{
-			title: "Magical Eye - Dropped by Evokers"
+			title: "Magical Eye"
 			x: 2.5d
 			y: -8.0d
+			subtitle: "Dropped by Evokers"
 			dependencies: ["3213708E164F5CE1"]
 			id: "01CE9AADCF0DD634"
 			tasks: [{
@@ -207,9 +218,10 @@
 			}]
 		}
 		{
-			title: "Wither Eye - Dropped by The Wither"
+			title: "Wither Eye"
 			x: -5.5d
 			y: -8.0d
+			subtitle: "Dropped by The Wither"
 			dependencies: ["3F60137CEC196791"]
 			id: "464C38BC03DB6D50"
 			tasks: [{
@@ -225,9 +237,10 @@
 			}]
 		}
 		{
-			title: "Witch Eye - Craft it using the witch pupil"
+			title: "Witch Eye"
 			x: 3.5d
 			y: -8.0d
+			subtitle: "Craft it using the witch pupil"
 			dependencies: ["3213708E164F5CE1"]
 			id: "1A5444B829EFE989"
 			tasks: [{
@@ -243,9 +256,10 @@
 			}]
 		}
 		{
-			title: "Undead Eye - Craft it using an Undead Soul"
+			title: "Undead Eye"
 			x: 4.5d
 			y: -8.0d
+			subtitle: "Craft it using an Undead Soul"
 			dependencies: ["3213708E164F5CE1"]
 			id: "04E4A81F92AD10FD"
 			tasks: [{
@@ -261,9 +275,10 @@
 			}]
 		}
 		{
-			title: "Exotic Eye - Craft it using aquatic items"
+			title: "Exotic Eye"
 			x: 6.5d
 			y: -8.0d
+			subtitle: "Craft it using aquatic items"
 			dependencies: ["3213708E164F5CE1"]
 			id: "0D5EAA2E3BBA24D5"
 			tasks: [{
@@ -606,6 +621,7 @@
 		{
 			x: 23.5d
 			y: 14.5d
+			subtitle: "Build big mining contraption to do it easy and fast."
 			dependencies: [
 				"74A60D96F6226F52"
 				"39698A97C8F7B9D4"
@@ -632,6 +648,7 @@
 		{
 			x: -3.5d
 			y: 0.0d
+			subtitle: "You can have only one standard backpack in the inventory. Don't try to make second one."
 			dependencies: ["35FA3C2E42143217"]
 			id: "3536DC1DD11B4D99"
 			tasks: [{
@@ -1419,6 +1436,48 @@
 				id: "2A3C8423F76D0452"
 				type: "item"
 				item: "create_enchantment_industry:enchanting_guide"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["35FA3C2E42143217"]
+			id: "17D99FBBACB024DC"
+			tasks: [{
+				id: "788EC71FAE954EDE"
+				type: "item"
+				item: {
+					id: "torchbowmod:torchbow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -19.5d
+			dependencies: [
+				"11710D97905F8332"
+				"7368DCD352CDC7AF"
+			]
+			id: "0378D3113195F6B7"
+			tasks: [{
+				id: "155422A2ED072A08"
+				type: "item"
+				item: "apotheosis:draconic_endshelf"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -15.5d
+			dependencies: ["7368DCD352CDC7AF"]
+			id: "6D734D680CBF0481"
+			tasks: [{
+				id: "0AF3C001BBE1032B"
+				type: "item"
+				item: "apotheosis:pearl_endshelf"
 			}]
 		}
 	]

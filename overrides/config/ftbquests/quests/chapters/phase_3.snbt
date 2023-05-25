@@ -11,23 +11,310 @@
 		{
 			x: 0.0d
 			y: 0.0d
-			subtitle: "Phase is physicly ready, but quests will come in one of the next update!"
-			id: "13DA0D3F6708E986"
-			tasks: [{
-				id: "3519F2E77F3DE15D"
-				type: "item"
-				item: "minecraft:bedrock"
-			}]
-		}
-		{
-			x: 1.5d
-			y: 0.0d
 			dependencies: ["29CC582D5C7CB122"]
 			id: "7E1FD50704218F25"
 			tasks: [{
 				id: "7C36458F7434B7C8"
 				type: "item"
 				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["7BA70A2F3037FB57"]
+			id: "24ABBEDDA7C9AD97"
+			tasks: [{
+				id: "72E025CAC85D470C"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			dependencies: ["24ABBEDDA7C9AD97"]
+			id: "53108397F51FBF5E"
+			tasks: [{
+				id: "17383909C62CF3B1"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.5d
+			dependencies: [
+				"53108397F51FBF5E"
+				"3264384F2FEA6026"
+			]
+			id: "46214C5617146111"
+			tasks: [{
+				id: "7D881D5E20C84953"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.5d
+			dependencies: ["24ABBEDDA7C9AD97"]
+			id: "5F4C5681F9138C5C"
+			tasks: [{
+				id: "7BA62DDC37F0F3E3"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.0d
+			dependencies: [
+				"53108397F51FBF5E"
+				"5F4C5681F9138C5C"
+			]
+			id: "768DB196DBDDAB5B"
+			tasks: [{
+				id: "23D85BE6C764F911"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 6.5d
+			dependencies: [
+				"46214C5617146111"
+				"768DB196DBDDAB5B"
+			]
+			id: "7D56D0ED482B8CD1"
+			tasks: [{
+				id: "52A263F0E0C24407"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.5d
+			dependencies: [
+				"595F67703D955E3A"
+				"17950886C285B1DE"
+				"4DD253E48053E709"
+			]
+			id: "553DA829DF55279F"
+			tasks: [{
+				id: "34186EBF1D867189"
+				type: "item"
+				item: "mekanism:dust_lithium"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -2.5d
+			dependencies: ["0649806EFCDD5008"]
+			id: "1867B86F05B4CF62"
+			tasks: [{
+				id: "703E59005A42F70D"
+				type: "item"
+				item: "mekanism:basic_energy_cube"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -3.5d
+			dependencies: ["1867B86F05B4CF62"]
+			id: "098112ADF5E37972"
+			tasks: [{
+				id: "1271D28828E68F37"
+				type: "item"
+				item: "mekanism:advanced_energy_cube"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -4.5d
+			dependencies: ["098112ADF5E37972"]
+			id: "598466579E7DE58E"
+			tasks: [{
+				id: "1D138F264800D531"
+				type: "item"
+				item: "mekanism:elite_energy_cube"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -5.5d
+			dependencies: ["598466579E7DE58E"]
+			id: "5584F4D6DF608518"
+			tasks: [{
+				id: "7ECFFA13A0DB4F6E"
+				type: "item"
+				item: "mekanism:ultimate_energy_cube"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["7E1FD50704218F25"]
+			id: "71F9FB4F8BA48D13"
+			tasks: [{
+				id: "70F654A504D89182"
+				type: "item"
+				item: "mekanism:configurator"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -1.5d
+			dependencies: ["553DA829DF55279F"]
+			id: "0649806EFCDD5008"
+			tasks: [{
+				id: "0EA395EC358B281A"
+				type: "item"
+				item: "mekanism:energy_tablet"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.0d
+			dependencies: ["7D56D0ED482B8CD1"]
+			id: "595F67703D955E3A"
+			tasks: [{
+				id: "0D0828E17C559600"
+				type: "item"
+				item: "mekanism:chemical_crystallizer"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.5d
+			dependencies: [
+				"2BD512FA4DB5B516"
+				"4FF9F00AA281234D"
+			]
+			dependency_requirement: "one_completed"
+			id: "3264384F2FEA6026"
+			tasks: [{
+				id: "02AEF46D8A9F880C"
+				type: "item"
+				item: "mekanism:ingot_refined_obsidian"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["7BA70A2F3037FB57"]
+			id: "4FF9F00AA281234D"
+			tasks: [{
+				id: "69FA9A673E9518B7"
+				type: "item"
+				item: "mekanism:dust_refined_obsidian"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["24AAD8631776F025"]
+			can_repeat: true
+			id: "7BA70A2F3037FB57"
+			tasks: [{
+				id: "2C25459C69BB48EE"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["7E1FD50704218F25"]
+			id: "24AAD8631776F025"
+			tasks: [{
+				id: "567318823C5DC628"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.5d
+			dependencies: ["5F4C5681F9138C5C"]
+			id: "2BD512FA4DB5B516"
+			tasks: [{
+				id: "70605465785A4A46"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.5d
+			dependencies: ["10A406AB1A7DB220"]
+			id: "4DD253E48053E709"
+			tasks: [{
+				id: "7E73DB37185FE140"
+				type: "fluid"
+				fluid: "mekanism:lithium"
+				amount: 1000L
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			dependencies: ["138297C861EE30D5"]
+			id: "17950886C285B1DE"
+			tasks: [{
+				id: "6F31FAA08C60DDDF"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 2.0d
+			dependencies: ["5F4C5681F9138C5C"]
+			id: "138297C861EE30D5"
+			tasks: [{
+				id: "753FB5B5A9A3263A"
+				type: "item"
+				item: "mekanism:thermal_evaporation_controller"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 2.0d
+			dependencies: ["138297C861EE30D5"]
+			id: "10A406AB1A7DB220"
+			tasks: [{
+				id: "689B9186CDBB804B"
+				type: "fluid"
+				fluid: "mekanism:brine"
+				amount: 1000L
+			}]
+		}
+		{
+			x: 11.5d
+			y: 6.5d
+			dependencies: [
+				"7D56D0ED482B8CD1"
+				"0649806EFCDD5008"
+			]
+			id: "44B1358B2EAE0FC7"
+			tasks: [{
+				id: "2F86CC58CF96B16E"
+				type: "item"
+				item: "mekanism:atomic_disassembler"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			dependencies: ["0649806EFCDD5008"]
+			id: "02AF8D87991B6825"
+			tasks: [{
+				id: "6C4B9C6C3CFF6F4E"
+				type: "item"
+				item: "mekanism:electric_bow"
 			}]
 		}
 	]
