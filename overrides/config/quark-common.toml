@@ -98,7 +98,7 @@
 	"Vertical Planks" = true
 	"Variant Ladders" = true
 	"Variant Furnaces" = true
-	"Variant Chests" = false
+	"Variant Chests" = true
 	"Variant Bookshelves" = true
 	Thatch = true
 	"Sturdy Stone" = true

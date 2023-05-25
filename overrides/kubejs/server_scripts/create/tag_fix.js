@@ -246,6 +246,26 @@ ServerEvents.recipes(event => {
     event.replaceOutput({}, 'akashictome:tome', ac_tome)
     event.shapeless(ac_tome, ['akashictome:tome'])
 
+    function make_hollow_wood(wood) {
+        event.shaped(
+            Item.of('projectvibrantjourneys:' + wood + '_hollow_log', 4),
+            [
+                ' A ',
+                'A A',
+                ' A '
+            ],
+            {
+                A: 'minecraft:' + wood + '_log'
+            }
+        )
+    }
+
+    make_hollow_wood('oak')
+    make_hollow_wood('birch')
+    make_hollow_wood('spruce')
+    make_hollow_wood('jungle')
+    make_hollow_wood('acacia')
+    make_hollow_wood('dark_oak')
 })
 MoreJSEvents.playerStartTrading((event) => {
     event.forEachOffers((o, i) => {
@@ -258,7 +278,7 @@ MoreJSEvents.playerStartTrading((event) => {
 ServerEvents.loaded(event => {
     Utils.server.runCommand("reload")
 })
-PlayerEvents.loggedOut(event=>{
+PlayerEvents.loggedOut(event => {
     console.log("M-Tech-logging: Player " + event.player.username + " logged out(" + event.player.level.dimension + "). X: " + event.player.x + " Y: " + event.player.y + " Z: " + event.player.z)
 })
 PlayerEvents.loggedIn(event => {

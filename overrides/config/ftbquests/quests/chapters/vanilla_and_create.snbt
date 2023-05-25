@@ -3080,6 +3080,7 @@
 		{
 			x: 3.5d
 			y: -3.5d
+			subtitle: "An integral part of the hammock."
 			dependencies: ["13958CCA4782144D"]
 			id: "090907240CD1DD18"
 			tasks: [{
