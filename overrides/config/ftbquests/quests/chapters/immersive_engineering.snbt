@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
+			x: -0.5d
 			y: 0.0d
 			dependencies: ["4C217E67271D2488"]
 			id: "4C2403B5DF660DFE"
@@ -20,7 +20,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -0.5d
 			y: -4.5d
 			dependencies: ["4C2403B5DF660DFE"]
 			id: "39181DCFB11D743D"
@@ -37,7 +37,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: -4.5d
 			dependencies: [
 				"39181DCFB11D743D"
@@ -51,7 +51,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: -6.0d
 			dependencies: ["39181DCFB11D743D"]
 			id: "4690B489D4768138"
@@ -62,7 +62,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: -3.0d
 			dependencies: ["31055B4F7673ABB0"]
 			id: "40134738D2A44894"
@@ -74,7 +74,7 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 1.0d
 			y: -3.0d
 			dependencies: ["39181DCFB11D743D"]
 			id: "31055B4F7673ABB0"
@@ -101,7 +101,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 5.5d
 			y: 0.0d
 			dependencies: [
 				"4C2403B5DF660DFE"
@@ -116,7 +116,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 5.5d
 			y: -4.5d
 			dependencies: [
 				"389CD68DB373D66A"
@@ -252,7 +252,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: -3.0d
 			dependencies: ["40134738D2A44894"]
 			id: "1B4E3B2316E355FA"
@@ -264,8 +264,8 @@
 			}]
 		}
 		{
-			x: 18.0d
-			y: -3.0d
+			x: 15.5d
+			y: -4.5d
 			dependencies: [
 				"7E8AFA41FE46AC98"
 				"4176FC6E624317C6"
@@ -279,7 +279,7 @@
 			}]
 		}
 		{
-			x: 13.5d
+			x: 12.5d
 			y: -4.5d
 			dependencies: ["61C58CBCF5C17FB0"]
 			id: "1D595CE59AD4E42F"
@@ -290,7 +290,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 11.0d
 			y: -4.5d
 			dependencies: ["2EC4EFEA2273A673"]
 			id: "61C58CBCF5C17FB0"
@@ -301,7 +301,7 @@
 			}]
 		}
 		{
-			x: 15.0d
+			x: 14.0d
 			y: -4.5d
 			dependencies: ["1D595CE59AD4E42F"]
 			id: "7E8AFA41FE46AC98"
@@ -319,7 +319,7 @@
 		}
 		{
 			x: 7.5d
-			y: 0.0d
+			y: -0.5d
 			dependencies: ["01BB64D65AB416F6"]
 			id: "1423D9FE4E0E78FD"
 			tasks: [{
@@ -381,7 +381,7 @@
 			}]
 		}
 		{
-			x: 15.0d
+			x: 15.5d
 			y: -1.5d
 			dependencies: ["72998130C8BC7325"]
 			id: "4176FC6E624317C6"
@@ -393,7 +393,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: -1.5d
 			dependencies: ["31055B4F7673ABB0"]
 			id: "775591EF0C43D04C"
@@ -405,7 +405,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: -1.5d
 			dependencies: ["775591EF0C43D04C"]
 			id: "611354256B85D41D"
@@ -464,8 +464,8 @@
 			}]
 		}
 		{
-			x: 16.5d
-			y: -11.5d
+			x: 15.5d
+			y: -10.5d
 			dependencies: ["7A7B3911EC16EA2F"]
 			id: "44E68D13AADC0128"
 			tasks: [{
@@ -475,7 +475,7 @@
 			}]
 		}
 		{
-			x: 15.0d
+			x: 15.5d
 			y: -9.0d
 			dependencies: ["7A7B3911EC16EA2F"]
 			id: "2D18D9047C11088A"
@@ -486,8 +486,8 @@
 			}]
 		}
 		{
-			x: 15.0d
-			y: -8.0d
+			x: 15.5d
+			y: -7.5d
 			dependencies: ["7A7B3911EC16EA2F"]
 			id: "7D8955EC617CD33B"
 			tasks: [{
@@ -497,8 +497,8 @@
 			}]
 		}
 		{
-			x: 15.0d
-			y: -7.0d
+			x: 15.5d
+			y: -6.0d
 			dependencies: ["7A7B3911EC16EA2F"]
 			id: "2D776D961F83D9FE"
 			tasks: [{
@@ -508,10 +508,9 @@
 			}]
 		}
 		{
-			x: 19.5d
-			y: -3.0d
+			x: 21.5d
+			y: -9.0d
 			dependencies: [
-				"2E52DAC12127B742"
 				"18114F2F276121CF"
 				"1171DD99A547DA91"
 			]
@@ -524,7 +523,7 @@
 		}
 		{
 			x: 19.5d
-			y: -5.5d
+			y: -9.0d
 			dependencies: [
 				"2E52DAC12127B742"
 				"2D18D9047C11088A"
@@ -538,8 +537,8 @@
 			}]
 		}
 		{
-			x: 18.0d
-			y: -5.5d
+			x: 19.5d
+			y: -7.5d
 			dependencies: [
 				"7D8955EC617CD33B"
 				"2E52DAC12127B742"
@@ -553,8 +552,8 @@
 			}]
 		}
 		{
-			x: 16.5d
-			y: -5.5d
+			x: 19.5d
+			y: -6.0d
 			dependencies: [
 				"2D776D961F83D9FE"
 				"2E52DAC12127B742"
@@ -656,6 +655,50 @@
 				id: "331BCF63C4DF9223"
 				type: "item"
 				item: "immersiveengineering:turret_chem"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -3.0d
+			dependencies: ["1D595CE59AD4E42F"]
+			id: "7A9B6CFD760B3CB7"
+			tasks: [{
+				id: "5360FE2DBFC0B9DD"
+				type: "item"
+				item: "immersiveengineering:capacitor_hv"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			dependencies: ["362C00E8242EAA02"]
+			id: "725B7DED32BD9369"
+			tasks: [{
+				id: "062DCAE40580113A"
+				type: "item"
+				item: "immersiveengineering:capacitor_mv"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.5d
+			dependencies: ["0E98E491E51E2D21"]
+			id: "362C00E8242EAA02"
+			tasks: [{
+				id: "3B01C4F8C4534698"
+				type: "item"
+				item: "immersiveengineering:capacitor_lv"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: ["4C2403B5DF660DFE"]
+			id: "0D69E29D26677BDA"
+			tasks: [{
+				id: "5A42C07B02F03F4E"
+				type: "item"
+				item: "immersiveengineering:voltmeter"
 			}]
 		}
 	]
