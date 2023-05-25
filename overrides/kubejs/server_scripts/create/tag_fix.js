@@ -70,6 +70,7 @@ ServerEvents.recipes(event => {
     event.remove({id: 'waystones:warp_scroll'})
     event.remove({id: 'waystones:warp_dust'})
     event.remove({id: 'waystones:return_scroll'})
+    event.remove({id: 'immersiveengineering:alloybrick'})
     event.custom({
             "result": {
                 "item": "waystones:warp_stone"
@@ -226,6 +227,14 @@ ServerEvents.recipes(event => {
         "secondaries": []
     })
 
+})
+MoreJSEvents.playerStartTrading((event) => {
+    event.forEachOffers((o, i) => {
+        let modId = o.getOutput().getItem().id.split(':')[0]
+        if (modId === 'advancedperipherals' || modId === 'computercraft') {
+            o.disabled = true
+        }
+    })
 })
 ServerEvents.loaded(event => {
     Utils.server.runCommand("reload")

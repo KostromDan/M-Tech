@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 2
 	filename: "pahse_3_ae2"
-	title: "Pahse 3 AE2"
+	title: "Phase 3 AE2"
 	icon: "ae2:controller"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
