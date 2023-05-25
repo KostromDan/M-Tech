@@ -46,6 +46,10 @@
     "mob_spawner": true,
     "redstone": true
   },
+  "beyond_earth": {
+    "block": true,
+    "entity": true
+  },
   "mekanism": {
     "infuse_type": true,
     "gas": true,
