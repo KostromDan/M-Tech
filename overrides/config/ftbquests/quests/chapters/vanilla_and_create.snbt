@@ -1950,6 +1950,116 @@
 				item: "sophisticatedbackpacks:auto_smoking_upgrade"
 			}]
 		}
+		{
+			x: 17.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "32415120718B9B07"
+			tasks: [{
+				id: "506C643C25374C69"
+				type: "item"
+				item: "simpleplanes:floaty_bedding"
+			}]
+		}
+		{
+			x: 21.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "51140BBD208DF9AB"
+			tasks: [{
+				id: "25446AD91150A881"
+				type: "item"
+				item: "simpleplanes:booster"
+			}]
+		}
+		{
+			x: 16.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "5889E41B745CC856"
+			tasks: [{
+				id: "7C46B1E02FB64076"
+				type: "item"
+				item: "simpleplanes:healing"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "3C220E48CC2EF4FA"
+			tasks: [{
+				id: "55A9D211B49481F6"
+				type: "item"
+				item: "simpleplanes:armor"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "6A4B7B7256D7F281"
+			tasks: [{
+				id: "4F337B7205A60536"
+				type: "item"
+				item: "simpleplanes:folding"
+			}]
+		}
+		{
+			x: 24.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "08B09341E803072D"
+			tasks: [{
+				id: "4DB3822281EC5CE6"
+				type: "item"
+				item: "simpleplanes:supply_crate"
+			}]
+		}
+		{
+			x: 23.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "414BE34C91BA71C7"
+			tasks: [{
+				id: "6C970D3F03495AB9"
+				type: "item"
+				item: "simpleplanes:seats"
+			}]
+		}
+		{
+			x: 18.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "30D081713738F7F7"
+			tasks: [{
+				id: "064D94F5A901E125"
+				type: "item"
+				item: "simpleplanes:shooter"
+			}]
+		}
+		{
+			x: 19.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "2549FBCCB5A2865E"
+			tasks: [{
+				id: "337DF9D3661FCB31"
+				type: "item"
+				item: "simpleplanes:furnace_engine"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 26.5d
+			dependencies: ["532A298A7893CE45"]
+			id: "55BED56AB63430A5"
+			tasks: [{
+				id: "3AED03D1D74278B5"
+				type: "item"
+				item: "simpleplanes:liquid_engine"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
