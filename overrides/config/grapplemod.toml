@@ -144,7 +144,7 @@ min_upgraded = 0.0
 default_value = 0.5
 enabled = 0
 max = 0.5
-max_upgraded = 5.0
+max_upgraded = 0.5
 min = 0.0
 min_upgraded = 0.0
 [options.grapplinghook.custom.rocket.rocket_refuel_ratio]
@@ -152,8 +152,8 @@ default_value = 15.0
 enabled = 0
 max = 30.0
 max_upgraded = 30.0
-min = 15.0
-min_upgraded = 3.0
+min = 30.0
+min_upgraded = 15.0
 [options.grapplinghook.custom.rocket.rocket_vertical_angle]
 default_value = 0.0
 enabled = 0

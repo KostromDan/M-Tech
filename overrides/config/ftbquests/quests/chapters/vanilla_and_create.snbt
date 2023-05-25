@@ -10,10 +10,10 @@
 	quests: [
 		{
 			title: "Black Eye"
-			x: -0.5d
-			y: -8.0d
+			x: -7.0d
+			y: -9.0d
 			subtitle: "Found in Buried Chests"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["67CFBF42726C3F40"]
 			id: "45A9281056C76F12"
 			tasks: [{
 				id: "121132C4D9ECF9BE"
@@ -29,10 +29,10 @@
 		}
 		{
 			title: "Cold Eye"
-			x: -4.5d
-			y: -8.0d
+			x: -3.0d
+			y: -9.0d
 			subtitle: "Found in Igloos"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["26966019E944881D"]
 			id: "174C350B05539928"
 			tasks: [{
 				id: "06FC61451AAD2D5E"
@@ -48,10 +48,10 @@
 		}
 		{
 			title: "Corrupted Eye"
-			x: 1.5d
-			y: -8.0d
+			x: -1.0d
+			y: -9.0d
 			subtitle: "Found in Pillager Outposts"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["4E96CE62BD13A2B0"]
 			id: "36936B74BA51FB80"
 			tasks: [{
 				id: "17156CE9C2C1A0EB"
@@ -67,10 +67,10 @@
 		}
 		{
 			title: "Lost Eye"
-			x: -1.5d
-			y: -8.0d
+			x: -4.0d
+			y: -9.0d
 			subtitle: "Found in Mineshafts"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["684E118F311EA0D5"]
 			id: "79414E7EFA8111F9"
 			tasks: [{
 				id: "77E876155B94697A"
@@ -86,10 +86,10 @@
 		}
 		{
 			title: "Nether Eye"
-			x: -7.5d
-			y: -8.0d
+			x: -9.0d
+			y: -9.0d
 			subtitle: "Found in Nether Fortresses"
-			dependencies: ["3F60137CEC196791"]
+			dependencies: ["68EC772B0F603ADA"]
 			id: "0E42FA37CE4A8404"
 			tasks: [{
 				id: "0AC000A16F78A159"
@@ -105,10 +105,10 @@
 		}
 		{
 			title: "Old Eye"
-			x: -2.5d
-			y: -8.0d
+			x: -5.0d
+			y: -9.0d
 			subtitle: "Found in Desert Pyramids"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["7E362DC04C71DA6E"]
 			id: "6BB565598AAB7A92"
 			tasks: [{
 				id: "160E0E9498E2BFCE"
@@ -124,10 +124,10 @@
 		}
 		{
 			title: "Rogue Eye"
-			x: -3.5d
-			y: -8.0d
+			x: -6.0d
+			y: -9.0d
 			subtitle: "Found in Jungle Pyramids"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["666196AFAAF8D206"]
 			id: "46367ADF3E205EF5"
 			tasks: [{
 				id: "28037F62C999825C"
@@ -143,10 +143,10 @@
 		}
 		{
 			title: "Cursed Eye"
-			x: -6.5d
-			y: -8.0d
+			x: -8.0d
+			y: -9.0d
 			subtitle: "Found in Bastions treasure chest"
-			dependencies: ["3F60137CEC196791"]
+			dependencies: ["3AF1AC709F55C172"]
 			id: "1E00067A584D0971"
 			tasks: [{
 				id: "79B47BC4570DF792"
@@ -162,10 +162,10 @@
 		}
 		{
 			title: "Evil Eye"
-			x: 5.5d
-			y: -8.0d
-			subtitle: "Buy it from a master cleric"
-			dependencies: ["3213708E164F5CE1"]
+			x: 1.0d
+			y: -9.0d
+			subtitle: "Buy it from a master cleric for a rabbit's foot and emeralds."
+			dependencies: ["17B264D313913D40"]
 			id: "041C67E8034FB97A"
 			tasks: [{
 				id: "3B442F67DA46D299"
@@ -181,10 +181,10 @@
 		}
 		{
 			title: "Guardian Eye"
-			x: 0.5d
-			y: -8.0d
+			x: -2.0d
+			y: -9.0d
 			subtitle: "Get it by Killing Elder Guardian"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["4A133A1D005C912D"]
 			id: "47ADD6B5BF8DA077"
 			tasks: [{
 				id: "35BC640B8D8AD60B"
@@ -200,10 +200,10 @@
 		}
 		{
 			title: "Magical Eye"
-			x: 2.5d
-			y: -8.0d
+			x: 0.0d
+			y: -9.0d
 			subtitle: "Dropped by Evokers"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["238611D672C9E586"]
 			id: "01CE9AADCF0DD634"
 			tasks: [{
 				id: "375B0E6C618C3271"
@@ -219,10 +219,10 @@
 		}
 		{
 			title: "Wither Eye"
-			x: -5.5d
-			y: -8.0d
+			x: -10.0d
+			y: -10.5d
 			subtitle: "Dropped by The Wither"
-			dependencies: ["3F60137CEC196791"]
+			dependencies: ["79237342ADCEFEA9"]
 			id: "464C38BC03DB6D50"
 			tasks: [{
 				id: "34602BEA7BD15291"
@@ -238,10 +238,10 @@
 		}
 		{
 			title: "Witch Eye"
-			x: 3.5d
-			y: -8.0d
+			x: 2.0d
+			y: -10.0d
 			subtitle: "Craft it using the witch pupil"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["09CC47E6DDB141DA"]
 			id: "1A5444B829EFE989"
 			tasks: [{
 				id: "1C9628F4BDA1AD03"
@@ -257,10 +257,10 @@
 		}
 		{
 			title: "Undead Eye"
-			x: 4.5d
-			y: -8.0d
+			x: 3.0d
+			y: -10.0d
 			subtitle: "Craft it using an Undead Soul. You can get the Undead Soul by killing a skeleton horse."
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: ["7FA0BA619D77B30B"]
 			id: "04E4A81F92AD10FD"
 			tasks: [{
 				id: "405A4D7D00203A5C"
@@ -276,10 +276,14 @@
 		}
 		{
 			title: "Exotic Eye"
-			x: 6.5d
-			y: -8.0d
+			x: 5.0d
+			y: -10.0d
 			subtitle: "Craft it using aquatic items"
-			dependencies: ["3213708E164F5CE1"]
+			dependencies: [
+				"5E716672E8DC6023"
+				"6CD9F3A8887FC8E5"
+				"24EAFACA5F9D0975"
+			]
 			id: "0D5EAA2E3BBA24D5"
 			tasks: [{
 				id: "1F1454AFC4CE5BB5"
@@ -296,9 +300,9 @@
 		{
 			title: "The way to the end is clear."
 			icon: "minecraft:ender_eye"
-			x: -0.5d
-			y: -13.0d
-			subtitle: "You need any different 12/15 eyes. Without this achievement, you will not be able to get to the end, even if the portal is already opened by another player. Attention! If you do not heed this warning, you will be teleported very high and far into the overworld and will most likely die."
+			x: -3.0d
+			y: -14.0d
+			subtitle: "You need any different 12/15 eyes. Without this achievement, you will not be able to get to the end, even if the portal is already opened by another player. Attention! If you do not heed this warning, you will be teleported very high and far into the overword. If you play in a team, make sure that you are a member of the same FTB team to synchronize achievements."
 			min_required_dependencies: 12
 			dependencies: [
 				"45A9281056C76F12"
@@ -327,8 +331,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -15.0d
+			x: -3.0d
+			y: -16.0d
 			dependencies: ["4E662F4D6EF3E134"]
 			id: "69F920C65A71B0C3"
 			tasks: [{
@@ -339,8 +343,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -16.0d
+			x: -3.0d
+			y: -17.0d
 			dependencies: ["69F920C65A71B0C3"]
 			id: "181B66292B3EA3E5"
 			tasks: [{
@@ -351,8 +355,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -17.0d
+			x: -3.0d
+			y: -18.0d
 			dependencies: ["181B66292B3EA3E5"]
 			id: "5412C8396989DED0"
 			tasks: [{
@@ -363,8 +367,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -18.0d
+			x: -3.0d
+			y: -19.0d
 			dependencies: ["5412C8396989DED0"]
 			id: "4A51F9FE4D6BDA6B"
 			tasks: [{
@@ -375,8 +379,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -18.5d
+			x: -4.0d
+			y: -19.5d
 			dependencies: ["4A51F9FE4D6BDA6B"]
 			id: "00F4710A06FB2C4A"
 			tasks: [{
@@ -386,8 +390,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -18.5d
+			x: -2.0d
+			y: -19.5d
 			dependencies: ["4A51F9FE4D6BDA6B"]
 			id: "5250AECF649F06F1"
 			tasks: [{
@@ -398,9 +402,10 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: -6.5d
+			x: -8.5d
+			y: -6.0d
 			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
 			id: "3F60137CEC196791"
 			tasks: [{
 				id: "48E6F50DAC5A2125"
@@ -410,8 +415,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -19.0d
+			x: -3.0d
+			y: -20.0d
 			dependencies: ["4A51F9FE4D6BDA6B"]
 			id: "11710D97905F8332"
 			tasks: [{
@@ -421,8 +426,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -19.0d
+			x: -5.0d
+			y: -20.0d
 			dependencies: ["00F4710A06FB2C4A"]
 			id: "5CF53712DBCF57BE"
 			tasks: [{
@@ -432,8 +437,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -19.5d
+			x: -6.0d
+			y: -20.5d
 			dependencies: ["5CF53712DBCF57BE"]
 			id: "73FA514B1A5A8DF3"
 			tasks: [{
@@ -443,8 +448,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -20.0d
+			x: -7.0d
+			y: -21.0d
 			dependencies: ["73FA514B1A5A8DF3"]
 			id: "2C3691FA06D03485"
 			tasks: [{
@@ -454,8 +459,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: -20.5d
+			x: -8.0d
+			y: -21.5d
 			dependencies: ["2C3691FA06D03485"]
 			id: "6A2D5ED6D5BEDF85"
 			tasks: [{
@@ -479,15 +484,23 @@
 		{
 			x: -0.5d
 			y: -3.0d
-			subtitle: "Exploration is the main focus of End Remastered, and to reach the End and beat the Ender Dragon, you will have to find 16 custom eyes by exploring vanilla structures and fighting vanilla bosses. Once you have at least 12 eyes, you can follow them until you reach the Stronghold. You have to put the 12 custom eyes in the portal in order to open it. If there's a vanilla eye of ender in one of the frames, you can remove it by right clicking on it with a custom eye."
+			subtitle: "Exploration is the main focus of End Remastered, and to reach the End and beat the Ender Dragon, you will have to find 16 custom eyes by exploring vanilla structures and fighting vanilla bosses. Once you have at least 12 eyes, you can follow them until you reach the Stronghold. You have to put the 12 custom eyes in the portal in order to open it. If there's a vanilla eye of ender in one of the frames, you can remove it by right clicking on it with a custom eye. There is no guarantee that the eye falls out of every mob (except wither) or will be in every dungeon! You may be lucky and you will find it in the first, or maybe not, and there will be no eyes in 10 dungeons. Therefore, it is highly recommended to use an airplane or helicopter to search. Also, in no case do not forget about the explorer's compass. Otherwise you will spend too much time."
 			dependencies: ["35FA3C2E42143217"]
 			id: "3213708E164F5CE1"
-			tasks: [{
-				id: "484FFEEC2E6AC4ED"
-				type: "advancement"
-				advancement: "endrem:main/root"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "484FFEEC2E6AC4ED"
+					type: "advancement"
+					advancement: "endrem:main/root"
+					criterion: ""
+				}
+				{
+					id: "0FCC58E29EE831B8"
+					type: "item"
+					disable_toast: true
+					item: "akashictome:tome"
+				}
+			]
 		}
 		{
 			x: 26.5d
@@ -527,8 +540,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -15.5d
+			x: -2.0d
+			y: -16.5d
 			subtitle: "Do not forget to collect enough dragon breath so that you do not have to revive dragon later for this."
 			dependencies: ["69F920C65A71B0C3"]
 			id: "4B87BB3B97274BFB"
@@ -540,8 +553,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -16.0d
+			x: -1.0d
+			y: -17.0d
 			dependencies: ["4B87BB3B97274BFB"]
 			id: "7368DCD352CDC7AF"
 			tasks: [{
@@ -1420,8 +1433,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -20.0d
+			x: -1.0d
+			y: -21.0d
 			dependencies: [
 				"11710D97905F8332"
 				"7368DCD352CDC7AF"
@@ -1434,8 +1447,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -16.5d
+			x: 0.0d
+			y: -17.5d
 			dependencies: ["7368DCD352CDC7AF"]
 			id: "6D734D680CBF0481"
 			tasks: [{
@@ -2980,8 +2993,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: -5.0d
+			x: -10.0d
+			y: -6.5d
 			dependencies: ["3F60137CEC196791"]
 			id: "68C3C1354353EB1A"
 			tasks: [{
@@ -2991,8 +3004,8 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: -5.0d
+			x: -12.0d
+			y: -7.5d
 			dependencies: ["747CA72B797333AA"]
 			id: "765A60D676EA0A6D"
 			tasks: [{
@@ -3002,8 +3015,9 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -5.0d
+			x: -13.0d
+			y: -8.0d
+			subtitle: "Telepots you to the lastest waystone, you clicked with this item."
 			dependencies: ["765A60D676EA0A6D"]
 			id: "41EBE4463971C2C1"
 			tasks: [{
@@ -3013,8 +3027,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: -5.0d
+			x: -11.0d
+			y: -7.0d
 			dependencies: ["68C3C1354353EB1A"]
 			id: "747CA72B797333AA"
 			tasks: [{
@@ -3060,8 +3074,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -20.0d
+			x: -3.0d
+			y: -21.0d
 			dependencies: ["181B66292B3EA3E5"]
 			id: "5D0D043A1D8A9795"
 			tasks: [{
@@ -3072,8 +3086,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -21.0d
+			x: -3.0d
+			y: -22.0d
 			dependencies: ["5D0D043A1D8A9795"]
 			id: "2A3C0B01B19953C0"
 			tasks: [{
@@ -3084,6 +3098,7 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 2.5d
 			y: 1.5d
 			subtitle: "The Akashic Tome is a book that includes all existing documentation books in the modpack as well as 2 compasses: for locating biomes or structures. If you started the progress on the old version of the modpack, and you are missing something, you need to craft a tome from a tome, and you will have the current version."
@@ -3260,8 +3275,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -14.0d
+			x: -3.0d
+			y: -15.0d
 			dependencies: ["6A72CB008C10DA05"]
 			dependency_requirement: "all_started"
 			id: "4E662F4D6EF3E134"
@@ -3271,6 +3286,294 @@
 				advancement: "minecraft:story/follow_ender_eye"
 				criterion: ""
 			}]
+		}
+		{
+			icon: "minecraft:chiseled_sandstone"
+			x: -5.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "7E362DC04C71DA6E"
+			tasks: [{
+				id: "14079B6C717915C5"
+				type: "structure"
+				structure: "betterdeserttemples:desert_temple"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -8.5d
+			dependencies: ["68EC772B0F603ADA"]
+			id: "2A89DAD93AB8F848"
+			tasks: [{
+				id: "3D96E286D62DC3FF"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 3L
+			}]
+		}
+		{
+			icon: "minecraft:nether_star"
+			x: -10.0d
+			y: -9.5d
+			dependencies: ["2A89DAD93AB8F848"]
+			id: "79237342ADCEFEA9"
+			tasks: [
+				{
+					id: "599B451EF7C4089F"
+					type: "kill"
+					entity: "minecraft:wither"
+					value: 1L
+				}
+				{
+					id: "638229F9F80B7D59"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+			]
+		}
+		{
+			icon: "minecraft:nether_bricks"
+			x: -9.0d
+			y: -8.0d
+			dependencies: ["3F60137CEC196791"]
+			id: "68EC772B0F603ADA"
+			tasks: [{
+				id: "793E1D4BCBEBECFE"
+				type: "structure"
+				structure: "betterfortresses:fortress"
+			}]
+		}
+		{
+			icon: "minecraft:polished_blackstone_bricks"
+			x: -8.0d
+			y: -8.0d
+			dependencies: ["3F60137CEC196791"]
+			id: "3AF1AC709F55C172"
+			tasks: [{
+				id: "3DE11E7BB9720257"
+				type: "structure"
+				structure: "minecraft:bastion_remnant"
+			}]
+		}
+		{
+			icon: "minecraft:snow_block"
+			x: -3.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "26966019E944881D"
+			tasks: [{
+				id: "35EE349152B53B6E"
+				type: "structure"
+				structure: "minecraft:igloo"
+			}]
+		}
+		{
+			icon: "minecraft:mossy_cobblestone"
+			x: -6.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "666196AFAAF8D206"
+			tasks: [{
+				id: "73A465C96E472672"
+				type: "structure"
+				structure: "minecraft:jungle_pyramid"
+			}]
+		}
+		{
+			icon: "minecraft:lantern"
+			x: -4.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "684E118F311EA0D5"
+			tasks: [{
+				id: "368780E7DADD4AB7"
+				type: "structure"
+				structure: "#bettermineshafts:better_mineshafts"
+			}]
+		}
+		{
+			icon: "lootr:lootr_chest"
+			x: -7.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "67CFBF42726C3F40"
+			tasks: [{
+				id: "6A419B3B31942913"
+				type: "structure"
+				structure: "minecraft:buried_treasure"
+			}]
+		}
+		{
+			icon: "minecraft:prismarine"
+			x: -2.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "4A133A1D005C912D"
+			tasks: [{
+				id: "07C3DE5E85009AC5"
+				type: "structure"
+				structure: "betteroceanmonuments:ocean_monument"
+			}]
+		}
+		{
+			icon: "minecraft:dark_oak_log"
+			x: -1.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "4E96CE62BD13A2B0"
+			tasks: [{
+				id: "33F3E0F728DAA2EB"
+				type: "structure"
+				structure: "minecraft:pillager_outpost"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "238611D672C9E586"
+			tasks: [{
+				id: "7E39830CE84869D2"
+				type: "kill"
+				entity: "minecraft:evoker"
+				value: 1L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "5C073B45D0DAEBC9"
+			tasks: [{
+				id: "5DDFFFD054B9AC25"
+				type: "kill"
+				entity: "minecraft:witch"
+				value: 1L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -9.0d
+			dependencies: ["5C073B45D0DAEBC9"]
+			id: "09CC47E6DDB141DA"
+			tasks: [{
+				id: "58972678484C599E"
+				type: "item"
+				item: "endrem:witch_pupil"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "62EEB68CF68DB865"
+			tasks: [{
+				id: "3245DAA8B0116AC8"
+				type: "kill"
+				entity: "minecraft:skeleton_horse"
+				value: 1L
+			}]
+		}
+		{
+			x: 3.0d
+			y: -9.0d
+			dependencies: ["62EEB68CF68DB865"]
+			id: "7FA0BA619D77B30B"
+			tasks: [{
+				id: "413EF41DB186C611"
+				type: "item"
+				item: "endrem:undead_soul"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "17B264D313913D40"
+			tasks: [{
+				id: "20F496C1B1261DE5"
+				type: "item"
+				item: "minecraft:rabbit_foot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -9.0d
+			dependencies: ["5D7A16DDF33D4188"]
+			id: "24EAFACA5F9D0975"
+			tasks: [{
+				id: "2D0B232CAA9B8B4F"
+				type: "item"
+				item: "minecraft:conduit"
+				count: 2L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "5D7A16DDF33D4188"
+			tasks: [{
+				id: "2F390A5B2D95EC40"
+				type: "item"
+				item: "minecraft:nautilus_shell"
+				count: 8L
+			}]
+		}
+		{
+			x: 5.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "6CD9F3A8887FC8E5"
+			tasks: [{
+				id: "4294C002F326AEC5"
+				type: "item"
+				item: "minecraft:glow_ink_sac"
+				count: 2L
+			}]
+		}
+		{
+			icon: "minecraft:tube_coral"
+			x: 6.0d
+			y: -8.0d
+			dependencies: ["3213708E164F5CE1"]
+			dependency_requirement: "all_started"
+			id: "5E716672E8DC6023"
+			tasks: [
+				{
+					id: "36512591A448C6F0"
+					type: "item"
+					item: "minecraft:tube_coral"
+				}
+				{
+					id: "502898A83BFC2987"
+					type: "item"
+					item: "minecraft:fire_coral"
+				}
+				{
+					id: "552D00C9DC5E95CE"
+					type: "item"
+					item: "minecraft:horn_coral"
+				}
+				{
+					id: "5A3038C3AE5884A8"
+					type: "item"
+					item: "minecraft:bubble_coral"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

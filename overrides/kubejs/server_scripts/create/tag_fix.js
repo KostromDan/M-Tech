@@ -406,9 +406,23 @@ function give_book_after_connect(event, r) {
 }
 
 PlayerEvents.loggedIn(event => {
-    console.log(`M-Tech-logging: Player ${event.player.username} logged in(${event.player.level.dimension}). ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}!`)
-    if (!event.player.stages.has('starting_items')) {
+    let player = event.player
+    console.log(`M-Tech-logging: Player ${player.username} logged in(${player.level.dimension}). ${Math.floor(player.x)} ${Math.floor(player.y)} ${Math.floor(player.z)}!`)
+    if (!player.stages.has('starting_items')) {
         give_book_after_connect(event, 0)
+    }
+    let worldGenSettings = event.server.worldData.worldGenSettings()
+    let chunkGenerator = worldGenSettings.overworld()
+    let noiseGenSettings = chunkGenerator.generatorSettings()
+    if (!noiseGenSettings.toString().includes("large_biomes")) {
+        let msg = 'You have changed the type of world from large biomes to a different one. It is strongly not recommended to do this! Modpack and all its philosophy, recipes, mods were calculated specifically for large biomes. The process of the game in this world will be cheating and dishonest passing of the modpack. Recreate the world using standard generation settings! If you decide to ignore this message, then at least do not use the compass to locate biomes / structures, but this will not make the passage completely honest. If you created the world before this message appeared, then ignore it, you couldn\'t have known that. This message will no longer appear.'
+        console.warn(msg)
+        if (!event.server.persistentData.contains('notified_not_correct_world_type')) {
+            event.server.persistentData.putBoolean('notified_not_correct_world_type', true)
+            event.server.scheduleInTicks(100, e => {
+                player.tell(msg)
+            })
+        }
     }
 })
 
