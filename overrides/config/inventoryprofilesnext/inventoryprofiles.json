@@ -37,7 +37,10 @@
         "tool_damage_threshold": 40,
         "allow_break_for_non_enchanted": {
             "value": true
-        }
+        },
+        "type_visual_durability_notification": "CHAT",
+        "type_visual_replace_success_notification": "CHAT",
+        "type_visual_replace_failed_notification": "CHAT"
     },
     "ScrollSettings": {
         "scroll_auto_pickup_next_for_single": false

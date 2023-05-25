@@ -2,7 +2,7 @@
 
   "auroral_garden_enabled": false,
 
-  "bamboo_grove_enabled": true,
+  "bamboo_grove_enabled": false,
 
   "bayou_enabled": true,
 
@@ -88,7 +88,7 @@
 
   "rocky_rainforest_enabled": true,
 
-  "rocky_shrubland_enabled": true,
+  "rocky_shrubland_enabled": false,
 
   "scrubland_enabled": true,
 
@@ -96,7 +96,7 @@
 
   "seasonal_orchard_enabled": false,
 
-  "shrubland_enabled": true,
+  "shrubland_enabled": false,
 
   "snowy_coniferous_forest_enabled": true,
 
