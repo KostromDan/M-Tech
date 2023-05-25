@@ -38,6 +38,8 @@ if not exist "server.properties" (
         echo motd=M-Tech
         echo max-tick-time=180000
         echo difficulty=hard
+        echo view-distance={{view-distance}}
+        echo simulation-distance={{simulation-distance}}
         echo level-type=large_biomes
     )> "server.properties"
 )

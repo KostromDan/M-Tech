@@ -30,6 +30,20 @@ ServerEvents.recipes(event => {
     })
 })
 
+EntityEvents.death(event => {
+    if (event.entity.getType()==='minecraft:wither') {
+        let itemEntity = event.level.createEntity("item")
+        itemEntity.y = event.entity.y
+        itemEntity.x = event.entity.x
+        itemEntity.z = event.entity.z
+        itemEntity.item = 'endrem:wither_eye'
+        itemEntity.item.count = 1
+        itemEntity.setInvulnerable(true)
+        itemEntity.setGlowing(true)
+        itemEntity.setPickUpDelay(100)
+        itemEntity.spawn()
+    }
+})
 const CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
 
 function throw_item(event, item) {
@@ -45,22 +59,6 @@ function throw_item(event, item) {
     itemEntity.setPickUpDelay(100)
     itemEntity.spawn()
 }
-
-EntityEvents.death(event => {
-    if (event.entity.getType()==='minecraft:wither') {
-        let itemEntity = event.level.createEntity("item")
-        itemEntity.y = event.entity.y
-        itemEntity.x = event.entity.x
-        itemEntity.z = event.entity.z
-        itemEntity.item = 'endrem:wither_eye'
-        itemEntity.item.count = 1
-        itemEntity.setInvulnerable(true)
-        itemEntity.setGlowing(true)
-        itemEntity.setPickUpDelay(100)
-        itemEntity.spawn()
-    }
-})
-
 
 function deep_inventory_search(event, ingredient, del_more_than) {
     let player = event.player

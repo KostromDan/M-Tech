@@ -12,9 +12,10 @@ Overwolf application."""
 import json
 import os
 import time
+import tkinter as tk
 
 zip_path = r'"C:\Program Files\7-Zip\7z.exe"'
-VERSION = '1.2.31'
+VERSION = '1.2.32'
 OUT_DIR = 'Server-Files-' + VERSION
 COPY_DIRS = [
     'config',
@@ -51,12 +52,47 @@ ONLY_CLIENT_MODS = [
     'simple-rpc',
     'StylishEffects',
 ]
+raise_not_found = False
 
 
-def modify_forge_version_in_file(file, forge_version):
+def create_window():
+    global raise_not_found
+    raise_not_found = False
+
+    def raise_file_not_found_after_main_loop():
+        global raise_not_found
+        raise_not_found = True
+
+    def button_click(cmd):
+        window.destroy()
+        if cmd:
+            cmd()
+
+    window = tk.Tk()
+    window.title("Tkinter Window")
+
+    button1 = tk.Button(window, text="KostromDan's Server",
+                        command=lambda: button_click(None))
+    button1.pack(padx=10, pady=10)
+
+    button2 = tk.Button(window, text="CurseForge Release",
+                        command=lambda: button_click(
+                            raise_file_not_found_after_main_loop))
+    button2.pack(padx=10, pady=10)
+
+    window.mainloop()
+    if raise_not_found: raise FileNotFoundError
+
+
+def modify_bat_sh_file(file, custom_options):
     with open(os.path.join(OUT_DIR, file), 'r') as out_f:
         text = out_f.read()
-    text = text.replace("{{forge_version}}", forge_version)
+    text = text.replace("{{forge_version}}", custom_options['forge_version'])
+    text = text.replace("{{view-distance}}",
+                        str(custom_options["server_cfg_view"]))
+    text = text.replace("{{simulation-distance}}",
+                        str(custom_options["server_cfg_simulation"]))
+
     with open(os.path.join(OUT_DIR, file), 'w') as out_f:
         out_f.write(text)
 
@@ -79,11 +115,40 @@ def main():
                 os.remove(os.path.join(OUT_DIR, 'mods', file_name))
     os.system(fr'ren .\{OUT_DIR}\startserverbat.txt startserver.bat')
     os.system(fr'ren .\{OUT_DIR}\startserversh.txt startserver.sh')
+    try:
+
+        with open('custom_assemble_options.json', 'r') as in_f:
+            custom_options = json.loads(in_f.read())
+        create_window()
+    except FileNotFoundError:
+        with open(os.path.join("Server-Files-Static",
+                               "custom_assemble_options.json"), 'r') as in_f:
+            custom_options = json.loads(in_f.read())
     with open('manifest.json', 'r') as in_f:
         manifest = json.loads(in_f.read())
     forge_version = manifest["minecraft"]["modLoaders"][0]["id"].split('-')[1]
-    modify_forge_version_in_file('startserver.bat', forge_version)
-    modify_forge_version_in_file('startserver.sh', forge_version)
+    custom_options["forge_version"] = forge_version
+    modify_bat_sh_file('startserver.bat', custom_options)
+    modify_bat_sh_file('startserver.sh', custom_options)
+    os.remove(os.path.join(OUT_DIR, 'custom_assemble_options.json'))
+
+    dyn_cfg_path = os.path.join(OUT_DIR, 'config', 'dynview-common.toml')
+    with open(dyn_cfg_path, 'r') as in_f:
+        dyn_cfg = in_f.readlines()
+    dyn_modify_options = {"minChunkViewDist": "dyn_view_min_view",
+                          "maxChunkViewDist": "dyn_view_max_view",
+                          "minSimulationDist": "dyn_view_min_simulation",
+                          "maxSimulationDist": "dyn_view_max_simulation"}
+    with open(dyn_cfg_path, 'w') as out_f:
+        out = []
+        for line in dyn_cfg:
+            for modify_option, param in dyn_modify_options.items():
+                if modify_option in line:
+                    value = line.split(' = ')[1].strip()
+                    line=line.replace(value,str(custom_options[param]))
+            out.append(line)
+        out_f.write(''.join(out))
+
     desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
     out_file = os.path.join(desktop, OUT_DIR + '.zip')
     try:

@@ -372,7 +372,7 @@
 				"2CE8E11524F6363A"
 				"35D44FEE8E8BB947"
 			]
-			dependency_requirement: "all_started"
+			dependency_requirement: "one_started"
 			id: "472BD022485CBC48"
 			tasks: [{
 				id: "4EE27C525BCD9DA7"
@@ -385,7 +385,7 @@
 			x: 15.5d
 			y: -1.5d
 			dependencies: ["72998130C8BC7325"]
-			dependency_requirement: "all_started"
+			dependency_requirement: "one_started"
 			id: "4176FC6E624317C6"
 			tasks: [{
 				id: "06777EB4211B8F48"
@@ -430,40 +430,67 @@
 			}]
 		}
 		{
+			icon: "immersiveengineering:biodiesel_bucket"
 			x: 13.5d
 			y: -1.5d
 			dependencies: ["472BD022485CBC48"]
 			id: "72998130C8BC7325"
-			tasks: [{
-				id: "6C41C5E872D4A934"
-				type: "fluid"
-				fluid: "immersiveengineering:biodiesel_flowing"
-				amount: 1000L
-			}]
+			tasks: [
+				{
+					id: "6C41C5E872D4A934"
+					type: "fluid"
+					fluid: "immersiveengineering:biodiesel_flowing"
+					amount: 1000L
+				}
+				{
+					id: "36D0CFCF0DD1AFCF"
+					type: "advancement"
+					advancement: "immersiveengineering:main/craft_hammer"
+					criterion: ""
+				}
+			]
 		}
 		{
+			icon: "immersiveengineering:ethanol_bucket"
 			x: 11.0d
 			y: -0.5d
 			dependencies: ["0A5A64936105E9F4"]
 			id: "35D44FEE8E8BB947"
-			tasks: [{
-				id: "3F2BF24CBAAC4EF4"
-				type: "fluid"
-				fluid: "immersiveengineering:ethanol_flowing"
-				amount: 1000L
-			}]
+			tasks: [
+				{
+					id: "3F2BF24CBAAC4EF4"
+					type: "fluid"
+					fluid: "immersiveengineering:ethanol_flowing"
+					amount: 1000L
+				}
+				{
+					id: "56598859A4D04E71"
+					type: "advancement"
+					advancement: "immersiveengineering:main/craft_hammer"
+					criterion: ""
+				}
+			]
 		}
 		{
+			icon: "immersiveengineering:plantoil_bucket"
 			x: 11.0d
 			y: -2.5d
 			dependencies: ["2EC4EFEA2273A673"]
 			id: "2CE8E11524F6363A"
-			tasks: [{
-				id: "6292B8BB1C695C61"
-				type: "fluid"
-				fluid: "immersiveengineering:plantoil_flowing"
-				amount: 1000L
-			}]
+			tasks: [
+				{
+					id: "6292B8BB1C695C61"
+					type: "fluid"
+					fluid: "immersiveengineering:plantoil_flowing"
+					amount: 1000L
+				}
+				{
+					id: "3D2FA1C7A74BFB33"
+					type: "advancement"
+					advancement: "immersiveengineering:main/craft_hammer"
+					criterion: ""
+				}
+			]
 		}
 		{
 			x: 15.5d
@@ -584,6 +611,7 @@
 			x: 14.5d
 			y: 0.0d
 			dependencies: ["72998130C8BC7325"]
+			dependency_requirement: "one_started"
 			id: "255693957B4B7694"
 			tasks: [{
 				id: "5692FB1034338982"
@@ -608,6 +636,7 @@
 			x: 12.5d
 			y: 0.0d
 			dependencies: ["72998130C8BC7325"]
+			dependency_requirement: "one_started"
 			id: "1ED7C45B30B6F33F"
 			tasks: [{
 				id: "2782FD7D61594A08"

@@ -44,7 +44,7 @@ if [ ! -d libraries ]; then
 fi
 
 if [ ! -e server.properties ]; then
-    printf "allow-flight=true\nmotd=M-Tech\nmax-tick-time=180000\ndifficulty=hard\nlevel-type=large_biomes" > server.properties
+    printf "allow-flight=true\nmotd=M-Tech\nmax-tick-time=180000\ndifficulty=hard\nview-distance={{view-distance}}\nsimulation-distance={{simulation-distance}}\nlevel-type=large_biomes" > server.properties
 fi
 
 if [ "${MTECH_INSTALL_ONLY:-false}" = "true" ]; then
