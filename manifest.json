@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "M-Tech 1.19.2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "",
   "files": [
     {
@@ -95,13 +95,13 @@
       "required": true
     },
     {
-      "projectID": 438332,
-      "fileID": 3871792,
+      "projectID": 417645,
+      "fileID": 3873944,
       "required": true
     },
     {
-      "projectID": 417645,
-      "fileID": 3873944,
+      "projectID": 438332,
+      "fileID": 3871792,
       "required": true
     },
     {
@@ -135,13 +135,13 @@
       "required": true
     },
     {
-      "projectID": 382216,
-      "fileID": 4019850,
+      "projectID": 240630,
+      "fileID": 4092965,
       "required": true
     },
     {
-      "projectID": 240630,
-      "fileID": 4092965,
+      "projectID": 382216,
+      "fileID": 4019850,
       "required": true
     },
     {
@@ -285,13 +285,13 @@
       "required": true
     },
     {
-      "projectID": 510089,
-      "fileID": 4073204,
+      "projectID": 228756,
+      "fileID": 3966365,
       "required": true
     },
     {
-      "projectID": 228756,
-      "fileID": 3966365,
+      "projectID": 510089,
+      "fileID": 4073204,
       "required": true
     },
     {
@@ -300,13 +300,13 @@
       "required": true
     },
     {
-      "projectID": 415974,
-      "fileID": 3912029,
+      "projectID": 316582,
+      "fileID": 3920717,
       "required": true
     },
     {
-      "projectID": 316582,
-      "fileID": 3920717,
+      "projectID": 415974,
+      "fileID": 3912029,
       "required": true
     },
     {
@@ -345,13 +345,13 @@
       "required": true
     },
     {
-      "projectID": 419699,
-      "fileID": 4040977,
+      "projectID": 227887,
+      "fileID": 4044291,
       "required": true
     },
     {
-      "projectID": 227887,
-      "fileID": 4044291,
+      "projectID": 419699,
+      "fileID": 4040977,
       "required": true
     },
     {

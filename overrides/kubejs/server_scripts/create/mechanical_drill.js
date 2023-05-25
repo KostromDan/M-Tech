@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
                 "item": "create:rotation_speed_controller"
             },
             "D": {
-                "item": "createaddition:electric_motor"
+                "item": 'create:mechanical_bearing'
             },
             "E": {
                 "item": "create:railway_casing"
@@ -29,8 +29,8 @@ ServerEvents.recipes(event => {
         },
         "pattern": [
             " A ",
-            "ABA",
-            "CDC",
+            "ADA",
+            "CBC",
             "EFE",
             "EEE"
         ],
