@@ -48,6 +48,16 @@
             "main": {
                 "keys": "BUTTON_3"
             }
+        },
+        "scroll_to_chest": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "scroll_to_inventory": {
+            "main": {
+                "keys": ""
+            }
         }
     }
 }

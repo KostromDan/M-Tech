@@ -372,6 +372,7 @@
 				"2CE8E11524F6363A"
 				"35D44FEE8E8BB947"
 			]
+			dependency_requirement: "all_started"
 			id: "472BD022485CBC48"
 			tasks: [{
 				id: "4EE27C525BCD9DA7"
@@ -384,6 +385,7 @@
 			x: 15.5d
 			y: -1.5d
 			dependencies: ["72998130C8BC7325"]
+			dependency_requirement: "all_started"
 			id: "4176FC6E624317C6"
 			tasks: [{
 				id: "06777EB4211B8F48"

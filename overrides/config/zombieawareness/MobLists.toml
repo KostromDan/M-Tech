@@ -1,6 +1,0 @@
-
-#General mod settings
-[general]
-	#Mobs enhanced by zombie awareness
-	enhancedMobs = ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"]
-

@@ -24,6 +24,16 @@ ServerEvents.tags('item', event => {
 
 
 })
+let ac_tome = Item.of('akashictome:tome',
+        '{"akashictome:data":{' +
+        'advancedperipherals:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}},' +
+        'alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},' +
+        'naturescompass:{Count:1b,id:"naturescompass:naturescompass"},' +
+        'explorerscompass:{Count:1b,id:"explorerscompass:explorerscompass"},' +
+        'ftbquests:{Count:1b,id:"ftbquests:book"},' +
+        'apotheosis:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"book.apotheosis.name"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"book.apotheosis.name"}]}\'},"patchouli:book":"apotheosis:apoth_chronicle"}},' +
+        'immersiveengineering:{Count:1b,id:"immersiveengineering:manual",tag:{"akashictome:displayName":{text:\'{"translate":"item.immersiveengineering.manual"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.immersiveengineering.manual"}]}\'}}},' +
+        'simpleplanes:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"The Guide to Planes & Helicopters"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"The Guide to Planes & Helicopters"}]}\'},"patchouli:book":"simpleplanes:planes_book"}}},"akashictome:is_morphing":1b}')
 ServerEvents.recipes(event => {
     function fix_ore(name, ingot, dust) {
         if (ingot) {
@@ -226,6 +236,8 @@ ServerEvents.recipes(event => {
         "result": {"item": 'ae2:sky_dust'},
         "secondaries": []
     })
+    event.replaceOutput({}, 'akashictome:tome', ac_tome)
+    event.shapeless(ac_tome, ['akashictome:tome'])
 
 })
 MoreJSEvents.playerStartTrading((event) => {
@@ -245,15 +257,6 @@ PlayerEvents.loggedIn(event => {
         // Add the stage
         event.player.stages.add('starting_items')
         // Give some items to player
-        event.player.give(Item.of('akashictome:tome',
-            '{"akashictome:data":{' +
-            'advancedperipherals:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}},' +
-            'alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},' +
-            'naturescompass:{Count:1b,id:"naturescompass:naturescompass"},' +
-            'ftbquests:{Count:1b,id:"ftbquests:book"},' +
-            'apotheosis:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"book.apotheosis.name"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"book.apotheosis.name"}]}\'},"patchouli:book":"apotheosis:apoth_chronicle"}},' +
-            'immersiveengineering:{Count:1b,id:"immersiveengineering:manual",tag:{"akashictome:displayName":{text:\'{"translate":"item.immersiveengineering.manual"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.immersiveengineering.manual"}]}\'}}},' +
-            'simpleplanes:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:displayName":{text:\'{"translate":"The Guide to Planes & Helicopters"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"The Guide to Planes & Helicopters"}]}\'},"patchouli:book":"simpleplanes:planes_book"}}},"akashictome:is_morphing":1b}')
-        )
+        event.player.give(ac_tome)
     }
 })
