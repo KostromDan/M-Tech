@@ -257,4 +257,20 @@ ServerEvents.recipes(event => {
         }
     })
     event.shapeless('9x kubejs:basic_control_circuit_small', ['mekanism:basic_control_circuit'])
+    event.custom({
+        "type": "mekanism:crushing",
+        "input": {
+            "ingredient": [{"item": 'minecraft:blaze_rod'}]
+        },
+        "output": {"count": 5, "item": 'minecraft:blaze_powder'}
+    })
+
+
+    event.custom({
+        "type": "mekanism:crushing",
+        "input": {
+            "ingredient": [{"item": 'minecraft:ender_pearl'}]
+        },
+        "output": {"count": 1, "item": 'ae2:ender_dust'}
+    })
 })

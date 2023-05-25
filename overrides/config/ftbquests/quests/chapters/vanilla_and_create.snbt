@@ -31,7 +31,7 @@
 			title: "Cold Eye"
 			x: -3.0d
 			y: -9.0d
-			subtitle: "Found in Igloos"
+			subtitle: "Found in Igloos. Attention this eye is very rare, you can spend a lot of time getting it."
 			dependencies: ["26966019E944881D"]
 			id: "174C350B05539928"
 			tasks: [{
@@ -302,7 +302,7 @@
 			icon: "minecraft:ender_eye"
 			x: -3.0d
 			y: -14.0d
-			subtitle: "You need any different 12/15 eyes. Without this achievement, you will not be able to get to the end, even if the portal is already opened by another player. Attention! If you do not heed this warning, you will be teleported very high and far into the overword. If you play in a team, make sure that you are a member of the same FTB team to synchronize achievements."
+			subtitle: "You need any different 12/15 eyes. Without this achievement, you will not be able to get to the end, even if the portal is already opened by another player. Attention! If you do not heed this warning, you will be teleported very high and far into the overword. If you play in a team, make sure that you are a member of the same FTB team to synchronize achievements. Also keep in mind that in this modpack the dragon is very strong, the crystals are regenerated, and do not even dream of killing him without a full set of diamond armor full of enchantments and affixes, as well as golden apples. To destroy crystals, it is recommended to use a hook, preferably with an rocket upgrade. Also, you will not be able to leave the dragon island without killing him."
 			min_required_dependencies: 12
 			dependencies: [
 				"45A9281056C76F12"
@@ -529,8 +529,8 @@
 			}]
 		}
 		{
-			x: 21.0d
-			y: 10.0d
+			x: 23.0d
+			y: 11.5d
 			dependencies: ["59C7F319B478051D"]
 			id: "5D6B7AEE3256F1A7"
 			tasks: [{
@@ -3143,7 +3143,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 9.0d
 			y: -3.0d
 			dependencies: ["77F4B00E7E4B0979"]
 			id: "4C5232099E83DFCE"
@@ -3154,9 +3154,12 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: -3.0d
-			dependencies: ["4C5232099E83DFCE"]
+			x: 21.5d
+			y: 7.0d
+			dependencies: [
+				"4C5232099E83DFCE"
+				"58F6489569480121"
+			]
 			id: "25329BCAB079BF06"
 			tasks: [{
 				id: "772C33973A611BA8"
@@ -3165,8 +3168,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -6.5d
+			x: 26.5d
+			y: 3.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "302CC049FAF78788"
 			tasks: [{
@@ -3176,8 +3179,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -5.5d
+			x: 26.5d
+			y: 4.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "465C3D66C61E8935"
 			tasks: [{
@@ -3187,8 +3190,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -4.5d
+			x: 26.5d
+			y: 5.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "5EB3871BAC7DA2D4"
 			tasks: [{
@@ -3198,8 +3201,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -3.5d
+			x: 26.5d
+			y: 6.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "52C7AC10B683C905"
 			tasks: [{
@@ -3209,8 +3212,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -2.5d
+			x: 26.5d
+			y: 7.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "5716063030475054"
 			tasks: [{
@@ -3220,8 +3223,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -1.5d
+			x: 26.5d
+			y: 8.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "1F4FAB20BEDF046B"
 			tasks: [{
@@ -3231,8 +3234,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -0.5d
+			x: 26.5d
+			y: 9.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "52F29682750C19CF"
 			tasks: [{
@@ -3242,8 +3245,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: 0.5d
+			x: 26.5d
+			y: 10.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "13D56BAA853EE38F"
 			tasks: [{
@@ -3253,8 +3256,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: 1.5d
+			x: 26.5d
+			y: 11.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "00679B8299727A02"
 			tasks: [{
@@ -3264,8 +3267,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -7.5d
+			x: 26.5d
+			y: 2.5d
 			dependencies: ["25329BCAB079BF06"]
 			id: "01C6A94790BFC113"
 			tasks: [{

@@ -1,0 +1,10 @@
+ServerEvents.tags('item', event => {
+    event.remove('forge:plates/iron', 'create:iron_sheet')
+    event.remove('forge:plates', 'create:iron_sheet')
+    event.remove('forge:plates/copper', 'create:copper_sheet')
+    event.remove('forge:plates', 'create:copper_sheet')
+    event.remove('forge:plates/brass', 'create:brass_sheet')
+    event.remove('forge:plates', 'create:brass_sheet')
+    event.remove('forge:plates/gold', 'create:golden_sheet')
+    event.remove('forge:plates', 'create:golden_sheet')
+})

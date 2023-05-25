@@ -1,49 +1,3 @@
-ServerEvents.recipes(event => {
-    event.remove({output: "sophisticatedbackpacks:iron_backpack"})
-    event.custom({
-        "type": "sophisticatedbackpacks:backpack_upgrade",
-        "conditions": [
-            {
-                "itemRegistryName": "sophisticatedbackpacks:iron_backpack",
-                "type": "sophisticatedcore:item_enabled"
-            }
-        ],
-        "pattern": [
-            "ICI",
-            "IBI",
-            "ICI"
-        ],
-        "key": {
-            "I": {
-                "tag": "forge:ingots/iron"
-            },
-            "B": {
-                "item": "sophisticatedbackpacks:backpack"
-            },
-            "C": {
-                "item": 'minecraft:shulker_shell'
-            }
-        },
-        "result": {
-            "item": "sophisticatedbackpacks:iron_backpack"
-        }
-    })
-})
-
-EntityEvents.death(event => {
-    if (event.entity.getType() === 'minecraft:wither') {
-        let itemEntity = event.level.createEntity("item")
-        itemEntity.y = event.entity.y
-        itemEntity.x = event.entity.x
-        itemEntity.z = event.entity.z
-        itemEntity.item = 'endrem:wither_eye'
-        itemEntity.item.count = 1
-        itemEntity.setInvulnerable(true)
-        itemEntity.setGlowing(true)
-        itemEntity.setPickUpDelay(100)
-        itemEntity.spawn()
-    }
-})
 const CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
 
 function throw_item(event, item) {
@@ -90,7 +44,8 @@ function remove_from_inv_include_curious(event, ingredient, max_count) {
 }
 
 function del_item_more_than(event, ingredient, max_count) {
-    while (remove_from_inv_include_curious(event, ingredient, max_count) > max_count) {}
+    while (remove_from_inv_include_curious(event, ingredient, max_count) > max_count) {
+    }
 }
 
 PlayerEvents.inventoryChanged(event => {

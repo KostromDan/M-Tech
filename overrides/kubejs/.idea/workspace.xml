@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -23,13 +23,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/curseforge/minecraft/Instances/M-Tech/kubejs/server_scripts",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\curseforge\minecraft\Instances\M-Tech\kubejs\server_scripts" />
+      <recent name="C:\curseforge\minecraft\Instances\M-Tech\kubejs\server_scripts\Every Compat" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\curseforge\minecraft\Instances\M-Tech\kubejs\server_scripts" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,6 +88,8 @@
       <workItem from="1682355129486" duration="1664000" />
       <workItem from="1682443322033" duration="2737000" />
       <workItem from="1682446268922" duration="13101000" />
+      <workItem from="1682515013093" duration="13810000" />
+      <workItem from="1682619385164" duration="27143000" />
     </task>
     <servers />
   </component>
