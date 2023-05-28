@@ -15,7 +15,7 @@ import time
 import tkinter as tk
 
 zip_path = r'"C:\Program Files\7-Zip\7z.exe"'
-VERSION = '1.3.11'
+VERSION = '1.3.12'
 OUT_DIR = 'Server-Files-' + VERSION
 COPY_DIRS = [
     'config',

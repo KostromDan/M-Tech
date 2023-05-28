@@ -1,15 +1,17 @@
-ServerEvents.recipes(event => {event.custom({
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "X": {
-      "item": "createdeco:pearl_short_bricks"
-    }
-  },
-  "pattern": [
-    "XXX"
-  ],
-  "result": {
-    "count": 6,
-    "item": "createdeco:pearl_short_bricks_slab"
-  }
-})})
+ServerEvents.recipes(event => {
+    event.custom({
+        "type": "minecraft:crafting_shaped",
+        "key": {
+            "X": {
+                "item": "createdeco:pearl_short_bricks"
+            }
+        },
+        "pattern": [
+            "XXX"
+        ],
+        "result": {
+            "count": 6,
+            "item": "createdeco:pearl_short_bricks_slab"
+        }
+    })
+})

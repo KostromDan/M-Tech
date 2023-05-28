@@ -1,3 +1,5 @@
-ServerEvents.recipes(event => {event.custom({
-  "type": "createbigcannons:cartridge_assembly"
-})})
+ServerEvents.recipes(event => {
+    event.custom({
+        "type": "createbigcannons:cartridge_assembly"
+    })
+})

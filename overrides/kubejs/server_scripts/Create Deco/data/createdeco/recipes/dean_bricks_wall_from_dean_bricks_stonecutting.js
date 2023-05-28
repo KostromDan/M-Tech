@@ -1,8 +1,10 @@
-ServerEvents.recipes(event => {event.custom({
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "createdeco:dean_bricks"
-  },
-  "result": "createdeco:dean_bricks_wall"
-})})
+ServerEvents.recipes(event => {
+    event.custom({
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+            "item": "createdeco:dean_bricks"
+        },
+        "result": "createdeco:dean_bricks_wall"
+    })
+})

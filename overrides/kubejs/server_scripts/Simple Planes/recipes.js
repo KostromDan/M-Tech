@@ -1,6 +1,9 @@
 ServerEvents.recipes(event => {
     event.replaceInput({mod: 'simpleplanes'}, 'minecraft:daylight_detector', 'mekanismgenerators:advanced_solar_generator')
-    event.replaceInput({mod: 'simpleplanes', id: 'simpleplanes:charging_station'}, 'minecraft:light_weighted_pressure_plate', 'mekanism:chargepad')
+    event.replaceInput({
+        mod: 'simpleplanes',
+        id: 'simpleplanes:charging_station'
+    }, 'minecraft:light_weighted_pressure_plate', 'mekanism:chargepad')
 
     event.remove({
         output: 'simpleplanes:plane_workbench'

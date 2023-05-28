@@ -1,9 +1,11 @@
-ServerEvents.recipes(event => {event.custom({
-  "type": "minecraft:blasting",
-  "cookingtime": 100,
-  "experience": 0.5,
-  "ingredient": {
-    "item": "createdeco:pearl_brick_tiles"
-  },
-  "result": "createdeco:cracked_pearl_brick_tiles"
-})})
+ServerEvents.recipes(event => {
+    event.custom({
+        "type": "minecraft:blasting",
+        "cookingtime": 100,
+        "experience": 0.5,
+        "ingredient": {
+            "item": "createdeco:pearl_brick_tiles"
+        },
+        "result": "createdeco:cracked_pearl_brick_tiles"
+    })
+})

@@ -3,8 +3,8 @@ function get_page_type(ponder, player) {
         if (!("page_type" in ponder) || ponder.get("page_type") == 'PonderTagIndexScreen') {
             return 'PonderTagIndexScreen';
         }
-        if (ponder.get("page_type") == 'PonderUI') {
-            return 'PonderUI';
+        if (ponder.get("page_type") == 'PonderIndexScreen') {
+            return 'PonderIndexScreen';
         }
         return 'PonderTagIndexScreen';
     }
@@ -12,8 +12,8 @@ function get_page_type(ponder, player) {
     if (page_type == 'PonderTagIndexScreen') {
         return 'PonderTagIndexScreen';
     }
-    if (page_type == 'PonderUI') {
-        return 'PonderUI';
+    if (page_type == 'PonderIndexScreen') {
+        return 'PonderIndexScreen';
     }
     return 'PonderTagIndexScreen';
 }
@@ -24,9 +24,20 @@ function set_page_type(page_type) {
     JsonIO.write('kubejs/ponder.json', current)
 }
 
+let players_create_manual_right_click = []
+
 function create_manual_right_click(event) {
+
     if (event.player.mainHandItem == 'create:create_manual') {
         event.cancel()
+        if (players_create_manual_right_click.includes(event.player.username)) {
+            return;
+        }
+        players_create_manual_right_click.push(event.player.username)
+        event.server.scheduleInTicks(3, callback => {
+            players_create_manual_right_click = players_create_manual_right_click.filter((el) => el !== event.player.username);
+        })
+
         let ray = event.player.rayTrace(64)
         let ponder = JsonIO.read('kubejs/ponder.json')
         if (ponder == null) {
@@ -42,24 +53,38 @@ function create_manual_right_click(event) {
             }
         }
         if (ray.block !== null && !event.player.isCrouching()) {
+            let ponders = []
+            if (ray.block.id.includes('andesite_encased')) {
+                ponders.push('create:andesite_casing')
+            } else if (ray.block.id.includes('brass_encased')) {
+                ponders.push('create:brass_casing')
+            } else if (ray.block.id.includes('encased')) {
+                ponders.push('create:copper_casing')
+            }
             if (ponder.contains(ray.block.id)) {
-                event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder ${ray.block.id}`)
-                return;
-            } else {
-                for (const drop of ray.block.getDrops()) {
-                    if (ponder.contains(drop.id)) {
-                        event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder ${drop.id}`)
-                        return;
-                    }
+                ponders.push(ray.block.id)
+            }
+            for (const drop of ray.block.getDrops()) {
+                if (ponder.contains(drop.id) && !ponders.includes(drop.id)) {
+                    ponders.push(drop.id)
                 }
             }
+
+            if (ponders.length == 1) {
+                event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder ${ponders[0]}`)
+                return;
+            } else if (ponders.length >= 2) {
+                event.player.sendData('open_multi_ponder', {'ponders': ponders})
+                return;
+            }
+
         }
         let page_type = get_page_type(ponder, event.player)
         if (page_type == 'PonderTagIndexScreen') {
             event.player.sendData('openPonderTagIndexScreen', {})
             return;
         }
-        if (page_type == 'PonderUI') {
+        if (page_type == 'PonderIndexScreen') {
             event.server.runCommandSilent(`/execute as ${event.entity.uuid} run create ponder`)
             return;
         }
@@ -77,73 +102,14 @@ BlockEvents.rightClicked(event => {
 NetworkEvents.fromClient('create_manual_change_screen', event => {
     let screen = null
     if (!event.player.persistentData.contains('create_manual_page_type') || event.player.persistentData.create_manual_page_type == 'PonderTagIndexScreen') {
-        screen = "PonderUI"
-    } else if (event.player.persistentData.create_manual_page_type == 'PonderUI') {
+        screen = "PonderIndexScreen"
+    } else if (event.player.persistentData.create_manual_page_type == 'PonderIndexScreen') {
         screen = "PonderTagIndexScreen"
     }
     event.player.persistentData.create_manual_page_type = screen
     event.server.runCommandSilent(`title ${event.player.username} actionbar "Now manual will open ${screen}!"`)
 })
 
-ServerEvents.commandRegistry(event => {
-    const {commands: Commands, arguments: Arguments} = event;
-    event.register(
-        Commands.literal("create_manual_config")
-            .then(Commands.literal("page_type")
-                .then(Commands.literal("PonderTagIndexScreen")
-                    .executes(ctx => {
-                        let player = ctx.source.player;
-                        player.persistentData.create_manual_page_type = "PonderTagIndexScreen"
-                        player.tell("Now create manual will open PonderTagIndexScreen!")
-                        return 1;
-                    })
-                )
-                .then(Commands.literal("PonderUI")
-                    .executes(ctx => {
-                        let player = ctx.source.player;
-                        player.persistentData.create_manual_page_type = "PonderUI"
-                        player.tell("Now create manual will open PonderUI!")
-                        return 1;
-                    })
-                )
-                .then(Commands.literal("reset")
-                    .executes(ctx => {
-                        let player = ctx.source.player;
-                        player.persistentData.remove('create_manual_page_type')
-                        player.tell("Now create manual will open default server value!")
-                        return 1;
-                    })
-                )
-            )
-            .then(Commands.literal("default_page_type")
-                .requires(src => src.hasPermission(2))
-                .then(Commands.literal("PonderTagIndexScreen")
-                    .executes(ctx => {
-                        let player = ctx.source.player;
-                        set_page_type("PonderTagIndexScreen")
-                        player.tell("Now create manual will open PonderTagIndexScreen by default!")
-                        return 1;
-                    })
-                )
-                .then(Commands.literal("PonderUI")
-                    .executes(ctx => {
-                        let player = ctx.source.player;
-                        set_page_type("PonderUI")
-                        player.tell("Now create manual will open PonderUI by default!")
-                        return 1;
-                    })
-                )
-            )
-            .then(Commands.literal("help")
-                .executes(ctx => {
-                    let player = ctx.source.player;
-                    player.tell('/create_manual_config default_page_type <type> - will set default screen type for all players.\n' +
-                        '/create_manual_config page_type <type> will set screen type only for you.')
-                    return 1;
-                })
-            )
-    )
-})
 ServerEvents.recipes(event => {
     event.shapeless('create:create_manual', ['minecraft:book', 'create:andesite_alloy'])
 })

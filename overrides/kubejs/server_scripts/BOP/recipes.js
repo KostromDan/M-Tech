@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
         'minecraft:acacia_sapling',
         'minecraft:purple_dye'
     )
-        make_sapling(
+    make_sapling(
         'biomesoplenty:fir_sapling',
         'minecraft:spruce_sapling',
         'minecraft:gray_dye'

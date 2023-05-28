@@ -3,6 +3,15 @@
 
 	[types.leaves_type]
 
+		[types.leaves_type.quark]
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			pink_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+			ancient = true
+
 		[types.leaves_type.biomesoplenty]
 			origin = true
 			flowering_oak = true
@@ -22,15 +31,6 @@
 			magic = true
 			umbran = true
 			hellbark = true
-
-		[types.leaves_type.quark]
-			blue_blossom = true
-			lavender_blossom = true
-			orange_blossom = true
-			pink_blossom = true
-			yellow_blossom = true
-			red_blossom = true
-			ancient = true
 
 	[types.wood_type]
 
