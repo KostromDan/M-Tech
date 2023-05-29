@@ -1,4 +1,9 @@
 ServerEvents.loaded(event => {
+    if (event.server.persistentData.contains('firstload') && !event.server.persistentData.contains('is_1_3_13_and_upper_world')) {
+        event.server.persistentData.putBoolean('is_1_3_13_and_upper_world', false)
+    } else {
+        event.server.persistentData.putBoolean('is_1_3_13_and_upper_world', true)
+    }
     if (!event.server.persistentData.contains('firstload')) {
         event.server.persistentData.putBoolean('firstload', true)
         Utils.server.runCommandSilent("gamerule playersSleepingPercentage 66")
