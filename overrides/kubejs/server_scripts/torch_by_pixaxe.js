@@ -51,7 +51,6 @@ ItemEvents.rightClicked(event => {
             Utils.server.runCommandSilent(`/execute at ${event.player.uuid} run setblock ${x} ${y} ${z} air destroy`)
         }
 
-
         let vec_3 = new $Vec3(x, y, z)
         let block_pos = new $BlockPos(x, y, z)
         let block_hit_result = new $BlockHitResult(vec_3, ray.facing, block_pos, false)

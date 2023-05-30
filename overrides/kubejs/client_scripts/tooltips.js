@@ -14,3 +14,8 @@ ItemEvents.tooltip(tooltip => {
     let myMessage = Text.yellow('Reset with a left click on the air!')
     tooltip.add('akashictome:tome', [myMessage])
 })
+ItemEvents.tooltip(tooltip => {
+    let myMessage = Text.yellow("In this modpack you can't use pointed dripstone for infinite lava/water source. Use trains or something else!")
+    tooltip.add('minecraft:pointed_dripstone', [myMessage])
+    tooltip.add('minecraft:dripstone_block', [myMessage])
+})
