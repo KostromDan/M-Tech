@@ -48,7 +48,7 @@ function create_manual_right_click(event) {
         ponder = ponder.get("ponder")
         if (!event.player.stages.has('notified_about_create_manual_options')) {
             event.player.stages.add('notified_about_create_manual_options')
-            event.player.tell("Shift + scroll if you want to change screen mode!")
+            event.player.tell("Shift + scroll if you want to change screen mode or click on the block from Create for which you want to get help.")
         }
         if (ray.block !== null && !event.player.isCrouching()) {
             let ponders = []

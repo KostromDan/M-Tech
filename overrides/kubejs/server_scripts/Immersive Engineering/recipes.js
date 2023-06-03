@@ -4,10 +4,6 @@ ServerEvents.recipes(event => {
     event.replaceInput({}, 'immersiveengineering:dust_coke', 'mekanism:dust_coal')
     event.replaceInput({}, 'immersiveengineering:dust_sulfur', 'mekanism:dust_sulfur')
 
-    event.remove({output: 'immersiveengineering:dynamo'})
-    event.remove({output: 'immersiveengineering:windmill'})
-    event.remove({output: 'immersiveengineering:watermill'})
-    event.remove({output: 'immersiveengineering:waterwheel_segment'})
     event.remove({id: 'immersiveengineering:alloybrick'})
 
     event.remove({

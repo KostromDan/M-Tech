@@ -35,7 +35,7 @@
 	#Enable generation of short grass
 	enableShortGrass = false
 	#Enable generation of natural cobwebs
-	enableNaturalCobwebs = true
+	enableNaturalCobwebs = false
 	#Enable generation of small cacti
 	enableSmallCacti = true
 	#Enable generation of prickly bushes

@@ -172,6 +172,32 @@ ServerEvents.commandRegistry(event => {
                 })
             )
             .then(Commands.literal("config")
+                .then(Commands.literal("pointed_dripstone_enabled")
+                    .then(Commands.argument('arg1', Arguments.BOOLEAN.create(event))
+                        .executes(ctx => {
+                            const arg1 = Arguments.BOOLEAN.getResult(ctx, "arg1");
+                            let m_tech_options = JsonIO.read('kubejs/m_tech_options.json')
+                            if (m_tech_options == null) {
+                                m_tech_options = {}
+                            }
+                            m_tech_options["pointed_dripstone_enabled"] = arg1
+                            JsonIO.write('kubejs/m_tech_options.json', m_tech_options)
+
+                            let player = ctx.source.player
+                            player.tell(`Value changed to: ${m_tech_options["pointed_dripstone_enabled"]}. Restart game!`)
+                            return 1
+                        })
+                    ).executes(ctx => {// no argument
+                        let m_tech_options = JsonIO.read('kubejs/m_tech_options.json')
+                        if (m_tech_options == null) {
+                            m_tech_options = {}
+                            m_tech_options["pointed_dripstone_enabled"] = false
+                        }
+                        let player = ctx.source.player
+                        player.tell(`Current value is: ${m_tech_options["pointed_dripstone_enabled"]}`)
+                        return 1
+                    })
+                )
                 .then(Commands.literal("do_backup")
                     .then(Commands.argument('arg1', Arguments.BOOLEAN.create(event))
                         .executes(ctx => {

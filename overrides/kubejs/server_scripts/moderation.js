@@ -6,7 +6,7 @@ let moder_can_use = [
     'kick ',
     'mtech restart',
     'mtech backup',
-    'stop ',
+    'stop',
     'ftb'
 ]
 ServerEvents.commandRegistry(event => {

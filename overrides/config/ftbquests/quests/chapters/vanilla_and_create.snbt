@@ -619,7 +619,7 @@
 				type: "item"
 			}]
 			x: 22.5d
-			y: 21.0d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -637,7 +637,12 @@
 			y: 22.0d
 		}
 		{
-			dependencies: ["7D65C22457A98829"]
+			dependencies: [
+				"7D65C22457A98829"
+				"7D65C22457A98829"
+				"340232160EF688A8"
+			]
+			dependency_requirement: "one_completed"
 			id: "422140008BAD4A2E"
 			size: 1.5d
 			subtitle: "Build big mining contraption to do it easy and fast."
@@ -724,7 +729,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 17.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["39698A97C8F7B9D4"]
@@ -1149,6 +1154,7 @@
 				"6836E5CEE8F9293C"
 			]
 			id: "678AC2A9E602F8FC"
+			subtitle: "You will need a lot of lava! It is recommended to build an automatic train for the continuous delivery of lava from the nether."
 			tasks: [{
 				id: "2D7D8940114605A4"
 				item: "create:sturdy_sheet"
@@ -1221,19 +1227,8 @@
 				item: "create:wand_of_symmetry"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 14.5d
-		}
-		{
-			dependencies: ["47E018D3D2AB494D"]
-			id: "6177FCC39908B9E7"
-			tasks: [{
-				id: "6F28D861DEBEC7EA"
-				item: "create:cart_assembler"
-				type: "item"
-			}]
-			x: 21.0d
-			y: 12.0d
+			x: 22.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["744FD1DFF6664B06"]
@@ -3608,39 +3603,13 @@
 		}
 		{
 			dependencies: [
-				"0DFE8567FC3AF8D2"
-				"6177FCC39908B9E7"
-				"14F3E7DF937B195D"
 				"74A60D96F6226F52"
+				"0DFE8567FC3AF8D2"
 			]
 			icon: "create:mechanical_drill"
 			id: "75C5A0B456237F63"
-			rewards: [{
-				id: "661D688B9490DE6A"
-				item: {
-					Count: 1b
-					id: "create:schematic"
-					tag: {
-						Anchor: {
-							X: 0
-							Y: 0
-							Z: 0
-						}
-						Bounds: [
-							4
-							5
-							14
-						]
-						Deployed: 0b
-						File: "m_tech_small_drill_contraption.nbt"
-						Mirror: "NONE"
-						Rotation: "NONE"
-					}
-				}
-				type: "item"
-			}]
 			size: 1.5d
-			subtitle: "This is your first resource mining machine. You only need 5 drills to build it. After accumulating resources, you will receive schematics for its construction as a reward. Position it in the world and load it into Schematicannon along with gunpowder, the machine will be built. All mining contrations, the schematics of which are included in the modpack by default, are stable and replace water and lava. They can safely pass through any liquid without harming themselves or the controlling player. It is understood that with the help of this machine you will quickly accumulate enough resources for the next one. You can not use ready-made schematics and build something of your own. It is also recommended to make a drill factory, because you will need a lot of them."
+			subtitle: "This is your first resource mining machine. You only need 5 drills to build it. After accumulating resources, go to the schematics table, find the appropriately titled schematic. Position it in the world and load it into Schematicannon along with gunpowder, the machine will be built. All mining contrations, the schematics of which are included in the modpack by default, are stable and replace water and lava. To make the contraption run successfully, load it with red torches and powered rails. Give it at least five initial rails to get started. They can safely pass through any liquid without harming themselves or the controlling player. It is understood that with the help of this machine you will quickly accumulate enough resources for the next one. You can not use ready-made schematics and build something of your own. It is also recommended to make a drill factory, because you will need a lot of them. "
 			tasks: [
 				{
 					id: "6A0C39B6EBD6C296"
@@ -3743,30 +3712,6 @@
 			dependencies: ["75C5A0B456237F63"]
 			icon: "create:mechanical_drill"
 			id: "513EB6CA99C16ACC"
-			rewards: [{
-				id: "6B1C9F5035D9F894"
-				item: {
-					Count: 1b
-					id: "create:schematic"
-					tag: {
-						Anchor: {
-							X: 0
-							Y: 0
-							Z: 0
-						}
-						Bounds: [
-							4
-							5
-							14
-						]
-						Deployed: 0b
-						File: "m_tech_drill_contraption.nbt"
-						Mirror: "NONE"
-						Rotation: "NONE"
-					}
-				}
-				type: "item"
-			}]
 			size: 2.25d
 			subtitle: "You can expand this machine to speed up the extraction of resources, for this, increase the first layer of drills from the front in the outward direction (this comment applies to the following contraption as well)."
 			tasks: [
@@ -3872,30 +3817,6 @@
 			dependencies: ["513EB6CA99C16ACC"]
 			icon: "create:mechanical_drill"
 			id: "7D65C22457A98829"
-			rewards: [{
-				id: "6A2207C2E08483C7"
-				item: {
-					Count: 1b
-					id: "create:schematic"
-					tag: {
-						Anchor: {
-							X: 0
-							Y: 0
-							Z: 0
-						}
-						Bounds: [
-							4
-							5
-							14
-						]
-						Deployed: 0b
-						File: "m_tech_big_daddy.nbt"
-						Mirror: "NONE"
-						Rotation: "NONE"
-					}
-				}
-				type: "item"
-			}]
 			size: 2.5d
 			subtitle: "After building this machine, go to the nether at height 10, install the initial rails on it, contraption on them and after about 1-1.5 hours, accumulate enough resources for 36 netherite ingots."
 			tasks: [
@@ -3996,6 +3917,67 @@
 			title: "Big Daddy"
 			x: 28.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["74A60D96F6226F52"]
+			icon: "create:mechanical_drill"
+			id: "340232160EF688A8"
+			size: 2.25d
+			subtitle: "The modpack does not force the use of built-in schematics, you can go your own way and build a mining contraption yourself."
+			tasks: [
+				{
+					id: "44F262B40D34C9A3"
+					item: {
+						Count: 1b
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "03D43CA7158DC918"
+					item: {
+						Count: 1b
+						id: "create:attribute_filter"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "50A4A84FB0132660"
+					item: "create:cart_assembler"
+					type: "item"
+				}
+				{
+					count: 82L
+					id: "0BF768203BA2F8A2"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					count: 126L
+					id: "0DBE1701A2DF289F"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					id: "77CE6BE9504947AC"
+					item: "minecraft:minecart"
+					type: "item"
+				}
+				{
+					count: 302L
+					id: "000B0D8C435AEB6B"
+					item: "create:item_vault"
+					type: "item"
+				}
+			]
+			title: "Own Contraption"
+			x: 26.0d
+			y: 17.5d
 		}
 	]
 	title: "Phase 1"
