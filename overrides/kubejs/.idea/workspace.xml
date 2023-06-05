@@ -108,6 +108,8 @@
       <workItem from="1685403394406" duration="15000" />
       <workItem from="1685476812417" duration="409000" />
       <workItem from="1685625228867" duration="360000" />
+      <workItem from="1685926200699" duration="18000" />
+      <workItem from="1685927282883" duration="855000" />
     </task>
     <servers />
   </component>
@@ -116,6 +118,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tag_fix_js$assemble_server.coverage" NAME="assemble_server Coverage Results" MODIFIED="1682204210009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/torch_by_pixaxe_js$assemble_server.coverage" NAME="assemble_server Coverage Results" MODIFIED="1685928389445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/create_manual_client_js$assemble_server.coverage" NAME="assemble_server Coverage Results" MODIFIED="1685477203462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
 </project>

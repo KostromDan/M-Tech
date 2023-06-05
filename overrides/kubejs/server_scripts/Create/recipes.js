@@ -334,9 +334,9 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "create:sequenced_assembly",
         "ingredient": {
-            "item": "create:powdered_obsidian"
+            "item": 'createdeco:cast_iron_sheet'
         },
-        "loops": 5,
+        "loops": 3,
         "results": [
             {
                 "item": "create:sturdy_sheet"
@@ -344,6 +344,22 @@ ServerEvents.recipes(event => {
         ],
         "sequence": [
             {
+                "type": "create:deploying",
+                "ingredients": [
+                    {
+                        "item": "create:unprocessed_obsidian_sheet"
+                    },
+                    {
+                        "item": "create:powdered_obsidian"
+                    }
+                ],
+                "results": [
+                    {
+                        "item": "create:unprocessed_obsidian_sheet"
+                    }
+                ]
+            },
+            {
                 "type": "create:filling",
                 "ingredients": [
                     {
@@ -393,20 +409,6 @@ ServerEvents.recipes(event => {
                 ]
             },
             {
-                "type": "create:pressing",
-                "ingredients": [
-                    {
-                        "item": "create:unprocessed_obsidian_sheet"
-                    }
-                ],
-                "results": [
-                    {
-                        "item": "create:unprocessed_obsidian_sheet"
-                    }
-                ]
-            },
-
-            {
                 "type": "create:filling",
                 "ingredients": [
                     {
@@ -424,7 +426,6 @@ ServerEvents.recipes(event => {
                     }
                 ]
             },
-
             {
                 "type": "create:pressing",
                 "ingredients": [
